@@ -268,7 +268,7 @@ class Tacotron2(nn.Module):
 
     def forward(self, inputs):
         inputs, input_lengths, mels = inputs
-
+        
         B = inputs.size(0)
 
         # (B, T)

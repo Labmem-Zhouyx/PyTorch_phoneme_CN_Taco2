@@ -2,9 +2,7 @@
 import re
 from . import cleaners
 from .symbols import symbols
-from .pinyin import pinyin_to_symbols
-
-from .symbols_character import symbols
+from .pinyin import pinyin_to_symbols, symbols
 
 
 # Mappings from symbol to numeric ID and vice versa:
