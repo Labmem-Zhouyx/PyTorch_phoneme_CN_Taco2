@@ -14,7 +14,6 @@ class hparams:
         cudnn_enabled = True
         cudnn_benchmark = False
         ignore_layers = ['embedding.weight']
-        synth_batch_size = 1
 
         ################################
         # Data Parameters             #

@@ -98,3 +98,15 @@ class TextMelCollate():
             output_lengths[i] = mel.size(0)
 
         return text_padded, input_lengths, mel_padded, gate_padded, output_lengths
+
+
+class TextMelDatasetEval(torch.utils.data.Dataset):
+    def __init__(self, sentences, hparams):
+        self.sentences = sentences
+        self.text_cleaners = hparams.text_cleaners
+
+    def __len__(self):
+        return len(self.sentences)
+
+    def __getitem__(self, index):
+        return torch.IntTensor(text_to_sequence(self.sentences[index], self.text_cleaners))

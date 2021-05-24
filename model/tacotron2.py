@@ -270,7 +270,7 @@ class Tacotron2(nn.Module):
         inputs, input_lengths, mels = inputs
         
         B = inputs.size(0)
-
+        print(inputs)
         # (B, T)
         inputs = self.embedding(inputs)
 
@@ -289,7 +289,10 @@ class Tacotron2(nn.Module):
 
     def inference(self, inputs):
         # Only text inputs
+        device = next(self.parameters()).device
+        inputs = inputs.to(device).long()
         inputs = inputs, None, None
+        
         return self.forward(inputs)
 
 
