@@ -270,7 +270,7 @@ class Tacotron2(nn.Module):
         inputs, input_lengths, mels = inputs
         
         B = inputs.size(0)
-        print(inputs)
+        
         # (B, T)
         inputs = self.embedding(inputs)
 
