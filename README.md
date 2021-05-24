@@ -12,4 +12,4 @@ Output: Mel-spectrogram
 
 3. Inference.
 
-
+`python inference.py -t 'sentences.txt' -c ./save/checkpoint_100000`
