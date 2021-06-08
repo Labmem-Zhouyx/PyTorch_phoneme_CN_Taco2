@@ -1,0 +1,30 @@
+audio-SSB19560473.npy|mel-SSB19560473.npy|linear-SSB19560473.npy|58600|294|妻子孟美华和丈夫张国振|qi1 zi5 meng4 mei3 hua2 he2 zhang4 fu5 zhang1 guo2 zhen4 |SSB1956
+audio-SSB19560474.npy|mel-SSB19560474.npy|linear-SSB19560474.npy|136200|682|首批获得牌照的二十七家支付企业能否顺利通过年检疑存|shou3 pi1 huo4 de2 pai2 zhao4 de5 er4 shi2 qi1 jia1 zhi1 fu4 qi3 ye4 neng2 fou3 shun4 li4 tong1 guo4 nian2 jian3 yi2 cun2 |SSB1956
+audio-SSB04350330.npy|mel-SSB04350330.npy|linear-SSB04350330.npy|42200|212|那些东西就进来了|na4 xie1 dong1 xi1 jiu4 jin4 lai2 le5 |SSB0435
+audio-SSB04350331.npy|mel-SSB04350331.npy|linear-SSB04350331.npy|69200|347|今晚对逃跑的印度豹的找寻工作|jin1 wan3 dui4 tao2 pao3 de5 yin4 du4 bao4 de5 zhao3 xun2 gong1 zuo4 |SSB0435
+audio-SSB04350332.npy|mel-SSB04350332.npy|linear-SSB04350332.npy|63800|320|就必须建立一套个人信息保护制度|jiu4 bi4 xu1 jian4 li4 yi2 tao4 ge4 ren2 xin4 xi1 bao3 hu4 zhi4 du4 |SSB0435
+audio-SSB03410018.npy|mel-SSB03410018.npy|linear-SSB03410018.npy|33800|170|魏家园学校|wei4 jia1 yuan2 xue2 xiao4 |SSB0341
+audio-SSB03410019.npy|mel-SSB03410019.npy|linear-SSB03410019.npy|37800|190|我们不是相爱吗|wo3 men5 bu2 shi4 xiang1 ai4 ma5 |SSB0341
+audio-SSB03410020.npy|mel-SSB03410020.npy|linear-SSB03410020.npy|48400|243|韩国地区电影有什么|han2 guo2 di4 qu1 dian4 ying3 you3 shen2 me5 |SSB0341
+audio-SSB03410021.npy|mel-SSB03410021.npy|linear-SSB03410021.npy|61400|308|比赛组织工作非常详细|bi3 sai4 zu3 zhi2 gong1 zuo4 fei1 chang2 xiang2 xi4 |SSB0341
+audio-SSB01220445.npy|mel-SSB01220445.npy|linear-SSB01220445.npy|60200|302|厦门荣资商务代理有限公司|xia4 men2 rong2 zi1 shang1 wu4 dai4 li3 you3 xian4 gong1 si1 |SSB0122
+audio-SSB01220447.npy|mel-SSB01220447.npy|linear-SSB01220447.npy|61400|308|保险机构投资实行牌照化管理|bao2 xian3 ji1 gou4 tou2 zi1 shi2 xing2 pai2 zhao4 hua4 guan2 li3 |SSB0122
+audio-SSB01220448.npy|mel-SSB01220448.npy|linear-SSB01220448.npy|66400|333|持牌人对风险管控负责根据通知|chi2 pai2 ren2 dui4 feng1 xian2 guan3 kong4 fu4 ze2 gen1 ju4 tong1 zhi1 |SSB0122
+audio-SSB00050010.npy|mel-SSB00050010.npy|linear-SSB00050010.npy|84000|421|职业联赛该干的让职业联赛干|zhi2 ye4 lian2 sai4 gai1 gan4 de5 rang4 zhi2 ye4 lian2 sai4 gan4 |SSB0005
+audio-SSB00050013.npy|mel-SSB00050013.npy|linear-SSB00050013.npy|77000|386|未来广州将把高铁引进市区|wei4 lai2 guang3 zhou1 jiang1 ba3 gao1 tie2 yin3 jin4 shi4 qu1 |SSB0005
+audio-SSB00050014.npy|mel-SSB00050014.npy|linear-SSB00050014.npy|118200|592|将于十一月二十一日早七点在东方明珠塔下跑起|jiang1 yu2 shi2 yi1 yue4 er4 shi2 yi1 ri4 zao3 qi1 dian3 zai4 dong1 fang1 ming2 zhu1 ta3 xia4 pao1 qi4 |SSB0005
+audio-SSB00730280.npy|mel-SSB00730280.npy|linear-SSB00730280.npy|40200|202|各大奖项尘埃落定|ge4 da4 jiang3 xiang4 cheng2 ai1 luo4 ding4 |SSB0073
+audio-SSB00730281.npy|mel-SSB00730281.npy|linear-SSB00730281.npy|59400|298|因为投标方报价越高损失越大|yin1 wei2 tou2 biao1 fang1 bao4 jia4 yue4 gao1 sun3 shi1 yue4 da4 |SSB0073
+audio-SSB00730282.npy|mel-SSB00730282.npy|linear-SSB00730282.npy|52600|264|表现似乎并不尽如人意|biao3 xian4 si4 hu1 bing4 bu2 jin4 ru2 ren2 yi4 |SSB0073
+audio-SSB00730283.npy|mel-SSB00730283.npy|linear-SSB00730283.npy|100400|503|安徽五人因十九年前少女被害案被控杀人今被撤销|an1 hui1 wu3 ren2 yin1 shi2 jiu3 nian2 qian2 shao4 nv3 bei4 hai4 an4 bei4 kong4 sha1 ren2 jin1 bei4 che4 xiao1 |SSB0073
+audio-SSB00730284.npy|mel-SSB00730284.npy|linear-SSB00730284.npy|43000|216|那么情况就将不同了|na4 me5 qing2 kuang4 jiu4 jiang1 bu4 tong2 le5 |SSB0073
+audio-SSB09190194.npy|mel-SSB09190194.npy|linear-SSB09190194.npy|59400|298|打造没有围墙的虚拟养老院|da3 zao4 mei2 you3 wei2 qiang2 de5 xu1 ni2 yang2 lao3 yuan4 |SSB0919
+audio-SSB09190195.npy|mel-SSB09190195.npy|linear-SSB09190195.npy|33800|170|非常正点|fei1 chang2 zheng4 dian3 |SSB0919
+audio-SSB09190196.npy|mel-SSB09190196.npy|linear-SSB09190196.npy|61200|307|位于德国首都的一处房产|wei4 yu2 de2 guo2 shou3 du1 de5 yi2 chu4 fang2 chan3 |SSB0919
+audio-SSB09190197.npy|mel-SSB09190197.npy|linear-SSB09190197.npy|85800|430|将会获得贵人鸟提供的夜跑装饰具体见后面|jiang1 hui4 huo4 de2 gui4 ren2 niao3 ti2 gong1 de5 ye4 pao3 zhuang1 shi4 ju4 ti3 jian4 hou4 mian4 |SSB0919
+audio-SSB11310504.npy|mel-SSB11310504.npy|linear-SSB11310504.npy|96600|484|七岁男童放学途中失踪三天后在河中发现尸体|qi1 sui4 nan2 tong2 fang4 xue2 tu2 zhong1 shi1 zhong1 sang1 tian1 hou4 zai4 he2 zhong1 fa1 xian4 shi1 ti3 |SSB1131
+audio-SSB11310506.npy|mel-SSB11310506.npy|linear-SSB11310506.npy|44600|224|花样滑冰运动员有什么|hua1 yang4 hua2 bing1 yun4 dong4 yuan2 you2 shen3 me5 |SSB1131
+audio-SSB12530036.npy|mel-SSB12530036.npy|linear-SSB12530036.npy|89800|450|贵州小伙小潘只因与妻子感情不和|gui4 zhou1 xiao2 huo3 xiao3 pan1 zhi3 yin1 yu3 qi1 zi3 gan3 qing2 bu4 he2 |SSB1253
+audio-SSB12530037.npy|mel-SSB12530037.npy|linear-SSB12530037.npy|89600|449|而持股百分之二十五的大股东华侨城集团|e2 chi2 gu2 bai3 fen4 zhi1 e4 shi2 wu3 de5 da4 gu3 dong1 hua2 qiao2 cheng1 ji2 tuan1 |SSB1253
+audio-SSB12530038.npy|mel-SSB12530038.npy|linear-SSB12530038.npy|66000|331|一位基金经理告诉时代周报记者|yi2 wei4 ji1 jin1 jing1 li3 gao4 shu4 shi2 dai4 zhou1 bao4 ji4 zhe3 |SSB1253
+audio-SSB12530039.npy|mel-SSB12530039.npy|linear-SSB12530039.npy|79400|398|但最终的出售交易还不会立刻发生|dan4 zui4 zhong1 de5 chu1 shou4 jiao1 yi4 hai2 bu2 hui4 li4 ke4 fa1 shen1 |SSB1253
