@@ -63,7 +63,7 @@ class hparams:
         # speaker embedding
         num_speakers = len(speakers)
         speaker_embedding_dim = 64
-        speaker_loss_weight = 0.02
+        speaker_loss_weight = 0.0
         spk_classifier_hidden_dims = [256]
 
         ################################

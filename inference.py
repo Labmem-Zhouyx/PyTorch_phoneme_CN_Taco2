@@ -44,10 +44,11 @@ def inference(args):
     testset = TextMelDatasetEval(sentences, hparams)
 
     with torch.no_grad():
-        for i, input in enumerate(testset):
-            inputs = input.unsqueeze(0)
-            predicts = model.inference(inputs)
-            mel_predict, mel_post_predict, stop_predict, _ = predicts
+        for i, batch in enumerate(testset):
+            inputs, speaker_ids = batch
+            inputs = inputs.unsqueeze(0)
+            predicts = model.inference(inputs, speaker_ids)
+            mel_predict, mel_post_predict, stop_predict, _, _ = predicts
 
             mels = mel_post_predict[0].cpu().numpy()
             print('CHECK MEL SHAPE:', mels.shape)

@@ -114,5 +114,5 @@ class TextMelDatasetEval(torch.utils.data.Dataset):
 
     def __getitem__(self, index):
         text, speaker = self.sentences[index].split('|')
-        spk_id = torch.IntTensor(speaker_to_id[speaker])
+        spk_id = torch.IntTensor([speaker_to_id[speaker]])
         return torch.IntTensor(text_to_sequence(text, self.text_cleaners)), spk_id
