@@ -17,4 +17,5 @@ Referred：https://github.com/Labmem-Zhouyx/audio2mel_preprocessor
 
 `python inference.py -t 'sentences.txt' -c ./save/checkpoint_100000`
 
-Reference：https://github.com/thuhcsi/tacotron/tree/multispeaker
+# Reference
+https://github.com/thuhcsi/tacotron/tree/multispeaker
