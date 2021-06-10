@@ -1,7 +1,7 @@
-# phoneme-based Tacotron2 for Chinese
+# phoneme-based Tacotron2 for Multi-Speaker Chinese
 An implementation of Tacotron2 based Pytorch
 
-Input: Chinese Pinyin Sequence
+Input: Chinese Pinyin Sequence + Corresponding speaker ID
 
 Output: Mel-spectrogram
 
@@ -16,3 +16,5 @@ Referred：https://github.com/Labmem-Zhouyx/audio2mel_preprocessor
 3. Inference.
 
 `python inference.py -t 'sentences.txt' -c ./save/checkpoint_100000`
+
+Reference：https://github.com/thuhcsi/tacotron/tree/multispeaker
