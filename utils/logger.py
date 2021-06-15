@@ -41,11 +41,11 @@ class Tacotron2Logger(SummaryWriter):
             iteration, dataformats='HWC')
         self.add_image(
             "mel_target",
-            plot_spectrogram_to_numpy(mel_targets[idx].data.cpu().numpy()),
+            plot_spectrogram_to_numpy(mel_targets[idx].data.cpu().numpy().T),
             iteration, dataformats='HWC')
         self.add_image(
             "mel_predicted",
-            plot_spectrogram_to_numpy(mel_predicts[idx].data.cpu().numpy()),
+            plot_spectrogram_to_numpy(mel_predicts[idx].data.cpu().numpy().T),
             iteration, dataformats='HWC')
         self.add_image(
             "gate",
