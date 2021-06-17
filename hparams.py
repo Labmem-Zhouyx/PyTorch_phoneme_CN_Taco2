@@ -14,7 +14,7 @@ class hparams:
         cudnn_enabled = True
         cudnn_benchmark = False
         ignore_layers = ['embedding.weight']
-        speaker_embedding_type = 'global' 
+        speaker_embedding_type = 'local' 
 
         ################################
         # Data Parameters             #
@@ -38,7 +38,7 @@ class hparams:
         ref_conv_channels = [32, 32, 64, 64, 128, 128]
         ref_global_gru_units = 128
         ref_local_gru_units = 128
-        ref_local_style_dim = 3
+        ref_local_style_dim = 128
         ref_attention_dropout = 0.0
         ref_attention_dim = 128
 

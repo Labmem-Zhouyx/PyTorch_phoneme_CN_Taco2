@@ -287,11 +287,13 @@ class Tacotron2(nn.Module):
         mel_length = mel_length.to(device).long()
         stop = stop.to(device).float()
         speaker_id = speaker_id.to(device).long()
+        ref_mel = mel.to(device).float()
+        ref_mel_length = mel_length.to(device).long()
 
-        return (text, text_length, mel, mel_length, speaker_id), (mel, stop, speaker_id)
+        return (text, text_length, mel, mel_length, speaker_id, ref_mel, ref_mel_length), (mel, stop, speaker_id)
 
     def forward(self, inputs):
-        inputs, input_lengths, mels, mel_lengths, speaker_ids = inputs
+        inputs, input_lengths, mels, mel_lengths, speaker_ids, ref_mels, ref_mel_lengths = inputs
 
         B = inputs.size(0)
         
@@ -309,13 +311,13 @@ class Tacotron2(nn.Module):
             speaker_embeddings = self.speaker_embedding(speaker_ids)[:, None]
             speaker_embeddings = speaker_embeddings.repeat(1, encoder_outputs.size(1), 1)
         elif self.speaker_embedding_type == 'global':
-            ref_global_embedding, _ = self.reference_encoder(mels)
+            ref_global_embedding, _ = self.reference_encoder(ref_mels)
             speaker_embeddings = ref_global_embedding.repeat(1, encoder_outputs.size(1), 1)
             speaker_embeddings = torch.reshape(speaker_embeddings, [B, -1, self.speaker_embedding_dim])
         elif self.speaker_embedding_type == 'local':
-            _, ref_local_embedding = self.reference_encoder(mels)
+            _, ref_local_embedding = self.reference_encoder(ref_mels)
             speaker_embeddings, ref_alignments = self.ref_local_atten_encoder(
-                encoder_outputs, input_lengths, ref_local_embedding, mels, mel_lengths)  # batch, seq_len, local_style_embedding_dim
+                encoder_outputs, input_lengths, ref_local_embedding, ref_mels, ref_mel_lengths)  # batch, seq_len, local_style_embedding_dim
 
         # (B, T, encoder_out_dim + speaker_embed_dim)
         encoder_outputs = torch.cat((encoder_outputs, speaker_embeddings), dim=2)
@@ -341,7 +343,7 @@ class Tacotron2(nn.Module):
             ref_mels = ref_mels.unsqueeze(0)
             ref_mels = ref_mels.to(device).float()
 
-        inputs = inputs, None, ref_mels, None, speaker_ids
+        inputs = inputs, None, None, None, speaker_ids, ref_mels, None
         return self.forward(inputs)
 
 

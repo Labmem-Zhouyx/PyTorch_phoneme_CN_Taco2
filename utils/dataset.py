@@ -110,6 +110,7 @@ class TextMelDatasetEval(torch.utils.data.Dataset):
         self.text_cleaners = hparams.text_cleaners
         self.type = hparams.speaker_embedding_type
         self.melpath_prefix = hparams.melpath_prefix
+        self.mel_dim = hparams.mel_dim
 
     def get_mel(self, file_path):
         # stored melspec: np.ndarray [shape=(T_out, num_mels)]
