@@ -108,11 +108,28 @@ class TextMelDatasetEval(torch.utils.data.Dataset):
     def __init__(self, sentences, hparams):
         self.sentences = sentences
         self.text_cleaners = hparams.text_cleaners
+        self.type = hparams.speaker_embedding_type
+        self.melpath_prefix = hparams.melpath_prefix
+
+    def get_mel(self, file_path):
+        # stored melspec: np.ndarray [shape=(T_out, num_mels)]
+        melspec = torch.from_numpy(np.load(file_path))
+        assert melspec.size(1) == self.mel_dim, (
+            'Mel dimension mismatch: given {}, expected {}'.format(melspec.size(1), self.mel_dim))
+        return melspec
 
     def __len__(self):
         return len(self.sentences)
 
     def __getitem__(self, index):
         text, speaker = self.sentences[index].split('|')
-        spk_id = torch.IntTensor([speaker_to_id[speaker]])
-        return torch.IntTensor(text_to_sequence(text, self.text_cleaners)), spk_id
+        if self.type == 'one-hot':
+            spk_id = torch.IntTensor([speaker_to_id[speaker]])
+            ref_mel = None
+        else:
+            spk_id = None
+            if self.melpath_prefix:
+                speaker = os.path.join(self.melpath_prefix, speaker)
+            ref_mel = self.get_mel(speaker)
+
+        return torch.IntTensor(text_to_sequence(text, self.text_cleaners)), spk_id, ref_mel

@@ -45,9 +45,8 @@ def inference(args):
 
     with torch.no_grad():
         for i, batch in enumerate(testset):
-            inputs, speaker_ids = batch
-            inputs = inputs.unsqueeze(0)
-            predicts = model.inference(inputs, speaker_ids)
+            inputs, speaker_ids, ref_mels = batch
+            predicts = model.inference(inputs, speaker_ids, ref_mels)
             mel_predict, mel_post_predict, stop_predict, _, _ = predicts
 
             mels = mel_post_predict[0].cpu().numpy()

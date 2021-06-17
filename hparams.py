@@ -14,6 +14,7 @@ class hparams:
         cudnn_enabled = True
         cudnn_benchmark = False
         ignore_layers = ['embedding.weight']
+        speaker_embedding_type = 'global' 
 
         ################################
         # Data Parameters             #
@@ -32,6 +33,14 @@ class hparams:
         stop_threshold = 0.5
         n_frames_per_step = 3
         max_decoder_steps = 1000
+
+        # Reference Encoder parameters
+        ref_conv_channels = [32, 32, 64, 64, 128, 128]
+        ref_global_gru_units = 128
+        ref_local_gru_units = 128
+        ref_local_style_dim = 3
+        ref_attention_dropout = 0.0
+        ref_attention_dim = 128
 
         # Encoder parameters
         encoder_num_convs = 3
@@ -62,7 +71,7 @@ class hparams:
 
         # speaker embedding
         num_speakers = len(speakers)
-        speaker_embedding_dim = 64
+        speaker_embedding_dim = 128
         speaker_loss_weight = 0.0
         spk_classifier_hidden_dims = [256]
 
@@ -70,7 +79,7 @@ class hparams:
         # Optimization Hyperparameters #
         ################################
         use_saved_learning_rate = False
-        learning_rate = 1e-3
+        learning_rate = 1e-4
         weight_decay = 1e-6
         grad_clip_thresh = 1.0
         batch_size = 32

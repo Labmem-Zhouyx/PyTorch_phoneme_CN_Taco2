@@ -292,7 +292,7 @@ class Tacotron2(nn.Module):
 
     def forward(self, inputs):
         inputs, input_lengths, mels, mel_lengths, speaker_ids = inputs
-
+        
         B = inputs.size(0)
         
         # (B, T)
@@ -330,18 +330,12 @@ class Tacotron2(nn.Module):
 
         return mel_outputs, mel_post, stop_tokens, alignments, speaker_outputs
 
-    def inference(self, inputs, speaker_ids, ref_mels):
+    def inference(self, inputs, speaker_ids, ref_mel=None):
         device = next(self.parameters()).device
-        inputs = inputs.unsqueeze(0)
         inputs = inputs.to(device).long()
-
-        if speaker_ids != None:
-            speaker_ids = speaker_ids.to(device).long()
-        if ref_mels != None:
-            ref_mels = ref_mels.unsqueeze(0)
-            ref_mels = ref_mels.to(device).float()
-
+        speaker_ids = speaker_ids.to(device).long()
         inputs = inputs, None, ref_mels, None, speaker_ids
+        
         return self.forward(inputs)
 
 
