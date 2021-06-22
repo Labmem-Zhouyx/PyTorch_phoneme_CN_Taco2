@@ -97,3 +97,32 @@ class AdversarialClassifier(nn.Module):
         for (linear, activate) in zip(self.layers, self.activations):
             x = activate(linear(x))
         return x
+
+
+class Classifier(nn.Module):
+    """
+    Normal Classifier
+        - n hidden linear layers with ReLU activation
+        - 1 output linear layer with Softmax activation
+    """
+    def __init__(self, in_dim, out_dim, hidden_dims=[256]):
+        """
+        Args:
+             in_dim: input dimension
+            out_dim: number of units of output layer (number of classes)
+        hidden_dims: number of units of hidden layers
+        """
+        super(Classifier, self).__init__()
+
+        in_sizes = [in_dim] + hidden_dims[:]
+        out_sizes = hidden_dims[:] + [out_dim]
+        self.layers = nn.ModuleList(
+            [nn.Linear(in_size, out_size, bias=True)
+             for (in_size, out_size) in zip(in_sizes, out_sizes)])
+
+        self.activations = [nn.ReLU()] * len(hidden_dims) + [nn.Softmax(dim=-1)]
+
+    def forward(self, x):
+        for (linear, activate) in zip(self.layers, self.activations):
+            x = activate(linear(x))
+        return x

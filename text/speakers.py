@@ -1,3 +1,5 @@
+# For one-hot lookup table
+
 norm_spks = [
     'BZNSYP', 
 ]

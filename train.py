@@ -23,7 +23,7 @@ def prepare_datasets(hparams):
 
 def create_model(hparams):
     model = Tacotron2(hparams)
-    criterion = Tacotron2Loss(hparams.speaker_loss_weight)
+    criterion = Tacotron2Loss(hparams)
     return model, criterion
 
 
@@ -81,11 +81,12 @@ def validate(model, criterion, iteration, valset, batch_size, collate_fn, logger
             predicts = model(inputs)
 
             # Loss
-            loss, speaker_loss = criterion(predicts, targets)
+            loss, speaker_loss, ref_speaker_loss, vae_kl_loss = criterion(predicts, targets)
             val_loss += loss.item()
             val_speaker_loss += speaker_loss.item()
         val_loss = val_loss / (i + 1)
         val_speaker_loss = val_speaker_loss / (i + 1)
+
 
     model.train()
     print("Validation loss {}: {:9f}  ".format(iteration, val_loss))
@@ -172,7 +173,7 @@ def train(output_dir, log_dir, checkpoint_path, warm_start, hparams):
                 predicts = model(inputs)
 
             # Loss
-            loss, speaker_loss = criterion(predicts, targets)
+            loss, speaker_loss, ref_speaker_loss, vae_kl_loss = criterion(predicts, targets)
 
             # Backward pass
             optimizer.zero_grad()
@@ -182,8 +183,8 @@ def train(output_dir, log_dir, checkpoint_path, warm_start, hparams):
 
             # Logs
             duration = time.perf_counter() - start
-            print("Train loss {} {:.6f} Grad Norm {:.6f} {:.2f}s/it".format(iteration, loss, grad_norm, duration))
-            logger.log_training(loss, speaker_loss, grad_norm, learning_rate, duration, iteration)
+            print("Train loss {} {:.6f} Ref Speaker loss {:.6f} VAE KL loss {:.6f} Grad Norm {:.6f} {:.2f}s/it".format(iteration, loss, ref_speaker_loss, vae_kl_loss, grad_norm, duration))
+            logger.log_training(loss, speaker_loss, ref_speaker_loss, vae_kl_loss, grad_norm, learning_rate, duration, iteration)
 
             # Validation
             if iteration % hparams.iters_per_validation == 0:

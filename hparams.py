@@ -6,7 +6,7 @@ class hparams:
         # Experiment Parameters        #
         ################################
         epochs = 500
-        iters_per_checkpoint = 5000
+        iters_per_checkpoint = 10000
         iters_per_validation = 1000
         seed = 4321
         dynamic_loss_scaling = True
@@ -14,7 +14,7 @@ class hparams:
         cudnn_enabled = True
         cudnn_benchmark = False
         ignore_layers = ['embedding.weight']
-        speaker_embedding_type = 'local' 
+        speaker_embedding_type = 'vae'   # one-hot, global, local, gst, vae
 
         ################################
         # Data Parameters             #
@@ -34,13 +34,25 @@ class hparams:
         n_frames_per_step = 3
         max_decoder_steps = 1000
 
+        # speaker embedding
+        num_speakers = len(speakers)
+        speaker_embedding_dim = 128
+        speaker_loss_weight = 0.0
+        spk_classifier_hidden_dims = [256]
+
         # Reference Encoder parameters
         ref_conv_channels = [32, 32, 64, 64, 128, 128]
         ref_global_gru_units = 128
         ref_local_gru_units = 128
-        ref_local_style_dim = 128
+        ref_local_style_dim = 3
         ref_attention_dropout = 0.0
         ref_attention_dim = 128
+        ref_speaker_loss_weight = 0.1
+        gst_token_num = 10
+        gst_head_num = 8
+        gst_num_units = 256
+        vae_latent_dim = 128
+        vae_loss_weight = 0.1
 
         # Encoder parameters
         encoder_num_convs = 3
@@ -69,17 +81,12 @@ class hparams:
         postnet_conv_kernel_size = 5
         postnet_conv_dropout = 0.5
 
-        # speaker embedding
-        num_speakers = len(speakers)
-        speaker_embedding_dim = 128
-        speaker_loss_weight = 0.0
-        spk_classifier_hidden_dims = [256]
 
         ################################
         # Optimization Hyperparameters #
         ################################
         use_saved_learning_rate = False
-        learning_rate = 1e-4
+        learning_rate = 1e-3
         weight_decay = 1e-6
         grad_clip_thresh = 1.0
         batch_size = 32

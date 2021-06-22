@@ -29,6 +29,24 @@ def plot_alignment_to_numpy(alignment, info=None):
     return data
 
 
+def plot_reference_alignment_to_numpy(alignment, info=None):
+    fig, ax = plt.subplots(figsize=(6, 4))
+    im = ax.imshow(alignment, aspect='auto', origin='lower',
+                   interpolation='none')
+    fig.colorbar(im, ax=ax)
+    xlabel = 'Text Side'
+    if info is not None:
+        xlabel += '\n\n' + info
+    plt.xlabel(xlabel)
+    plt.ylabel('ReferenceAudio Side')
+    plt.tight_layout()
+
+    fig.canvas.draw()
+    data = save_figure_to_numpy(fig)
+    plt.close()
+    return data
+
+
 def plot_spectrogram_to_numpy(spectrogram):
     fig, ax = plt.subplots(figsize=(12, 3))
     im = ax.imshow(spectrogram, aspect="auto", origin="lower",

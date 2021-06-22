@@ -7,9 +7,10 @@ from torch import nn
 
 from .attention import LocationSensitiveAttention, AttentionWrapper
 from .attention import get_mask_from_lengths
-from .modules import BatchNormConv1dStack, AdversarialClassifier
+from .modules import BatchNormConv1dStack, AdversarialClassifier, Classifier
 from .reference_encoder import ReferenceEncoder, LocalAttentionEncoder
-
+from .gst import GST
+from .vae import VAE
 
 class Prenet(nn.Module):
     """
@@ -242,23 +243,36 @@ class Tacotron2(nn.Module):
         val = sqrt(3.0) * std  # uniform bounds for std
         self.embedding.weight.data.uniform_(-val, val)
 
-        # Speaker Embedding
+        '''
+        Different Speaker Embedding Type
+        '''
         self.speaker_embedding_type = hparams.speaker_embedding_type
+
         if self.speaker_embedding_type == 'one-hot':
             self.speaker_embedding = nn.Embedding(hparams.num_speakers, hparams.speaker_embedding_dim)
             self.speaker_embedding_dim = hparams.speaker_embedding_dim
-            encoder_out_dim = hparams.encoder_blstm_units + hparams.speaker_embedding_dim
 
         elif self.speaker_embedding_type == 'global':
             self.reference_encoder = ReferenceEncoder(hparams)
+            self.reference_speaker_classifier = Classifier(hparams.speaker_embedding_dim, hparams.num_speakers, hparams.spk_classifier_hidden_dims)
             self.speaker_embedding_dim = hparams.speaker_embedding_dim
-            encoder_out_dim = hparams.encoder_blstm_units + hparams.speaker_embedding_dim
+        
+        elif self.speaker_embedding_type == 'gst':
+            self.reference_encoder = ReferenceEncoder(hparams)
+            self.reference_speaker_classifier = Classifier(hparams.speaker_embedding_dim, hparams.num_speakers, hparams.spk_classifier_hidden_dims)
+            self.gst = GST(hparams)
+            self.speaker_embedding_dim = hparams.gst_num_units
+        
+        elif self.speaker_embedding_type == 'vae':
+            self.reference_encoder = ReferenceEncoder(hparams)
+            self.reference_speaker_classifier = Classifier(hparams.speaker_embedding_dim, hparams.num_speakers, hparams.spk_classifier_hidden_dims)
+            self.vae = VAE(hparams.speaker_embedding_dim, hparams.vae_latent_dim)
+            self.speaker_embedding_dim = hparams.vae_latent_dim
 
         elif self.speaker_embedding_type == 'local':
             self.reference_encoder = ReferenceEncoder(hparams)
             self.ref_local_atten_encoder = LocalAttentionEncoder(hparams)
             self.speaker_embedding_dim = hparams.ref_local_style_dim
-            encoder_out_dim = hparams.encoder_blstm_units + hparams.ref_local_style_dim
         
         # Encoder
         embed_dim = hparams.text_embedding_dim
@@ -268,7 +282,7 @@ class Tacotron2(nn.Module):
         self.speaker_classifier = AdversarialClassifier(hparams.encoder_blstm_units, hparams.num_speakers, hparams.spk_classifier_hidden_dims)
 
         # Decoder
-
+        encoder_out_dim = hparams.encoder_blstm_units + self.speaker_embedding_dim
         self.decoder = Decoder(encoder_out_dim, hparams)
 
         # Postnet
@@ -307,13 +321,37 @@ class Tacotron2(nn.Module):
         speaker_outputs = self.speaker_classifier(encoder_outputs)
 
         # (B) -> (B, T, speaker_embed_dim)
+        '''
+        Different Speaker Embedding Type
+        '''
+        reference_speaker_outputs = None
+        ref_alignments = None
+        vae_mean = None
+        vae_var = None
         if self.speaker_embedding_type == 'one-hot':
             speaker_embeddings = self.speaker_embedding(speaker_ids)[:, None]
             speaker_embeddings = speaker_embeddings.repeat(1, encoder_outputs.size(1), 1)
+
         elif self.speaker_embedding_type == 'global':
             ref_global_embedding, _ = self.reference_encoder(ref_mels)
+            reference_speaker_outputs = self.reference_speaker_classifier(ref_global_embedding)
             speaker_embeddings = ref_global_embedding.repeat(1, encoder_outputs.size(1), 1)
-            speaker_embeddings = torch.reshape(speaker_embeddings, [B, -1, self.speaker_embedding_dim])
+            speaker_embeddings = torch.reshape(speaker_embeddings, [B, -1, self.speaker_embedding_dim])         
+
+        elif self.speaker_embedding_type == 'gst':
+            ref_global_embedding, _ = self.reference_encoder(ref_mels)
+            reference_speaker_outputs = self.reference_speaker_classifier(ref_global_embedding)
+            gst_output = self.gst(ref_global_embedding)
+            speaker_embeddings = gst_output.repeat(1, encoder_outputs.size(1), 1)
+            speaker_embeddings = torch.reshape(speaker_embeddings, [B, -1, self.speaker_embedding_dim])   
+
+        elif self.speaker_embedding_type == 'vae':
+            ref_global_embedding, _ = self.reference_encoder(ref_mels)
+            reference_speaker_outputs = self.reference_speaker_classifier(ref_global_embedding)
+            vae_output, vae_mean, vae_var = self.vae(ref_global_embedding)
+            speaker_embeddings = vae_output.repeat(1, encoder_outputs.size(1), 1)
+            speaker_embeddings = torch.reshape(speaker_embeddings, [B, -1, self.speaker_embedding_dim])  
+
         elif self.speaker_embedding_type == 'local':
             _, ref_local_embedding = self.reference_encoder(ref_mels)
             speaker_embeddings, ref_alignments = self.ref_local_atten_encoder(
@@ -329,8 +367,8 @@ class Tacotron2(nn.Module):
         # Postnet processing
         mel_post = self.postnet(mel_outputs)
         mel_post = mel_outputs + mel_post
-
-        return mel_outputs, mel_post, stop_tokens, alignments, speaker_outputs
+        
+        return mel_outputs, mel_post, stop_tokens, alignments, ref_alignments, speaker_outputs, reference_speaker_outputs, vae_mean, vae_var
 
     def inference(self, inputs, speaker_ids, ref_mels):
         device = next(self.parameters()).device
@@ -348,9 +386,11 @@ class Tacotron2(nn.Module):
 
 
 class Tacotron2Loss(nn.Module):
-    def __init__(self, speaker_loss_weight):
+    def __init__(self, hparams):
         super(Tacotron2Loss, self).__init__()
-        self.speaker_loss_weight = speaker_loss_weight
+        self.speaker_loss_weight = hparams.speaker_loss_weight
+        self.ref_speaker_loss_weight = hparams.ref_speaker_loss_weight
+        self.vae_loss_weight = hparams.vae_loss_weight
 
     def forward(self, predicts, targets):
         mel_target, stop_target, speaker_target = targets
@@ -358,11 +398,16 @@ class Tacotron2Loss(nn.Module):
         stop_target.requires_grad = False
         speaker_target.requires_grad = False
 
-        mel_predict, mel_post_predict, stop_predict, _, speaker_predict = predicts
+        mel_predict, mel_post_predict, stop_predict, _, _, speaker_predict, ref_speaker_predict, vae_mean, vae_var = predicts
 
         mel_loss = nn.MSELoss()(mel_predict, mel_target)
         post_loss = nn.MSELoss()(mel_post_predict, mel_target)
         stop_loss = nn.BCELoss()(stop_predict, stop_target)
+
+        if ref_speaker_predict != None:
+            ref_speaker_loss = self.ref_speaker_loss_weight * nn.CrossEntropyLoss()(ref_speaker_predict, speaker_target)
+        else:
+            ref_speaker_loss = 0.0        
 
         # Compute speaker adversarial loss
         # The speaker adversarial loss should be computed against each element of the encoder output.
@@ -371,6 +416,10 @@ class Tacotron2Loss(nn.Module):
         
         speaker_target = speaker_target.unsqueeze(1).repeat(1, speaker_predict.size(1)) # (B) -> (B, T)
         speaker_predict = speaker_predict.transpose(1, 2) # (B, T, n_speaker) -> (B, n_speaker, T)
-        speaker_loss = nn.CrossEntropyLoss()(speaker_predict, speaker_target)
+        speaker_loss = self.speaker_loss_weight * nn.CrossEntropyLoss()(speaker_predict, speaker_target)
 
-        return mel_loss + post_loss + stop_loss + self.speaker_loss_weight * speaker_loss, speaker_loss
+        kl_loss = 0.0
+        if vae_mean != None and vae_var != None:
+            kl_loss = self.vae_loss_weight * (-0.5 * torch.sum(1 + vae_var - torch.pow(vae_mean, 2) - torch.exp(vae_var)))
+
+        return mel_loss + post_loss + stop_loss + speaker_loss + ref_speaker_loss + kl_loss, speaker_loss, ref_speaker_loss, kl_loss

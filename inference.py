@@ -8,6 +8,8 @@ from torch.utils.data import DataLoader
 from hparams import hparams
 from model.tacotron2 import Tacotron2
 from utils.dataset import TextMelDatasetEval
+from utils.plot import plot_reference_alignment_to_numpy, plot_spectrogram_to_numpy
+from PIL import Image
 
 
 def get_sentences(args):
@@ -47,8 +49,10 @@ def inference(args):
         for i, batch in enumerate(testset):
             inputs, speaker_ids, ref_mels = batch
             predicts = model.inference(inputs, speaker_ids, ref_mels)
-            mel_predict, mel_post_predict, stop_predict, _, _ = predicts
-
+            _, mel_post_predict, _, _, ref_alignments, _ = predicts
+            if hparams.speaker_embedding_type == 'local':
+                im = Image.fromarray(plot_reference_alignment_to_numpy(ref_alignments[0].data.cpu().numpy().T))
+                im.save(os.path.join(args.outdir, 'sentence_{}_reference_alignment.jpg'.format(i)))
             mels = mel_post_predict[0].cpu().numpy()
             print('CHECK MEL SHAPE:', mels.shape)
 
