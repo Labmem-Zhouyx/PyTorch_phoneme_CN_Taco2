@@ -22,6 +22,7 @@ def prepare_datasets(hparams):
 
 
 def create_model(hparams):
+    print("Speaker Embedding Type:", hparams.speaker_embedding_type)
     model = Tacotron2(hparams)
     criterion = Tacotron2Loss(hparams)
     return model, criterion

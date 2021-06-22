@@ -44,7 +44,7 @@ class hparams:
         ref_conv_channels = [32, 32, 64, 64, 128, 128]
         ref_global_gru_units = 128
         ref_local_gru_units = 128
-        ref_local_style_dim = 3
+        ref_local_style_dim = 8
         ref_attention_dropout = 0.0
         ref_attention_dim = 128
         ref_speaker_loss_weight = 0.1
