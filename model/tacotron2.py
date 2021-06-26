@@ -397,7 +397,7 @@ class Tacotron2Loss(nn.Module):
         stop_loss = nn.BCELoss()(stop_predict, stop_target)
 
         if ref_speaker_predict != None:
-            ref_speaker_loss = self.ref_speaker_loss_weight * nn.CrossEntropyLoss()(ref_speaker_predict, speaker_target)
+            ref_speaker_loss = self.ref_speaker_loss_weight * nn.CrossEntropyLoss(ref_speaker_predict, speaker_target)
         else:
             ref_speaker_loss = 0.0        
 
@@ -408,7 +408,7 @@ class Tacotron2Loss(nn.Module):
         
         speaker_target = speaker_target.unsqueeze(1).repeat(1, speaker_predict.size(1)) # (B) -> (B, T)
         speaker_predict = speaker_predict.transpose(1, 2) # (B, T, n_speaker) -> (B, n_speaker, T)
-        speaker_loss = self.speaker_loss_weight * nn.CrossEntropyLoss()(speaker_predict, speaker_target)
+        speaker_loss = self.speaker_loss_weight * nn.CrossEntropyLoss(speaker_predict, speaker_target)
 
         kl_loss = 0.0
         if vae_mean != None and vae_var != None:
