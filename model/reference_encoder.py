@@ -9,50 +9,82 @@ class ReferenceEncoder(nn.Module):
     def __init__(self, hparams):
         super(ReferenceEncoder, self).__init__()
 
-        K = len(hparams.ref_conv_channels)
-        filters = [hparams.mel_dim] + hparams.ref_conv_channels
-        self.convs = nn.ModuleList([nn.Conv1d(in_channels=filters[i],
-                            out_channels=filters[i + 1],
-                            kernel_size=3,
-                            stride=1,
-                            padding=1) for i in range(K)])
-        self.bns = nn.ModuleList([nn.BatchNorm1d(num_features=hparams.ref_conv_channels[i]) for i in range(K)])
+        in_dim = hparams.mel_dim
+        conv_channels = hparams.ref_conv_channels
+        gru_units = hparams.ref_gru_units
+        K = len(conv_channels)
+        kernel_size = 3
+        stride = 2
+        padding = 1
 
-        self.global_bgru = nn.GRU(input_size=hparams.ref_conv_channels[-1],
-                            hidden_size=hparams.ref_global_gru_units,
-                            bidirectional=True,
-                            batch_first=True)
+        # 2-D convolution layers
+        filters = [1] + conv_channels
+        self.conv2ds = nn.ModuleList(
+            [nn.Conv2d(in_channels=filters[i],
+                       out_channels=filters[i+1],
+                       kernel_size=kernel_size,
+                       stride=stride,
+                       padding=padding)
+             for i in range(K)])
+
+        # 2-D batch normalization (BN) layers
+        self.bns = nn.ModuleList(
+            [nn.BatchNorm2d(num_features=conv_channels[i])
+             for i in range(K)])
+
+        # ReLU
+        self.relu = nn.ReLU()
+
+        # GRU
+        out_channels = self.calculate_channels(in_dim, kernel_size, stride, padding, K)
+        self.gru = nn.GRU(input_size=conv_channels[-1] * out_channels,
+                          hidden_size=gru_units,
+                          # bidirectional=True,
+                          batch_first=True)
 
         self.global_outlayer = nn.Sequential(
-            nn.Linear(in_features=hparams.ref_global_gru_units * 2,
+            nn.Linear(in_features=gru_units,
                       out_features=hparams.speaker_embedding_dim),
             nn.Tanh()
         )
 
-        self.local_gru = nn.GRU(input_size=hparams.ref_conv_channels[-1],
-                           hidden_size=hparams.ref_local_gru_units,
-                           batch_first=True)
-
         self.local_outlayer = nn.Sequential(
-            nn.Linear(in_features=hparams.ref_local_gru_units,
+            nn.Linear(in_features=gru_units,
                       out_features=hparams.ref_local_style_dim * 2),
             nn.Tanh()
         )
 
-    def forward(self, inputs):
-        x = inputs.transpose(1, 2)
-        for conv, bn in zip(self.convs, self.bns):
-            x = conv(x)
-            x = bn(x)
-            x = F.relu(x)
-        conv_out = x.transpose(1, 2)
-        bmemory, _ = self.global_bgru(conv_out)
-        global_embedding = self.global_outlayer(bmemory[:, -1])
 
-        memory, _ = self.local_gru(conv_out)
+    def forward(self, inputs, input_lengths=None):
+
+        out = inputs.unsqueeze(1)  # [B, 1, T, mel_dim]
+        for conv, bn in zip(self.conv2ds, self.bns):
+            out = conv(out)
+            out = bn(out)
+            out = self.relu(out)  # [B, 128, T//2^K, mel_dim//2^K], where 128 = conv_channels[-1]
+
+        out = out.transpose(1, 2)  # [B, T//2^K, 128, mel_dim//2^K]
+        B, T = out.size(0), out.size(1)
+        out = out.contiguous().view(B, T, -1)  # [B, T//2^K, 128*mel_dim//2^K]
+
+        # get precise last step by excluding paddings
+        if input_lengths is not None:
+            input_lengths = torch.ceil(input_lengths.float() / 2 ** len(self.conv2ds))
+            input_lengths = input_lengths.cpu().numpy().astype(int)
+            out = nn.utils.rnn.pack_padded_sequence(out, input_lengths, batch_first=True, enforce_sorted=False)
+
+        self.gru.flatten_parameters()
+        memory, out = self.gru(out)  # memory --- [B, T, gru_units]  out --- [1, B, gru_units]
+        memory, _ = nn.utils.rnn.pad_packed_sequence(memory, batch_first=True)
+        global_embedding = self.global_outlayer(out.squeeze(0))
         local_embedding = self.local_outlayer(memory)
 
         return global_embedding, local_embedding
+
+    def calculate_channels(self, L, kernel_size, stride, pad, n_convs):
+        for _ in range(n_convs):
+            L = (L - kernel_size + 2 * pad) // stride + 1
+        return L
 
 
 class ScaledDotProductAttention(

@@ -258,15 +258,11 @@ class Tacotron2(nn.Module):
             self.speaker_embedding_dim = hparams.speaker_embedding_dim
         
         elif self.speaker_embedding_type == 'gst':
-            self.reference_encoder = ReferenceEncoder(hparams)
-            self.reference_speaker_classifier = Classifier(hparams.speaker_embedding_dim, hparams.num_speakers, hparams.spk_classifier_hidden_dims)
-            self.gst = GST(hparams)
-            self.speaker_embedding_dim = hparams.gst_num_units
+            self.gst = GST(hparams.mel_dim, hparams.gst_gru_units, conv_channels=hparams.gst_conv_channels, num_tokens=hparams.gst_num_tokens, token_embed_dim=hparams.gst_token_dim, num_heads=hparams.gst_num_heads)
+            self.speaker_embedding_dim = hparams.gst_token_dim
         
         elif self.speaker_embedding_type == 'vae':
-            self.reference_encoder = ReferenceEncoder(hparams)
-            self.reference_speaker_classifier = Classifier(hparams.speaker_embedding_dim, hparams.num_speakers, hparams.spk_classifier_hidden_dims)
-            self.vae = VAE(hparams.speaker_embedding_dim, hparams.vae_latent_dim)
+            self.vae = VAE(hparams.mel_dim, hparams.vae_latent_dim, conv_channels=hparams.vae_conv_channels, lstm_units=hparams.vae_lstm_units, lstm_layers=hparams.vae_lstm_layers)
             self.speaker_embedding_dim = hparams.vae_latent_dim
 
         elif self.speaker_embedding_type == 'local':
@@ -333,27 +329,23 @@ class Tacotron2(nn.Module):
             speaker_embeddings = speaker_embeddings.repeat(1, encoder_outputs.size(1), 1)
 
         elif self.speaker_embedding_type == 'global':
-            ref_global_embedding, _ = self.reference_encoder(ref_mels)
+            ref_global_embedding, _ = self.reference_encoder(ref_mels, ref_mel_lengths)
             reference_speaker_outputs = self.reference_speaker_classifier(ref_global_embedding)
             speaker_embeddings = ref_global_embedding.repeat(1, encoder_outputs.size(1), 1)
             speaker_embeddings = torch.reshape(speaker_embeddings, [B, -1, self.speaker_embedding_dim])         
 
         elif self.speaker_embedding_type == 'gst':
-            ref_global_embedding, _ = self.reference_encoder(ref_mels)
-            reference_speaker_outputs = self.reference_speaker_classifier(ref_global_embedding)
-            gst_output = self.gst(ref_global_embedding)
+            gst_output = self.gst(ref_mels, ref_mel_lengths)
             speaker_embeddings = gst_output.repeat(1, encoder_outputs.size(1), 1)
             speaker_embeddings = torch.reshape(speaker_embeddings, [B, -1, self.speaker_embedding_dim])   
 
         elif self.speaker_embedding_type == 'vae':
-            ref_global_embedding, _ = self.reference_encoder(ref_mels)
-            reference_speaker_outputs = self.reference_speaker_classifier(ref_global_embedding)
-            vae_output, vae_mean, vae_var = self.vae(ref_global_embedding)
+            vae_output, vae_mean, vae_var = self.vae(ref_mels, ref_mel_lengths)
             speaker_embeddings = vae_output.repeat(1, encoder_outputs.size(1), 1)
             speaker_embeddings = torch.reshape(speaker_embeddings, [B, -1, self.speaker_embedding_dim])  
 
         elif self.speaker_embedding_type == 'local':
-            _, ref_local_embedding = self.reference_encoder(ref_mels)
+            _, ref_local_embedding = self.reference_encoder(ref_mels, ref_mel_lengths)
             speaker_embeddings, ref_alignments = self.ref_local_atten_encoder(
                 encoder_outputs, input_lengths, ref_local_embedding, ref_mels, ref_mel_lengths)  # batch, seq_len, local_style_embedding_dim
 
