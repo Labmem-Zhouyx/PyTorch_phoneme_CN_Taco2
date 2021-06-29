@@ -1,8 +1,8 @@
 __pycache__/
 save/
-save_0/
 log/
 inference_mels/
 inference_wavs/
 synth_waveform.sh
+.gitignore
 

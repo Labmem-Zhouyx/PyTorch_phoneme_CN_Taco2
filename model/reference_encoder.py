@@ -14,8 +14,12 @@ class ReferenceEncoder(nn.Module):
         gru_units = hparams.ref_gru_units
         K = len(conv_channels)
         kernel_size = 3
-        stride = 2
+        stride = hparams.ref_conv_stride
         padding = 1
+        self.convtimes = 1
+        for i in stride:
+            self.convtimes *= i
+
 
         # 2-D convolution layers
         filters = [1] + conv_channels
@@ -23,7 +27,7 @@ class ReferenceEncoder(nn.Module):
             [nn.Conv2d(in_channels=filters[i],
                        out_channels=filters[i+1],
                        kernel_size=kernel_size,
-                       stride=stride,
+                       stride=stride[i],
                        padding=padding)
              for i in range(K)])
 
@@ -56,7 +60,7 @@ class ReferenceEncoder(nn.Module):
 
 
     def forward(self, inputs, input_lengths=None):
-
+        device = next(self.parameters()).device
         out = inputs.unsqueeze(1)  # [B, 1, T, mel_dim]
         for conv, bn in zip(self.conv2ds, self.bns):
             out = conv(out)
@@ -67,23 +71,27 @@ class ReferenceEncoder(nn.Module):
         B, T = out.size(0), out.size(1)
         out = out.contiguous().view(B, T, -1)  # [B, T//2^K, 128*mel_dim//2^K]
 
+        self.gru.flatten_parameters()
         # get precise last step by excluding paddings
         if input_lengths is not None:
-            input_lengths = torch.ceil(input_lengths.float() / 2 ** len(self.conv2ds))
+            input_lengths = torch.ceil(input_lengths.float() / self.convtimes)
             input_lengths = input_lengths.cpu().numpy().astype(int)
             out = nn.utils.rnn.pack_padded_sequence(out, input_lengths, batch_first=True, enforce_sorted=False)
+            memory, out = self.gru(out)  # memory --- [B, T, gru_units]  out --- [1, B, gru_units]
+            memory, lens = nn.utils.rnn.pad_packed_sequence(memory, batch_first=True)
+            lens = lens.to(device).long()
+        else:
+            memory, out = self.gru(out)  # memory --- [B, T, gru_units]  out --- [1, B, gru_units]
+            lens = None
 
-        self.gru.flatten_parameters()
-        memory, out = self.gru(out)  # memory --- [B, T, gru_units]  out --- [1, B, gru_units]
-        memory, _ = nn.utils.rnn.pad_packed_sequence(memory, batch_first=True)
         global_embedding = self.global_outlayer(out.squeeze(0))
         local_embedding = self.local_outlayer(memory)
 
-        return global_embedding, local_embedding
+        return global_embedding, local_embedding, lens
 
     def calculate_channels(self, L, kernel_size, stride, pad, n_convs):
-        for _ in range(n_convs):
-            L = (L - kernel_size + 2 * pad) // stride + 1
+        for i in range(n_convs):
+            L = (L - kernel_size + 2 * pad) // stride[i] + 1
         return L
 
 
@@ -135,11 +143,11 @@ class LocalAttentionEncoder(nn.Module):
         self.ref_local_style_dim = hparams.ref_local_style_dim
         self.ref_attn = ScaledDotProductAttention(hparams)
 
-    def forward(self, text_embeddings, text_lengths, local_embeddings, mels, mels_lengths):
+    def forward(self, text_embeddings, text_lengths, local_embeddings, ref_mels, ref_mel_lengths):
 
         key, value = torch.split(local_embeddings, self.ref_local_style_dim, dim=-1)  # [N, Ty, style_embedding_dim] * 2
 
-        if text_lengths == None and mels_lengths == None:
+        if text_lengths == None and ref_mel_lengths == None:
             attn_mask = None
         else:
             # Get attention mask
@@ -147,11 +155,11 @@ class LocalAttentionEncoder(nn.Module):
             text_total_length = text_embeddings.size(1)  # [N, T_x, #dim]
             text_mask = get_mask_from_lengths(text_lengths, text_total_length).float().unsqueeze(-1)  # [B, seq_len, 1]
             # 2. mel mask (regularized to phoneme_scale)
-            mels_total_length = mels.size(2)  # [N, #n_mels, T_y]
-            mels_mask = get_mask_from_lengths(mels_lengths, mels_total_length).float().unsqueeze(-1)  # [B, rseq_len, 1]
-            mels_mask = F.interpolate(mels_mask.transpose(1, 2), size=key.size(1))  # [B, 1, Ty]
+            ref_mel_total_length = ref_mels.size(1)  # [N, T_y, n_mels]
+            ref_mel_mask = get_mask_from_lengths(ref_mel_lengths, ref_mel_total_length).float().unsqueeze(-1)  # [B, rseq_len, 1]
+            ref_mel_mask = F.interpolate(ref_mel_mask.transpose(1, 2), size=key.size(1))  # [B, 1, Ty]
             # 3. The attention mask
-            attn_mask = torch.bmm(text_mask, mels_mask)  # [N, seq_len, ref_len]
+            attn_mask = torch.bmm(text_mask, ref_mel_mask)  # [N, seq_len, ref_len]
 
         # Attention
         style_embed, alignments = self.ref_attn(text_embeddings, key, value, attn_mask)

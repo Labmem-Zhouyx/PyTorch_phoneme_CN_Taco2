@@ -14,7 +14,7 @@ class hparams:
         cudnn_enabled = True
         cudnn_benchmark = False
         ignore_layers = ['embedding.weight']
-        speaker_embedding_type = 'local'   # one-hot, global, local, gst, vae
+        speaker_embedding_type = 'local_vae'   # one-hot, global, local, local_vae, gst, vae
 
         ################################
         # Data Parameters             #
@@ -42,6 +42,7 @@ class hparams:
 
         # Reference Encoder parameters
         ref_conv_channels = [32, 32, 64, 64, 128, 128]
+        ref_conv_stride = [2, 1, 2, 1, 2, 1]
         ref_gru_units = 128
         ref_local_style_dim = 8
         ref_attention_dropout = 0.0
@@ -49,7 +50,7 @@ class hparams:
         ref_speaker_loss_weight = 0.1
 
         # GST parameters
-        gst_num_tokens = 10
+        gst_num_tokens = 256
         gst_num_heads = 8
         gst_conv_channels = [32, 32, 64, 64, 128, 128]
         gst_gru_units = 128
@@ -98,6 +99,6 @@ class hparams:
         learning_rate = 1e-3
         weight_decay = 1e-6
         grad_clip_thresh = 1.0
-        batch_size = 4
+        batch_size = 32
         mask_padding = True  # set model's padded outputs to padded values
 

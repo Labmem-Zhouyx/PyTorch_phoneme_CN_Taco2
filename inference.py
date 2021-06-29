@@ -62,7 +62,7 @@ def inference(args):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('-w', '--sentences', type=str, help='text to infer', default='hao3 jia1-huo5.|SSB0005')
+    parser.add_argument('-w', '--sentences', type=str, help='text to infer', default='hao3 jia1 huo5 |SSB0005')
     parser.add_argument('-t', '--text', type=str, help='text file to infer', default='./sentences.txt')
     parser.add_argument('-c', '--checkpoint', type=str, help='checkpoint path', default='./save/checkpoint_100000')
     parser.add_argument('-o', '--outdir', type=str, help='output filename', default='./inference_mels')

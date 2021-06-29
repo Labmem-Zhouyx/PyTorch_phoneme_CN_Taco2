@@ -236,6 +236,7 @@ class Tacotron2(nn.Module):
         super(Tacotron2, self).__init__()
 
         self.mel_dim = hparams.mel_dim
+        self.vae_latent_dim = hparams.vae_latent_dim
 
         # Embedding
         self.embedding = nn.Embedding(hparams.num_symbols, hparams.text_embedding_dim)
@@ -259,8 +260,8 @@ class Tacotron2(nn.Module):
         
         elif self.speaker_embedding_type == 'gst':
             self.gst = GST(hparams.mel_dim, hparams.gst_gru_units, conv_channels=hparams.gst_conv_channels, num_tokens=hparams.gst_num_tokens, token_embed_dim=hparams.gst_token_dim, num_heads=hparams.gst_num_heads)
-            self.speaker_embedding_dim = hparams.gst_token_dim
-        
+            self.speaker_embedding_dim = hparams.gst_token_dim    
+                
         elif self.speaker_embedding_type == 'vae':
             self.vae = VAE(hparams.mel_dim, hparams.vae_latent_dim, conv_channels=hparams.vae_conv_channels, lstm_units=hparams.vae_lstm_units, lstm_layers=hparams.vae_lstm_layers)
             self.speaker_embedding_dim = hparams.vae_latent_dim
@@ -270,12 +271,20 @@ class Tacotron2(nn.Module):
             self.ref_local_atten_encoder = LocalAttentionEncoder(hparams)
             self.speaker_embedding_dim = hparams.ref_local_style_dim
         
+        elif self.speaker_embedding_type == 'local_vae':
+            self.reference_encoder = ReferenceEncoder(hparams)
+            self.ref_local_atten_encoder = LocalAttentionEncoder(hparams)
+            self.vae = VAE(hparams.mel_dim, hparams.vae_latent_dim, conv_channels=hparams.vae_conv_channels, lstm_units=hparams.vae_lstm_units, lstm_layers=hparams.vae_lstm_layers)
+            self.speaker_embedding_dim = hparams.ref_local_style_dim + hparams.vae_latent_dim
+
+        
         # Encoder
         embed_dim = hparams.text_embedding_dim
         self.encoder = Encoder(embed_dim, hparams)
 
         # Adversarial speaker classifier
         self.speaker_classifier = AdversarialClassifier(hparams.encoder_blstm_units, hparams.num_speakers, hparams.spk_classifier_hidden_dims)
+
 
         # Decoder
         encoder_out_dim = hparams.encoder_blstm_units + self.speaker_embedding_dim
@@ -329,7 +338,7 @@ class Tacotron2(nn.Module):
             speaker_embeddings = speaker_embeddings.repeat(1, encoder_outputs.size(1), 1)
 
         elif self.speaker_embedding_type == 'global':
-            ref_global_embedding, _ = self.reference_encoder(ref_mels, ref_mel_lengths)
+            ref_global_embedding, _, _ = self.reference_encoder(ref_mels, ref_mel_lengths)
             reference_speaker_outputs = self.reference_speaker_classifier(ref_global_embedding)
             speaker_embeddings = ref_global_embedding.repeat(1, encoder_outputs.size(1), 1)
             speaker_embeddings = torch.reshape(speaker_embeddings, [B, -1, self.speaker_embedding_dim])         
@@ -345,9 +354,18 @@ class Tacotron2(nn.Module):
             speaker_embeddings = torch.reshape(speaker_embeddings, [B, -1, self.speaker_embedding_dim])  
 
         elif self.speaker_embedding_type == 'local':
-            _, ref_local_embedding = self.reference_encoder(ref_mels, ref_mel_lengths)
+            _, ref_local_embedding, _ = self.reference_encoder(ref_mels, ref_mel_lengths)
             speaker_embeddings, ref_alignments = self.ref_local_atten_encoder(
                 encoder_outputs, input_lengths, ref_local_embedding, ref_mels, ref_mel_lengths)  # batch, seq_len, local_style_embedding_dim
+        
+        elif self.speaker_embedding_type == 'local_vae':
+            vae_output, vae_mean, vae_var = self.vae(mels, mel_lengths)
+            vae_outputs = vae_output.repeat(1, encoder_outputs.size(1), 1)
+            vae_outputs = torch.reshape(vae_outputs, [B, -1, self.vae_latent_dim])  
+            _, ref_local_embedding, _ = self.reference_encoder(ref_mels, ref_mel_lengths)
+            speaker_embeddings, ref_alignments = self.ref_local_atten_encoder(
+                encoder_outputs, input_lengths, ref_local_embedding, ref_mels, ref_mel_lengths)  # batch, seq_len, local_style_embedding_dim
+            speaker_embeddings = torch.cat((speaker_embeddings, vae_outputs), dim=2)
 
         # (B, T, encoder_out_dim + speaker_embed_dim)
         encoder_outputs = torch.cat((encoder_outputs, speaker_embeddings), dim=2)
@@ -397,7 +415,7 @@ class Tacotron2Loss(nn.Module):
         stop_loss = nn.BCELoss()(stop_predict, stop_target)
 
         if ref_speaker_predict != None:
-            ref_speaker_loss = self.ref_speaker_loss_weight * nn.CrossEntropyLoss(ref_speaker_predict, speaker_target)
+            ref_speaker_loss = self.ref_speaker_loss_weight * nn.CrossEntropyLoss()(ref_speaker_predict, speaker_target)
         else:
             ref_speaker_loss = 0.0        
 
@@ -408,7 +426,7 @@ class Tacotron2Loss(nn.Module):
         
         speaker_target = speaker_target.unsqueeze(1).repeat(1, speaker_predict.size(1)) # (B) -> (B, T)
         speaker_predict = speaker_predict.transpose(1, 2) # (B, T, n_speaker) -> (B, n_speaker, T)
-        speaker_loss = self.speaker_loss_weight * nn.CrossEntropyLoss(speaker_predict, speaker_target)
+        speaker_loss = self.speaker_loss_weight * nn.CrossEntropyLoss()(speaker_predict, speaker_target)
 
         kl_loss = 0.0
         if vae_mean != None and vae_var != None:
