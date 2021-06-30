@@ -50,7 +50,7 @@ def inference(args):
             inputs, speaker_ids, ref_mels = batch
             predicts = model.inference(inputs, speaker_ids, ref_mels)
             _, mel_post_predict, _, _, ref_alignments, _, _, _, _ = predicts
-            if hparams.speaker_embedding_type == 'local':
+            if hparams.speaker_embedding_type.startswith('local'):
                 im = Image.fromarray(plot_reference_alignment_to_numpy(ref_alignments[0].data.cpu().numpy().T))
                 im.save(os.path.join(args.outdir, 'sentence_{}_reference_alignment.jpg'.format(i)))
             mels = mel_post_predict[0].cpu().numpy()

@@ -82,7 +82,7 @@ def validate(model, criterion, iteration, valset, batch_size, collate_fn, logger
             predicts = model(inputs)
 
             # Loss
-            loss, speaker_loss, ref_speaker_loss, vae_kl_loss = criterion(predicts, targets)
+            loss, speaker_loss, ref_speaker_loss, vae_kl_loss = criterion(predicts, targets, iteration)
             val_loss += loss.item()
             val_speaker_loss += speaker_loss.item()
         val_loss = val_loss / (i + 1)
@@ -174,7 +174,7 @@ def train(output_dir, log_dir, checkpoint_path, warm_start, hparams):
                 predicts = model(inputs)
 
             # Loss
-            loss, speaker_loss, ref_speaker_loss, vae_kl_loss = criterion(predicts, targets)
+            loss, speaker_loss, ref_speaker_loss, vae_kl_loss = criterion(predicts, targets, iteration)
 
             # Backward pass
             optimizer.zero_grad()

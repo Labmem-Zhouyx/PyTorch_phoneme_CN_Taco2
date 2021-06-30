@@ -311,7 +311,7 @@ class Tacotron2(nn.Module):
 
         return (text, text_length, mel, mel_length, speaker_id, ref_mel, ref_mel_length), (mel, stop, speaker_id)
 
-    def forward(self, inputs):
+    def forward(self, inputs, is_sampling=True):
         inputs, input_lengths, mels, mel_lengths, speaker_ids, ref_mels, ref_mel_lengths = inputs
 
         B = inputs.size(0)
@@ -338,31 +338,27 @@ class Tacotron2(nn.Module):
             speaker_embeddings = speaker_embeddings.repeat(1, encoder_outputs.size(1), 1)
 
         elif self.speaker_embedding_type == 'global':
-            ref_global_embedding, _, _ = self.reference_encoder(ref_mels, ref_mel_lengths)
-            reference_speaker_outputs = self.reference_speaker_classifier(ref_global_embedding)
-            speaker_embeddings = ref_global_embedding.repeat(1, encoder_outputs.size(1), 1)
-            speaker_embeddings = torch.reshape(speaker_embeddings, [B, -1, self.speaker_embedding_dim])         
+            ref_global_embedding, _ = self.reference_encoder(ref_mels, ref_mel_lengths)          
+            speaker_embeddings = ref_global_embedding.repeat(1, encoder_outputs.size(1), 1)    
+            reference_speaker_outputs = self.reference_speaker_classifier(ref_global_embedding.squeeze(1))
 
         elif self.speaker_embedding_type == 'gst':
             gst_output = self.gst(ref_mels, ref_mel_lengths)
             speaker_embeddings = gst_output.repeat(1, encoder_outputs.size(1), 1)
-            speaker_embeddings = torch.reshape(speaker_embeddings, [B, -1, self.speaker_embedding_dim])   
 
         elif self.speaker_embedding_type == 'vae':
-            vae_output, vae_mean, vae_var = self.vae(ref_mels, ref_mel_lengths)
+            vae_output, vae_mean, vae_var = self.vae(ref_mels, ref_mel_lengths, is_sampling)
             speaker_embeddings = vae_output.repeat(1, encoder_outputs.size(1), 1)
-            speaker_embeddings = torch.reshape(speaker_embeddings, [B, -1, self.speaker_embedding_dim])  
 
         elif self.speaker_embedding_type == 'local':
-            _, ref_local_embedding, _ = self.reference_encoder(ref_mels, ref_mel_lengths)
+            _, ref_local_embedding = self.reference_encoder(ref_mels, ref_mel_lengths)
             speaker_embeddings, ref_alignments = self.ref_local_atten_encoder(
                 encoder_outputs, input_lengths, ref_local_embedding, ref_mels, ref_mel_lengths)  # batch, seq_len, local_style_embedding_dim
         
         elif self.speaker_embedding_type == 'local_vae':
-            vae_output, vae_mean, vae_var = self.vae(mels, mel_lengths)
+            vae_output, vae_mean, vae_var = self.vae(ref_mels, ref_mel_lengths, is_sampling)
             vae_outputs = vae_output.repeat(1, encoder_outputs.size(1), 1)
-            vae_outputs = torch.reshape(vae_outputs, [B, -1, self.vae_latent_dim])  
-            _, ref_local_embedding, _ = self.reference_encoder(ref_mels, ref_mel_lengths)
+            _, ref_local_embedding = self.reference_encoder(ref_mels, ref_mel_lengths)
             speaker_embeddings, ref_alignments = self.ref_local_atten_encoder(
                 encoder_outputs, input_lengths, ref_local_embedding, ref_mels, ref_mel_lengths)  # batch, seq_len, local_style_embedding_dim
             speaker_embeddings = torch.cat((speaker_embeddings, vae_outputs), dim=2)
@@ -392,7 +388,7 @@ class Tacotron2(nn.Module):
             ref_mels = ref_mels.to(device).float()
 
         inputs = inputs, None, None, None, speaker_ids, ref_mels, None
-        return self.forward(inputs)
+        return self.forward(inputs, is_sampling=False)
 
 
 class Tacotron2Loss(nn.Module):
@@ -402,7 +398,7 @@ class Tacotron2Loss(nn.Module):
         self.ref_speaker_loss_weight = hparams.ref_speaker_loss_weight
         self.vae_loss_weight = hparams.vae_loss_weight
 
-    def forward(self, predicts, targets):
+    def forward(self, predicts, targets, step):
         mel_target, stop_target, speaker_target = targets
         mel_target.requires_grad = False
         stop_target.requires_grad = False
@@ -429,7 +425,9 @@ class Tacotron2Loss(nn.Module):
         speaker_loss = self.speaker_loss_weight * nn.CrossEntropyLoss()(speaker_predict, speaker_target)
 
         kl_loss = 0.0
-        if vae_mean != None and vae_var != None:
+        if vae_mean != None and vae_var != None and step % 100 == 0:
+            if step % 1000 == 0 and self.vae_loss_weight < 1:
+                self.vae_loss_weight *= 2
             kl_loss = self.vae_loss_weight * (-0.5 * torch.sum(1 + vae_var - torch.pow(vae_mean, 2) - torch.exp(vae_var)))
 
         return mel_loss + post_loss + stop_loss + speaker_loss + ref_speaker_loss + kl_loss, speaker_loss, ref_speaker_loss, kl_loss

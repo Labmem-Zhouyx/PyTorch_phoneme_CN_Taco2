@@ -12,16 +12,19 @@ class VAE(nn.Module):
         self._latent_var = nn.Linear(in_features=lstm_units * 2, out_features=latent_dim)
         self.latent_dim = latent_dim
 
-    def forward(self, inputs, input_lengths=None):
+    def forward(self, inputs, input_lengths=None, is_sampling=True):
         if inputs == None: # inference
-            out = torch.FloatTensor(1, self.latent_dim).to('cuda')
+            out = torch.FloatTensor(1, 1, self.latent_dim).to('cuda')
             out.zero_()
             return out, None, None
         else:
             enc_out = self.encoder(inputs, input_lengths)
             latent_mean = self._latent_mean(enc_out)
             latent_var = self._latent_var(enc_out)
-            out = self.reparameterize(latent_mean, latent_var)
+            if is_sampling:
+                out = self.reparameterize(latent_mean, latent_var)
+            else:
+                out = latent_mean
             return out, latent_mean, latent_var
 
     def reparameterize(self, mu, log_var):
@@ -74,6 +77,7 @@ class ReferenceEncoder(nn.Module):
                               bidirectional=True)
 
 
+
     def forward(self, inputs, input_lengths=None):
         """
         input:
@@ -97,17 +101,19 @@ class ReferenceEncoder(nn.Module):
 
         # get precise last step by excluding paddings
         if input_lengths is not None:
+            device = next(self.parameters()).device
             input_lengths = torch.ceil(input_lengths.float() / 2 ** len(self.conv2ds))
             input_lengths = input_lengths.cpu().numpy().astype(int)
             out = nn.utils.rnn.pack_padded_sequence(out, input_lengths, batch_first=True, enforce_sorted=False)
             out, _ = self.blstms(out)
-            out, _ = nn.utils.rnn.pad_packed_sequence(out, batch_first=True)  # out --- [B, T, 2 * lstm_units]
+            out, lens = nn.utils.rnn.pad_packed_sequence(out, batch_first=True)  # out --- [B, T, 2 * lstm_units]
+            out = torch.sum(out, axis=1)
+            lens = lens.unsqueeze(1).repeat(1, out.size(1)).to(device)
+            out = out / lens.float()
         else:
             out, _ = self.blstms(out)
-
-        out = torch.mean(out, axis=1)
-        # out = out[:, -1]
-        return out
+            out = torch.mean(out, axis=1)  
+        return out.unsqueeze(1)
 
     def calculate_channels(self, L, kernel_size, stride, pad, n_convs):
         for _ in range(n_convs):

@@ -60,7 +60,6 @@ class ReferenceEncoder(nn.Module):
 
 
     def forward(self, inputs, input_lengths=None):
-        device = next(self.parameters()).device
         out = inputs.unsqueeze(1)  # [B, 1, T, mel_dim]
         for conv, bn in zip(self.conv2ds, self.bns):
             out = conv(out)
@@ -78,16 +77,14 @@ class ReferenceEncoder(nn.Module):
             input_lengths = input_lengths.cpu().numpy().astype(int)
             out = nn.utils.rnn.pack_padded_sequence(out, input_lengths, batch_first=True, enforce_sorted=False)
             memory, out = self.gru(out)  # memory --- [B, T, gru_units]  out --- [1, B, gru_units]
-            memory, lens = nn.utils.rnn.pad_packed_sequence(memory, batch_first=True)
-            lens = lens.to(device).long()
+            memory, _ = nn.utils.rnn.pad_packed_sequence(memory, batch_first=True)
         else:
             memory, out = self.gru(out)  # memory --- [B, T, gru_units]  out --- [1, B, gru_units]
-            lens = None
 
         global_embedding = self.global_outlayer(out.squeeze(0))
         local_embedding = self.local_outlayer(memory)
 
-        return global_embedding, local_embedding, lens
+        return global_embedding.unsqueeze(1), local_embedding
 
     def calculate_channels(self, L, kernel_size, stride, pad, n_convs):
         for i in range(n_convs):

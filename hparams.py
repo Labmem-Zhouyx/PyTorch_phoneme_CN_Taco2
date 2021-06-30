@@ -14,7 +14,7 @@ class hparams:
         cudnn_enabled = True
         cudnn_benchmark = False
         ignore_layers = ['embedding.weight']
-        speaker_embedding_type = 'local_vae'   # one-hot, global, local, local_vae, gst, vae
+        speaker_embedding_type = 'vae'   # one-hot, global, local, local_vae, gst, vae
 
         ################################
         # Data Parameters             #
@@ -50,7 +50,7 @@ class hparams:
         ref_speaker_loss_weight = 0.1
 
         # GST parameters
-        gst_num_tokens = 256
+        gst_num_tokens = 10
         gst_num_heads = 8
         gst_conv_channels = [32, 32, 64, 64, 128, 128]
         gst_gru_units = 128
@@ -62,7 +62,7 @@ class hparams:
         vae_lstm_units = 256
         vae_lstm_layers = 2
         vae_latent_dim = 16
-        vae_loss_weight = 1.
+        vae_loss_weight = 1e-4
 
         # Encoder parameters
         encoder_num_convs = 3
