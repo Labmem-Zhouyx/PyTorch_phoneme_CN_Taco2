@@ -58,11 +58,13 @@ class hparams:
         gst_num_units = 256
 
         # VAE parameters
-        vae_conv_channels = [512, 512]
-        vae_lstm_units = 256
-        vae_lstm_layers = 2
-        vae_latent_dim = 16
-        vae_loss_weight = 1e-4
+        vae_latent_dim = 32
+        vae_out_dim = 256
+        anneal_function = 'logistic'
+        anneal_k = 0.0025
+        anneal_x0 = 10000
+        anneal_upper = 0.2
+        anneal_lag = 50000
 
         # Encoder parameters
         encoder_num_convs = 3

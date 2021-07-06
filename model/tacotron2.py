@@ -4,6 +4,7 @@ from math import sqrt
 
 import torch
 from torch import nn
+import numpy as np
 
 from .attention import LocationSensitiveAttention, AttentionWrapper
 from .attention import get_mask_from_lengths
@@ -263,8 +264,8 @@ class Tacotron2(nn.Module):
             self.speaker_embedding_dim = hparams.gst_token_dim    
                 
         elif self.speaker_embedding_type == 'vae':
-            self.vae = VAE(hparams.mel_dim, hparams.vae_latent_dim, conv_channels=hparams.vae_conv_channels, lstm_units=hparams.vae_lstm_units, lstm_layers=hparams.vae_lstm_layers)
-            self.speaker_embedding_dim = hparams.vae_latent_dim
+            self.vae = VAE(hparams.mel_dim, hparams.vae_latent_dim, out_dim=hparams.vae_out_dim)
+            self.speaker_embedding_dim = hparams.vae_out_dim
 
         elif self.speaker_embedding_type == 'local':
             self.reference_encoder = ReferenceEncoder(hparams)
@@ -274,8 +275,8 @@ class Tacotron2(nn.Module):
         elif self.speaker_embedding_type == 'local_vae':
             self.reference_encoder = ReferenceEncoder(hparams)
             self.ref_local_atten_encoder = LocalAttentionEncoder(hparams)
-            self.vae = VAE(hparams.mel_dim, hparams.vae_latent_dim, conv_channels=hparams.vae_conv_channels, lstm_units=hparams.vae_lstm_units, lstm_layers=hparams.vae_lstm_layers)
-            self.speaker_embedding_dim = hparams.ref_local_style_dim + hparams.vae_latent_dim
+            self.vae = VAE(hparams.mel_dim, hparams.vae_latent_dim, out_dim=hparams.vae_out_dim)
+            self.speaker_embedding_dim = hparams.ref_local_style_dim + hparams.vae_out_dim
 
         
         # Encoder
@@ -348,6 +349,7 @@ class Tacotron2(nn.Module):
 
         elif self.speaker_embedding_type == 'vae':
             vae_output, vae_mean, vae_var = self.vae(ref_mels, ref_mel_lengths, is_sampling)
+            # print(vae_mean)
             speaker_embeddings = vae_output.repeat(1, encoder_outputs.size(1), 1)
 
         elif self.speaker_embedding_type == 'local':
@@ -357,6 +359,7 @@ class Tacotron2(nn.Module):
         
         elif self.speaker_embedding_type == 'local_vae':
             vae_output, vae_mean, vae_var = self.vae(ref_mels, ref_mel_lengths, is_sampling)
+            # vae_output, vae_mean, vae_var = self.vae(mels, mel_lengths, is_sampling)
             vae_outputs = vae_output.repeat(1, encoder_outputs.size(1), 1)
             _, ref_local_embedding = self.reference_encoder(ref_mels, ref_mel_lengths)
             speaker_embeddings, ref_alignments = self.ref_local_atten_encoder(
@@ -396,7 +399,22 @@ class Tacotron2Loss(nn.Module):
         super(Tacotron2Loss, self).__init__()
         self.speaker_loss_weight = hparams.speaker_loss_weight
         self.ref_speaker_loss_weight = hparams.ref_speaker_loss_weight
-        self.vae_loss_weight = hparams.vae_loss_weight
+        self.anneal_function = hparams.anneal_function
+        self.lag = hparams.anneal_lag
+        self.k = hparams.anneal_k
+        self.x0 = hparams.anneal_x0
+        self.upper = hparams.anneal_upper
+
+    def kl_anneal_function(self, anneal_function, lag, step, k, x0, upper):
+        if anneal_function == 'logistic':
+            return float(upper/(upper + np.exp(-k * (step - x0))))
+        elif anneal_function == 'linear':
+            if step > lag:
+                return min(upper, step / x0)
+            else:
+                return 0
+        elif anneal_function == 'constant':
+            return 0.001
 
     def forward(self, predicts, targets, step):
         mel_target, stop_target, speaker_target = targets
@@ -425,9 +443,8 @@ class Tacotron2Loss(nn.Module):
         speaker_loss = self.speaker_loss_weight * nn.CrossEntropyLoss()(speaker_predict, speaker_target)
 
         kl_loss = 0.0
-        if vae_mean != None and vae_var != None and step % 100 == 0:
-            if step % 1000 == 0 and self.vae_loss_weight < 1:
-                self.vae_loss_weight *= 2
-            kl_loss = self.vae_loss_weight * (-0.5 * torch.sum(1 + vae_var - torch.pow(vae_mean, 2) - torch.exp(vae_var)))
-
+        if vae_mean != None and vae_var != None:
+            kl_loss = -0.5 * torch.sum(1 + vae_var - vae_mean.pow(2) - vae_var.exp())
+            kl_weight = self.kl_anneal_function(self.anneal_function, self.lag, step, self.k, self.x0, self.upper)
+            kl_loss *= kl_weight
         return mel_loss + post_loss + stop_loss + speaker_loss + ref_speaker_loss + kl_loss, speaker_loss, ref_speaker_loss, kl_loss

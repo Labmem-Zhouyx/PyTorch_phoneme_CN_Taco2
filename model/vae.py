@@ -3,35 +3,37 @@ import torch.nn as nn
 
 
 class VAE(nn.Module):
-    def __init__(self, mel_dim, latent_dim=16, conv_channels=[512, 512], lstm_units=256, lstm_layers=2, kernel_size=3,
+    def __init__(self, mel_dim, latent_dim=16, out_dim=256, gru_units=128, conv_channels=[32, 32, 64, 64, 128, 128], kernel_size=3,
                  stride=2, padding=1):
         super().__init__()
-        self.encoder = ReferenceEncoder(mel_dim, conv_channels, lstm_units, lstm_layers, kernel_size, stride, padding)
-        self._latent_mean = nn.Linear(in_features=lstm_units * 2, out_features=latent_dim)
-        self._latent_mean = nn.Linear(in_features=lstm_units * 2, out_features=latent_dim)
-        self._latent_var = nn.Linear(in_features=lstm_units * 2, out_features=latent_dim)
+        self.encoder = ReferenceEncoder(mel_dim, gru_units, conv_channels, kernel_size, stride, padding)
+        self._latent_mean = nn.Linear(in_features=gru_units, out_features=latent_dim)
+        self._latent_var = nn.Linear(in_features=gru_units, out_features=latent_dim)
         self.latent_dim = latent_dim
+        self.output = nn.Linear(in_features=latent_dim, out_features=out_dim)
 
     def forward(self, inputs, input_lengths=None, is_sampling=True):
-        if inputs == None: # inference
+        if inputs == None: # inference without reference
             out = torch.FloatTensor(1, 1, self.latent_dim).to('cuda')
             out.zero_()
+            out = self.output(out)
             return out, None, None
         else:
-            enc_out = self.encoder(inputs, input_lengths)
+            enc_out = self.encoder(inputs, input_lengths).unsqueeze(1)
             latent_mean = self._latent_mean(enc_out)
-            latent_var = self._latent_var(enc_out)
+            latent_logvar = self._latent_var(enc_out)
             if is_sampling:
-                out = self.reparameterize(latent_mean, latent_var)
+                out = self.reparameterize(latent_mean, latent_logvar)
             else:
                 out = latent_mean
-            return out, latent_mean, latent_var
+            out = self.output(out)
+            return out, latent_mean, latent_logvar
 
     def reparameterize(self, mu, log_var):
         "Reparameterize from mean and variance"
         device = next(self.parameters()).device
-        eps = torch.randn(log_var.shape).to(device).float()
-        std = torch.exp(log_var) ** 0.5
+        eps = torch.randn_like(log_var).to(device).float()
+        std = torch.exp(0.5 * log_var)
         z = mu + std * eps
         return z
 
@@ -39,13 +41,11 @@ class VAE(nn.Module):
 class ReferenceEncoder(nn.Module):
     """
     ReferenceEncoder
-        - a mel spectrogram is first passed through two convolutional layers, which contains 512 filters with shape 3 × 1.
-        - The output of these convolutional layers is then fed to a stack of two bidirectional LSTM layers with 256 cells at each direction.
-        - A mean pooling layer is used to summarize the LSTM outputs across time, followed by a linear projection layer to predict the
-        posterior mean and log variance.
+        - 6 2-D convolutional layers with 3*3 kernel, 2*2 stride, batch norm (BN), ReLU
+        - a single-layer unidirectional GRU with 128-unit
     """
 
-    def __init__(self, in_dim, conv_channels=[512, 512], lstm_units=256, lstm_layers=2, kernel_size=3, stride=2, padding=1):
+    def __init__(self, in_dim, gru_units=128, conv_channels=[32, 32, 64, 64, 128, 128], kernel_size=3, stride=2, padding=1):
         super().__init__()
 
         K = len(conv_channels)
@@ -68,15 +68,11 @@ class ReferenceEncoder(nn.Module):
         # ReLU
         self.relu = nn.ReLU()
 
-        # LSTM
+        # GRU
         out_channels = self.calculate_channels(in_dim, kernel_size, stride, padding, K)
-        self.blstms = nn.LSTM(input_size=conv_channels[-1] * out_channels,
-                              hidden_size=lstm_units,
-                              num_layers=lstm_layers,
-                              batch_first=True,
-                              bidirectional=True)
-
-
+        self.gru = nn.GRU(input_size=conv_channels[-1] * out_channels,
+                          hidden_size=gru_units,
+                          batch_first=True)
 
     def forward(self, inputs, input_lengths=None):
         """
@@ -84,7 +80,7 @@ class ReferenceEncoder(nn.Module):
             inputs --- [B, T, mel_dim] mels
             input_lengths --- [B] lengths of the mels
         output:
-            out --- [B, lstm_units * 2]
+            out --- [B, gru_units]
         """
 
         out = inputs.unsqueeze(1)  # [B, 1, T, mel_dim]
@@ -97,26 +93,18 @@ class ReferenceEncoder(nn.Module):
         B, T = out.size(0), out.size(1)
         out = out.contiguous().view(B, T, -1)  # [B, T//2^K, 128*mel_dim//2^K]
 
-        self.blstms.flatten_parameters()
-
         # get precise last step by excluding paddings
         if input_lengths is not None:
-            device = next(self.parameters()).device
             input_lengths = torch.ceil(input_lengths.float() / 2 ** len(self.conv2ds))
             input_lengths = input_lengths.cpu().numpy().astype(int)
             out = nn.utils.rnn.pack_padded_sequence(out, input_lengths, batch_first=True, enforce_sorted=False)
-            out, _ = self.blstms(out)
-            out, lens = nn.utils.rnn.pad_packed_sequence(out, batch_first=True)  # out --- [B, T, 2 * lstm_units]
-            out = torch.sum(out, axis=1)
-            lens = lens.unsqueeze(1).repeat(1, out.size(1)).to(device)
-            out = out / lens.float()
-        else:
-            out, _ = self.blstms(out)
-            out = torch.mean(out, axis=1)  
-        return out.unsqueeze(1)
+
+        self.gru.flatten_parameters()
+        _, out = self.gru(out)  # out --- [1, B, gru_units]
+
+        return out.squeeze(0)  # [B, gru_units]
 
     def calculate_channels(self, L, kernel_size, stride, pad, n_convs):
         for _ in range(n_convs):
             L = (L - kernel_size + 2 * pad) // stride + 1
         return L
-
