@@ -5,7 +5,7 @@ class hparams:
         ################################
         # Experiment Parameters        #
         ################################
-        epochs = 500
+        epochs = 300
         iters_per_checkpoint = 10000
         iters_per_validation = 1000
         seed = 4321
@@ -14,7 +14,8 @@ class hparams:
         cudnn_enabled = True
         cudnn_benchmark = False
         ignore_layers = ['embedding.weight']
-        speaker_embedding_type = 'vae'   # one-hot, global, local, local_vae, gst, vae
+        speaker_embedding_type = 'local'   # one-hot, global, local, local_vae, gst, vae
+        ref_mel_type = 'unpair'   # pair, unpair
 
         ################################
         # Data Parameters             #
@@ -50,7 +51,7 @@ class hparams:
         ref_speaker_loss_weight = 0.1
 
         # GST parameters
-        gst_num_tokens = 10
+        gst_num_tokens = 1024
         gst_num_heads = 8
         gst_conv_channels = [32, 32, 64, 64, 128, 128]
         gst_gru_units = 128
@@ -60,7 +61,7 @@ class hparams:
         # VAE parameters
         vae_latent_dim = 32
         vae_out_dim = 256
-        anneal_function = 'logistic'
+        anneal_function = 'constant'
         anneal_k = 0.0025
         anneal_x0 = 10000
         anneal_upper = 0.2

@@ -18,6 +18,7 @@ class TextMelDataset(torch.utils.data.Dataset):
         self.mel_dim = hparams.mel_dim
         self.f_list = self.files_to_list(melpaths_and_text)
         self.melpath_prefix = hparams.melpath_prefix
+        self.ref_mel_type = hparams.ref_mel_type
         random.seed(hparams.seed)
         random.shuffle(self.f_list)
 
@@ -33,21 +34,28 @@ class TextMelDataset(torch.utils.data.Dataset):
 
         if self.melpath_prefix:
             melpath = os.path.join(self.melpath_prefix, melpath)
-        mel = self.get_mel(melpath)
+        mel, ref_mel = self.get_mel(melpath, self.ref_mel_type)
 
         spk_id = torch.IntTensor([speaker_to_id[speaker]])
-        return (text, mel, spk_id)
+        return (text, mel, ref_mel, spk_id)
 
     def get_text(self, text):
         text_norm = torch.IntTensor(text_to_sequence(text, self.text_cleaners))
         return text_norm
 
-    def get_mel(self, file_path):
+    def get_mel(self, file_path, ref_mel_type):
         #stored melspec: np.ndarray [shape=(T_out, num_mels)]
         melspec = torch.from_numpy(np.load(file_path))
         assert melspec.size(1) == self.mel_dim, (
             'Mel dimension mismatch: given {}, expected {}'.format(melspec.size(1), self.mel_dim))
-        return melspec
+        if ref_mel_type == 'pair':
+            return melspec, melspec
+        else:
+            ref_file_path = 'abaabaabababababa'
+            while not os.path.exists(ref_file_path):
+                ref_file_path = file_path[:-7] + str(np.random.randint(0, 500)).zfill(3) + '.npy'
+            ref_melspec = torch.from_numpy(np.load(ref_file_path))    
+            return melspec, ref_melspec
 
     def __len__(self):
         return len(self.f_list)
@@ -80,7 +88,7 @@ class TextMelCollate():
         for i in range(len(ids_sorted_decreasing)):
             text = batch[ids_sorted_decreasing[i]][0]
             text_padded[i, :text.shape[0]] = text
-            speakers[i] = batch[ids_sorted_decreasing[i]][2]
+            speakers[i] = batch[ids_sorted_decreasing[i]][3]
 
         # Right zero-pad mel-spec
         num_mels = batch[0][1].size(1)
@@ -101,7 +109,23 @@ class TextMelCollate():
             gate_padded[i, mel.size(0)-1:] = 1
             output_lengths[i] = mel.size(0)
 
-        return text_padded, input_lengths, mel_padded, gate_padded, output_lengths, speakers
+        # Right zero-pad ref-mel-spec
+        max_target_len = max([x[2].size(0) for x in batch])
+        if max_target_len % self.n_frames_per_step != 0:
+            max_target_len += self.n_frames_per_step - max_target_len % self.n_frames_per_step
+            assert max_target_len % self.n_frames_per_step == 0
+
+        # include ref mel padded
+        ref_mel_padded = torch.FloatTensor(len(batch), max_target_len, num_mels)
+        ref_mel_padded.zero_()
+        ref_output_lengths = torch.LongTensor(len(batch))
+        for i in range(len(ids_sorted_decreasing)):
+            ref_mel = batch[ids_sorted_decreasing[i]][2]
+            ref_mel_padded[i, :ref_mel.size(0), :] = ref_mel
+            ref_output_lengths[i] = ref_mel.size(0)
+
+
+        return text_padded, input_lengths, mel_padded, gate_padded, output_lengths, ref_mel_padded, ref_output_lengths, speakers
 
 
 class TextMelDatasetEval(torch.utils.data.Dataset):

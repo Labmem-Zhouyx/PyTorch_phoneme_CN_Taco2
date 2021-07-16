@@ -300,15 +300,15 @@ class Tacotron2(nn.Module):
         # use same device as parameters
         device = next(self.parameters()).device
 
-        text, text_length, mel, stop, mel_length, speaker_id = batch
+        text, text_length, mel, stop, mel_length, ref_mel, ref_mel_length, speaker_id = batch
         text = text.to(device).long()
         text_length = text_length.to(device).long()
         mel = mel.to(device).float()
         mel_length = mel_length.to(device).long()
         stop = stop.to(device).float()
         speaker_id = speaker_id.to(device).long()
-        ref_mel = mel.to(device).float()
-        ref_mel_length = mel_length.to(device).long()
+        ref_mel = ref_mel.to(device).float()
+        ref_mel_length = ref_mel_length.to(device).long()
 
         return (text, text_length, mel, mel_length, speaker_id, ref_mel, ref_mel_length), (mel, stop, speaker_id)
 
@@ -349,7 +349,6 @@ class Tacotron2(nn.Module):
 
         elif self.speaker_embedding_type == 'vae':
             vae_output, vae_mean, vae_var = self.vae(ref_mels, ref_mel_lengths, is_sampling)
-            # print(vae_mean)
             speaker_embeddings = vae_output.repeat(1, encoder_outputs.size(1), 1)
 
         elif self.speaker_embedding_type == 'local':
@@ -368,7 +367,7 @@ class Tacotron2(nn.Module):
 
         # (B, T, encoder_out_dim + speaker_embed_dim)
         encoder_outputs = torch.cat((encoder_outputs, speaker_embeddings), dim=2)
-
+        
         # (B, T, mel_dim)
         mel_outputs, stop_tokens, alignments = self.decoder(
             encoder_outputs, mels, memory_lengths=input_lengths)
@@ -414,7 +413,7 @@ class Tacotron2Loss(nn.Module):
             else:
                 return 0
         elif anneal_function == 'constant':
-            return 0.001
+            return 1e-4
 
     def forward(self, predicts, targets, step):
         mel_target, stop_target, speaker_target = targets
