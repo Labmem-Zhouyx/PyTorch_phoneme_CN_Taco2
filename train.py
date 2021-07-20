@@ -127,7 +127,7 @@ def train(output_dir, log_dir, checkpoint_path, warm_start, hparams):
     learning_rate = hparams.learning_rate
     optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate,
                                  weight_decay=hparams.weight_decay)
-
+   
     # Prepare directory and logger
     os.makedirs(output_dir, exist_ok=True)
     logger = Tacotron2Logger(log_dir)
@@ -159,6 +159,8 @@ def train(output_dir, log_dir, checkpoint_path, warm_start, hparams):
         print("Epoch: {}".format(epoch))
         for i, batch in enumerate(train_loader):
             start = time.perf_counter()
+            if learning_rate >= 1e-5:
+                learning_rate = hparams.learning_rate * (hparams.lr_decay_rate ** (iteration / hparams.lr_decay_steps))
 
             for param_group in optimizer.param_groups:
                 param_group['lr'] = learning_rate

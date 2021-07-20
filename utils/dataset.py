@@ -29,7 +29,8 @@ class TextMelDataset(torch.utils.data.Dataset):
 
     def get_mel_text_pair(self, melpath_and_content):
         # separate filename and text
-        melpath, text, speaker = melpath_and_content[1], melpath_and_content[6], melpath_and_content[7]
+        melpath, text, speaker = melpath_and_content[0], melpath_and_content[3], melpath_and_content[1]
+        melpath = "{}-mel-{}.npy".format(speaker, melpath)
         text = self.get_text(text)
 
         if self.melpath_prefix:

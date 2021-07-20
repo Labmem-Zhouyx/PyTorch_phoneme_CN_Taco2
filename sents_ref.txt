@@ -1,12 +1,12 @@
-wu3 shu4 shi3 zhong1 bei4 kan4 zuo4 wo3 guo2 de5 guo2 cui4 |mel-SSB00050001.npy
-wo3 yao4 ting1 cui1 jian4 de5 ger1 |mel-SSB00050001.npy
-wu3 shu4 shi3 zhong1 bei4 kan4 zuo4 wo3 guo2 de5 guo2 cui4 |mel-SSB00090001.npy
-wo3 yao4 ting1 cui1 jian4 de5 ger1 |mel-SSB00090001.npy
-wu3 shu4 shi3 zhong1 bei4 kan4 zuo4 wo3 guo2 de5 guo2 cui4 |mel-SSB00110001.npy
-wo3 yao4 ting1 cui1 jian4 de5 ger1 |mel-SSB00110001.npy
-wu3 shu4 shi3 zhong1 bei4 kan4 zuo4 wo3 guo2 de5 guo2 cui4 |mel-SSB06030001.npy
-wo3 yao4 ting1 cui1 jian4 de5 ger1 |mel-SSB06030001.npy
-wu3 shu4 shi3 zhong1 bei4 kan4 zuo4 wo3 guo2 de5 guo2 cui4 |mel-SSB11080300.npy
-wo3 yao4 ting1 cui1 jian4 de5 ger1 |mel-SSB11080300.npy
-wu3 shu4 shi3 zhong1 bei4 kan4 zuo4 wo3 guo2 de5 guo2 cui4 |mel-SSB18310185.npy
-wo3 yao4 ting1 cui1 jian4 de5 ger1 |mel-SSB18310185.npy
+wu3 shu4 shi3 zhong1 bei4 kan4 zuo4 wo3 guo2 de5 guo2 cui4|SSB0005-mel-SSB00050001.npy
+wo3 yao4 ting1 cui1 jian4 de5 ger1|SSB0005-mel-SSB00050001.npy
+wu3 shu4 shi3 zhong1 bei4 kan4 zuo4 wo3 guo2 de5 guo2 cui4|SSB0009-mel-SSB00090001.npy
+wo3 yao4 ting1 cui1 jian4 de5 ger1|SSB0009-mel-SSB00090001.npy
+wu3 shu4 shi3 zhong1 bei4 kan4 zuo4 wo3 guo2 de5 guo2 cui4|SSB0011-mel-SSB00110001.npy
+wo3 yao4 ting1 cui1 jian4 de5 ger1|SSB0011-mel-SSB00110001.npy
+wu3 shu4 shi3 zhong1 bei4 kan4 zuo4 wo3 guo2 de5 guo2 cui4|SSB0603-mel-SSB06030001.npy
+wo3 yao4 ting1 cui1 jian4 de5 ger1|SSB0603-mel-SSB06030001.npy
+wu3 shu4 shi3 zhong1 bei4 kan4 zuo4 wo3 guo2 de5 guo2 cui4|SSB1108-mel-SSB11080300.npy
+wo3 yao4 ting1 cui1 jian4 de5 ger1|SSB1108-mel-SSB11080300.npy
+wu3 shu4 shi3 zhong1 bei4 kan4 zuo4 wo3 guo2 de5 guo2 cui4|SSB1831-mel-SSB18310185.npy
+wo3 yao4 ting1 cui1 jian4 de5 ger1|SSB1831-mel-SSB18310185.npy

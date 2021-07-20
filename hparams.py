@@ -20,9 +20,9 @@ class hparams:
         ################################
         # Data Parameters             #
         ################################
-        mel_training_files = './training_data/mel-aishell3_character_pinyin_data_train.txt'
-        mel_validation_files = './training_data/mel-aishell3_character_pinyin_data_val.txt'
-        melpath_prefix = '/data/datasets/aishell3_train/mels/' # If precise mel-spectrogram path is provided in above files, this param is set to None.
+        mel_training_files = './training_data/train.txt'
+        mel_validation_files = './training_data/val.txt'
+        melpath_prefix = '/data/datasets/preprocessed_data/AISHELL3/mel/' # If precise mel-spectrogram path is provided in above files, this param is set to None.
         text_cleaners = ['basic_cleaners']
 
         ################################
@@ -45,13 +45,13 @@ class hparams:
         ref_conv_channels = [32, 32, 64, 64, 128, 128]
         ref_conv_stride = [2, 1, 2, 1, 2, 1]
         ref_gru_units = 128
-        ref_local_style_dim = 8
+        ref_local_style_dim = 6
         ref_attention_dropout = 0.0
         ref_attention_dim = 128
         ref_speaker_loss_weight = 0.1
 
         # GST parameters
-        gst_num_tokens = 1024
+        gst_num_tokens = 10
         gst_num_heads = 8
         gst_conv_channels = [32, 32, 64, 64, 128, 128]
         gst_gru_units = 128
@@ -100,6 +100,8 @@ class hparams:
         ################################
         use_saved_learning_rate = False
         learning_rate = 1e-3
+        lr_decay_rate = 0.98
+        lr_decay_steps = 2000
         weight_decay = 1e-6
         grad_clip_thresh = 1.0
         batch_size = 32

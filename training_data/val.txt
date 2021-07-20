@@ -1,0 +1,512 @@
+SSB03150015|SSB0315|{y ie2 y iou3 x iao1 x i1 ch eng1 sp y iou2 y v2 l iang2 p in3 sp l v4 sp d i1 sp h e2 ch an3 n eng2 b u4 z u2}|ye2 you3 xiao1 xi1 cheng1 you2 yu2 liang2 pin3 lv4 di1 he2 chan3 neng2 bu4 zu2
+SSB06680090|SSB0668|{f u4 sh iii4 k ang1 sh ang4 w uei4 z uo4 ch u1 r en4 h e2 k en3 d ing4 d e5 ch eng2 n uo4}|fu4 shi4 kang1 shang4 wei4 zuo4 chu1 ren4 he2 ken3 ding4 de5 cheng2 nuo4
+SSB11610139|SSB1161|{w uen2 b en3 b ao4 sp j i4 zh e3 sp l iou2 ai4 l in2}|wen2 ben3 bao4 ji4 zhe3 liu2 ai4 lin2
+SSB10910370|SSB1091|{k ong3 p a4 m ei2 r en2 y iou3 n a4 m e5 d a4 d e5 n eng2 n ai4 sp b ang1 n i2 j ie3 j ve2 b a5}|kong3 pa4 mei2 ren2 you3 na4 me5 da4 de5 neng2 nai4 bang1 ni2 jie3 jue2 ba5
+SSB07160200|SSB0716|{sh uo1 l u2 k a3 s ii1 ch u1 sh ou3 k uo4 ch uo4}|shuo1 lu2 ka3 si1 chu1 shou3 kuo4 chuo4
+SSB01970315|SSB0197|{s uei1 r an2 d a1 ch eng2 x ian4 d ai4 s ong1 sp b ang2 sp d eng3 l i4 h ao3 zh eng4 c e4 d e5 k uai4 ch e1 h ou4}|sui1 ran2 da1 cheng2 xian4 dai4 song1 bang2 deng3 li4 hao3 zheng4 ce4 de5 kuai4 che1 hou4
+SSB06710317|SSB0671|{n i3 j iou4 b ie2 q v4 zh ao1 r e3 t a1 l e5}|ni3 jiu4 bie2 qu4 zhao1 re3 ta1 le5
+SSB03090239|SSB0309|{sh iii2 j i3 n ian2 l ai2 h uei4 j v4 l e5 sp d a4 sp l iang4 x iang3 d uei4 g ao1 zh iii4 l iang4 d e5 y i1 l iao2 z ii1 y van2}|shi2 ji3 nian2 lai2 hui4 ju4 le5 da4 liang4 xiang3 dui4 gao1 zhi4 liang4 de5 yi1 liao2 zi1 yuan2
+SSB10010261|SSB1001|{m iou4 j ian3 r en2 ch u1 y ian3 d e5 d ian4 y ing2 y iou3 sh en2 m e5}|miu4 jian3 ren2 chu1 yan3 de5 dian4 ying2 you3 shen2 me5
+SSB11100043|SSB1110|{f u4 l ei1 x ian1 sh eng5 ch ang2 l ai2 zh e4 l i3 m a5}|fu4 lei1 xian1 sheng5 chang2 lai2 zhe4 li3 ma5
+SSB13020318|SSB1302|{w uo2 z en3 m e5 h uei4 w uang4 n e5}|wo2 zen3 me5 hui4 wang4 ne5
+SSB07490333|SSB0749|{b ie2 g uan3 d an1 f u2 s ii1 t ai4 t ai5}|bie2 guan3 dan1 fu2 si1 tai4 tai5
+SSB13410291|SSB1341|{h u4 sh en1 zh eng4 q van4 j iao1 y i4 s uo3 g ong4 y iou3 sp e4 rr q ian1 j ia1 sh ang4 sh iii4 g ong1 sh iii1}|hu4 shen1 zheng4 quan4 jiao1 yi4 suo3 gong4 you3 er4 qian1 jia1 shang4 shi4 gong1 shi1
+SSB05650200|SSB0565|{x i3 j v4 y vn4 d ong4 d ian4 y ing2 y iou3 sh en2 m e5}|xi3 ju4 yun4 dong4 dian4 ying2 you3 shen2 me5
+SSB10500179|SSB1050|{z ai4 n i3 d e5 sp d a1 d ang4 sp g en1 sp b u1 l uo4 k e4 j iang3 sp h ua4 sh iii2 sp w uo3 c ai2 x iang2 q i3 l ai2}|zai4 ni3 de5 da1 dang4 gen1 bu1 luo4 ke4 jiang3 hua4 shi2 wo3 cai2 xiang2 qi3 lai2
+SSB07170016|SSB0717|{d i4 ch ang3 h ang2 y ie4 sp b ing4 g ou4 ch ao2 sp sh iii2 j i4 sh ang4 sp z ao2 y i3 l ai2 l in2}|di4 chang3 hang2 ye4 bing4 gou4 chao2 shi2 ji4 shang4 zao2 yi3 lai2 lin2
+SSB06660288|SSB0666|{h ou4 l ai2 sp d uei4 f ang1 k ou3 t ou2 j ie4 sh ao4 y ie3 sh iii4 g uo2 j ia1 t ong3 j i4 j v2 d e5 x ia4 sh u3 d an1 w uei4}|hou4 lai2 dui4 fang1 kou3 tou2 jie4 shao4 ye3 shi4 guo2 jia1 tong3 ji4 ju2 de5 xia4 shu3 dan1 wei4
+SSB07620372|SSB0762|{b ei3 s ong4 d e5 j ian4 zh u4 y iou3 sh en2 m e5}|bei3 song4 de5 jian4 zhu4 you3 shen2 me5
+SSB00430508|SSB0043|{k ong3 p a4 w uo3 m en5 g ai1 z ou3 l e5}|kong3 pa4 wo3 men5 gai1 zou3 le5
+SSB11870217|SSB1187|{q iao2 y iang2 d e5 g e1 q v2 y iou3 sh en2 m e5}|qiao2 yang2 de5 ge1 qu2 you3 shen2 me5
+SSB17810002|SSB1781|{z ao3 r en2 j iao4 y v4 x ve2 x iao4}|zao3 ren2 jiao4 yu4 xue2 xiao4
+SSB16070125|SSB1607|{w uo2 x iang3 s uei2 zh e5 sh iii4 d ian3 d e5 zh u2 b u4 sh en1 r u4}|wo2 xiang3 sui2 zhe5 shi4 dian3 de5 zhu2 bu4 shen1 ru4
+SSB06030463|SSB0603|{zh eng3 h e2 g uo2 j i4 g uo2 n ei4 d e5 y i1 l iou2 z ii1 y van2}|zheng3 he2 guo2 ji4 guo2 nei4 de5 yi1 liu2 zi1 yuan2
+SSB11310385|SSB1131|{c ao2 m eng4 d e2 h en3 sh iii4 x i3 h uan1 n i3}|cao2 meng4 de2 hen3 shi4 xi3 huan1 ni3
+SSB03420491|SSB0342|{z ai4 n an2 z ii5 sh iii2 m i3 q i4 b u4 q iang1 t uan2 t i3 x iang4 m u4 sh ang4}|zai4 nan2 zi5 shi2 mi3 qi4 bu4 qiang1 tuan2 ti3 xiang4 mu4 shang4
+SSB06310034|SSB0631|{g u4 y van2 t ong1 g uo4 g ong1 z ii1 sp k ou4 j ian3 sp g ei3 sp j i4 h ua4 j iao3 f ei4}|gu4 yuan2 tong1 guo4 gong1 zi1 kou4 jian3 gei3 ji4 hua4 jiao3 fei4
+SSB05990112|SSB0599|{b en3 c ii4 j iang4 f ei4 y iou2 zh eng4 q van4 y ie4 sp x ie2 h uei4 q ian1 t ou2}|ben3 ci4 jiang4 fei4 you2 zheng4 quan4 ye4 xie2 hui4 qian1 tou2
+SSB03800502|SSB0380|{x iao3 j ian4 d e5 d ang1 w uo3 ch ang4 q i3 zh e4 sh ou3 g e1}|xiao3 jian4 de5 dang1 wo3 chang4 qi3 zhe4 shou3 ge1
+SSB01970022|SSB0197|{l ing2 w u3 b a1 e4 rr sp w u3 l iou4 l ing2 l iou4}|ling2 wu3 ba1 er4 wu3 liu4 ling2 liu4
+SSB17390171|SSB1739|{j ia1 d ian4 y ie4 d uan4 n ai3 sp e4 rr n ian2 j i4 ch uan2 t ong3 sp b ai2 d ian4 sp p in1 sh a1 h u4 l ian2 w uang3 sp j ia1 s ou1 h u2 k e1 j i4}|jia1 dian4 ye4 duan4 nai3 er4 nian2 ji4 chuan2 tong3 bai2 dian4 pin1 sha1 hu4 lian2 wang3 jia1 sou1 hu2 ke1 ji4
+SSB08510067|SSB0851|{h e4 s ong1 t ing2 w uen2 j v4 l i2 p in3 d ian4}|he4 song1 ting2 wen2 ju4 li2 pin3 dian4
+SSB16860166|SSB1686|{d an4 zh ong1 g uo2 d uei4 r eng2 r an2 y i3 sp y ve1 sp q i1 sh iii2 m i3 d e5 y iou1 sh iii4 sp l v4 sp x ian1 sp j in4 r u4 n iao3 ch ao2}|dan4 zhong1 guo2 dui4 reng2 ran2 yi3 yue1 qi1 shi2 mi3 de5 you1 shi4 lv4 xian1 jin4 ru4 niao3 chao2
+SSB18310190|SSB1831|{z ii4 j i3 z ai4 z uei4 h ou4 l iang3 t iao4 sp f ei1 ch ang2 j in3 zh ang1}|zi4 ji3 zai4 zui4 hou4 liang3 tiao4 fei1 chang2 jin3 zhang1
+SSB00800293|SSB0080|{e2 rr j i1 y v2 d a4 sh u4 y van2 z e2 d e5 sh ang1 y ie4 b ao2 x ian3 d e5 f eng1 x ian3 ch eng2 d an1 j i1 zh iii4}|er2 ji1 yu2 da4 shu4 yuan2 ze2 de5 shang1 ye4 bao2 xian3 de5 feng1 xian3 cheng2 dan1 ji1 zhi4
+SSB00110280|SSB0011|{zh ong4 l ian2 k uai4 j i4 sh iii1 sh iii4 w u4 s uo3 y iou3 x ian4 g ong1 s ii1 zh u4 h e2 d ang4 c uen1 sp w uei3 y van2 sp c ai2 w u4 sp g uan2 l i3 f u2 w u4 zh an4}|zhong4 lian2 kuai4 ji4 shi1 shi4 wu4 suo3 you3 xian4 gong1 si1 zhu4 he2 dang4 cun1 wei3 yuan2 cai2 wu4 guan2 li3 fu2 wu4 zhan4
+SSB12160175|SSB1216|{d i2 r en2 m ei2 h ua1 c uei1 h uei3 zh iii1 l i4}|di2 ren2 mei2 hua1 cui1 hui3 zhi1 li4
+SSB18460218|SSB1846|{s a4 m u3 w uo4 x in1 d uen4 ch u1 y ian3 d e5 d ian4 y ing3 y iou2 sh en3 m e5}|sa4 mu3 wo4 xin1 dun4 chu1 yan3 de5 dian4 ying3 you2 shen3 me5
+SSB04070412|SSB0407|{z ai4 zh e4 l iang3 g e4 l ing3 y v4 sp zh ong1 sp g ong1 s ii1 d e5 sh iii4 ch ang3 zh an4 y iou3 l v4 z uei4 g ao1}|zai4 zhe4 liang3 ge4 ling3 yu4 zhong1 gong1 si1 de5 shi4 chang3 zhan4 you3 lv4 zui4 gao1
+SSB07580200|SSB0758|{sh ang1 y ie4 g uei1 m o2 d e5 d a4 f ang1 x iang4 s ii4 h u1 c ong2 w uei4 g ai3 b ian4}|shang1 ye4 gui1 mo2 de5 da4 fang1 xiang4 si4 hu1 cong2 wei4 gai3 bian4
+SSB17810158|SSB1781|{s ii4 l iou4 j iou3 s an1 sp l iou4 e4 rr e4 rr l ing2}|si4 liu4 jiu3 san1 liu4 er4 er4 ling2
+SSB01390339|SSB0139|{j iao1 n an2 d e5 x iang1 z en4 y iou2 s en3 m e5}|jiao1 nan2 de5 xiang1 zen4 you2 sen3 me5
+SSB14080071|SSB1408|{b u2 sp an4 zh ao4 m ei3 g uo2 sp t ong1 y iong4 k uai4 j i4 zh uen3 z e2}|bu2 an4 zhao4 mei3 guo2 tong1 yong4 kuai4 ji4 zhun3 ze2
+SSB15550380|SSB1555|{r ang4 p ing2 g uo3 zh e4 zh ong3 sp g e2 l ang3 t ai2 h ua1 d a4 q ian2 sh ou1 g ou4 zh e4 zh ong3 sh iii4}|rang4 ping2 guo3 zhe4 zhong3 ge2 lang3 tai2 hua1 da4 qian2 shou1 gou4 zhe4 zhong3 shi4
+SSB12160178|SSB1216|{w uo2 b a3 n a4 g e4 z uan4 sh iii2 n a2 d ao4 s an1 g e4 d i4 f ang1 q v4 j ian3 ch a2}|wo2 ba3 na4 ge4 zuan4 shi2 na2 dao4 san1 ge4 di4 fang1 qu4 jian3 cha2
+SSB13990365|SSB1399|{l uo4 y iang2 q ian1 n ian2 d i4 l ing2 l v3 z ao1 d ao4 m u4 z ei2 s ao1 r ao3 sp c uen1 m in2 z ii4 j ian4 sh ou3 m u4 d uei4}|luo4 yang2 qian1 nian2 di4 ling2 lv3 zao1 dao4 mu4 zei2 sao1 rao3 cun1 min2 zi4 jian4 shou3 mu4 dui4
+SSB02870206|SSB0287|{h ua4 t i2 s uei2 zh e5 h u4 l ian2 w uang3 x i2 j van3 q van2 q iou2}|hua4 ti2 sui2 zhe5 hu4 lian2 wang3 xi2 juan3 quan2 qiu2
+SSB07620499|SSB0762|{w uo3 zh iii1 d ao4 d a2 x i1 h e2 w uo3 y i2 y iang4 q in1 p ei4 n i3}|wo3 zhi1 dao4 da2 xi1 he2 wo3 yi2 yang4 qin1 pei4 ni3
+SSB03940177|SSB0394|{w u3 an1 d e5 d i4 m ing2 y iou3 sh en2 m e5}|wu3 an1 de5 di4 ming2 you3 shen2 me5
+SSB03410165|SSB0341|{d ang1 sh iii2 m en2 w uai4 t ing2 l e5 y i2 l iang4 sp b ai2 s e4 sp y ve4 y ie3 sp ch e1}|dang1 shi2 men2 wai4 ting2 le5 yi2 liang4 bai2 se4 yue4 ye3 che1
+SSB12530137|SSB1253|{x iao1 sh ou4 h uei4 x vn4 s u4 h uei2 sh en1}|xiao1 shou4 hui4 xun4 su4 hui2 shen1
+SSB07230451|SSB0723|{y ve4 x ia4 q i2 sh iii4}|yue4 xia4 qi2 shi4
+SSB18780260|SSB1878|{t a1 y iong4 g uen4 z ii5 d a3 d e2 g uo2 b ing1}|ta1 yong4 gun4 zi5 da3 de2 guo2 bing1
+SSB05350098|SSB0535|{zh eng3 g e4 sh eng1 t ai4 x i4 t ong3 d uei1 y v2 sp c uen2 ch u3 d ou1 y iou2 h en3 d a4 d e5 y iao1 q iou2}|zheng3 ge4 sheng1 tai4 xi4 tong3 dui1 yu2 cun2 chu3 dou1 you2 hen3 da4 de5 yao1 qiu2
+SSB12030438|SSB1203|{k ai1 zh an3 sp zh eng4 q van4 ch eng2 x iao1 sp zh eng4 q van4 sp j ing1 j i4 sp zh eng4 q van4 sh iii4 ch ang3 y ian2 j iou1 d eng3 y ie4 w u4}|kai1 zhan3 zheng4 quan4 cheng2 xiao1 zheng4 quan4 jing1 ji4 zheng4 quan4 shi4 chang3 yan2 jiu1 deng3 ye4 wu4
+SSB10960320|SSB1096|{b u4 f ang2 j iao1 g ei1 zh iii4 y van4 zh e3 b ang1 m ang2 ch u4 l i3}|bu4 fang2 jiao1 gei1 zhi4 yuan4 zhe3 bang1 mang2 chu4 li3
+SSB03790499|SSB0379|{m o4 w uen2 w uei4 d e5 d ian4 y ing3 y iou2 sh en3 m e5}|mo4 wen2 wei4 de5 dian4 ying3 you2 shen3 me5
+SSB07480251|SSB0748|{s uei2 b ian4 t ing1 t ing5 w uang2 r ong2 d e5 g e1}|sui2 bian4 ting1 ting5 wang2 rong2 de5 ge1
+SSB07230308|SSB0723|{h ong2 x ing1 m ing2 y ian1 m ing2 j iou3}|hong2 xing1 ming2 yan1 ming2 jiu3
+SSB07460392|SSB0746|{t a1 d e2 d ao4 zh iii1 y van3}|ta1 de2 dao4 zhi1 yuan3
+SSB09190147|SSB0919|{s ii3 p i2 l ai4 l ian3}|si3 pi2 lai4 lian3
+SSB18720334|SSB1872|{k ua4 j ing4 d ai4 k uan3 w u2 y i2 sh iii4 b ei4 sh ou4 g uan1 zh u4 d e5 y i2 x iang4}|kua4 jing4 dai4 kuan3 wu2 yi2 shi4 bei4 shou4 guan1 zhu4 de5 yi2 xiang4
+SSB12390440|SSB1239|{t ong2 b i3 z eng1 s u4 d a2 s ii4 b ai3}|tong2 bi3 zeng1 su4 da2 si4 bai3
+SSB07780285|SSB0778|{r en2 sp m en5 f en1 f en1 y iong3 d ao4 t a1 m en5 sh ou3 x ia4 x vn2 q iou2 b ao3 h u4}|ren2 men5 fen1 fen1 yong3 dao4 ta1 men5 shou3 xia4 xun2 qiu2 bao3 hu4
+SSB04350012|SSB0435|{t a1 zh en1 sh iii4 y i4 t uan2 z ao1}|ta1 zhen1 shi4 yi4 tuan2 zao1
+SSB12530344|SSB1253|{f ang2 d i4 ch ang3 sh iii4 ch ang3 ch eng2 j iao1 zh uang4 k uang4 y iou2 s uo3 h ao2 zh uan3}|fang2 di4 chang3 shi4 chang3 cheng2 jiao1 zhuang4 kuang4 you2 suo3 hao2 zhuan3
+SSB11250479|SSB1125|{j in4 y i2 b u4 j ia1 q iang2 zh ai4 j van4 sh iii4 ch ang3 d uei4 l v3 y iou2 sp q i3 y ie4 d e5 zh iii1 ch iii2 l i4 d u4}|jin4 yi2 bu4 jia1 qiang2 zhai4 juan4 shi4 chang3 dui4 lv3 you2 qi3 ye4 de5 zhi1 chi2 li4 du4
+SSB09350129|SSB0935|{w uo3 b u2 h uei4}|wo3 bu2 hui4
+SSB11970300|SSB1197|{d ong1 w uan3 sh e4 h uang2 t ai4 z ii2 j iou3 d ian4 sp b ei4 ch e4 w u3 x ing1 j i2}|dong1 wan3 she4 huang2 tai4 zi2 jiu3 dian4 bei4 che4 wu3 xing1 ji2
+SSB00380105|SSB0038|{y iou3 x ie1 sh iii2 h ou4 y ie3 ch eng1 h u5 w uei2}|you3 xie1 shi2 hou4 ye3 cheng1 hu5 wei2
+SSB05940263|SSB0594|{d uo1 c ii4 g an3 x ie4 zh ong1 g uo2 g uan1 zh ong4 d e5 r e4 q ing2}|duo1 ci4 gan3 xie4 zhong1 guo2 guan1 zhong4 de5 re4 qing2
+SSB18370052|SSB1837|{t a1 s uo3 z ai4 d e5 l ing2 j iang3 zh u4 l i3 b u4 sp g uo2 q i2 z u3 zh iii1 j v4 l i2 sp s ai4 ch ang2 zh iii2 y iou2 b ai2 m i3 zh iii1 y iao2}|ta1 suo3 zai4 de5 ling2 jiang3 zhu4 li3 bu4 guo2 qi2 zu3 zhi1 ju4 li2 sai4 chang2 zhi2 you2 bai2 mi3 zhi1 yao2
+SSB02990236|SSB0299|{b u3 f eng1 l ian2 h ua1 sp y iang2 g ao1 zh ong1 l u4 d ian4}|bu3 feng1 lian2 hua1 yang2 gao1 zhong1 lu4 dian4
+SSB07490009|SSB0749|{w uei4 q ing1 d ao2 d uan3 d ao4 s u4 sp h ua2 sp zh u4 r u4 l e5 h uo2 l i4}|wei4 qing1 dao2 duan3 dao4 su4 hua2 zhu4 ru4 le5 huo2 li4
+SSB02410430|SSB0241|{j ian3 q ing1 n ong2 m in2 f u4 d an1 g ong1 z uo4 d e5 y i4 j ian5}|jian3 qing1 nong2 min2 fu4 dan1 gong1 zuo4 de5 yi4 jian5
+SSB13200043|SSB1320|{sh iii4 sp sh en1 zh en4 sp zh eng4 j ian2 j v2 d e5 sp j ing1 x in1 b u4 sh u3}|shi4 shen1 zhen4 zheng4 jian2 ju2 de5 jing1 xin1 bu4 shu3
+SSB11970353|SSB1197|{k e2 y iou3 x ie1 r en2 j ve2 d e5 sp x ian2 l i3 l uen4 h en3 n an2}|ke2 you3 xie1 ren2 jue2 de5 xian2 li3 lun4 hen3 nan2
+SSB08510069|SSB0851|{t a1 b u2 h uei4 y in1 w uo3 m en5 y iou3 l e5 r en2 ai4 zh iii1 x in1}|ta1 bu2 hui4 yin1 wo3 men5 you3 le5 ren2 ai4 zhi1 xin1
+SSB03150329|SSB0315|{e2 rr y iao4 w uen4 t ai4 q van3 l ing2 h uo2 d e5 b u4 f a2 r u2 h e2 e4 rr l ai2}|er2 yao4 wen4 tai4 quan3 ling2 huo2 de5 bu4 fa2 ru2 he2 er4 lai2
+SSB02000313|SSB0200|{b ao3 j ian1 h uei4 h ai2 d uei4 x ian2 q i3 t ou2 z ii1 n eng2 l i4 j ian4 sh e4 j in4 x ing2 l e5 y iou1 h ua4 h e2 t iao2 zh eng3}|bao3 jian1 hui4 hai2 dui4 xian2 qi3 tou2 zi1 neng2 li4 jian4 she4 jin4 xing2 le5 you1 hua4 he2 tiao2 zheng3
+SSB10560272|SSB1056|{s a1 h e2 d a4 q iao2}|sa1 he2 da4 qiao2
+SSB12530418|SSB1253|{q i2 d uei4 l ou2 sh iii4 d e5 y ing2 x iang3 sp b ing4 w uei4 x ian3 x ian4}|qi2 dui4 lou2 shi4 de5 ying2 xiang3 bing4 wei4 xian3 xian4
+SSB15630187|SSB1563|{zh ang3 f u2 w uei2 b ai3 f en1 zh iii1 y i1 d ian3 s ii4 s ii4 sp z ai4 g ong1 b u4 l e5 c ai2 b ao4 zh iii1 h ou4 d e5 p an2 h ou4 j iao1 y i4 q i1 j ian1}|zhang3 fu2 wei2 bai3 fen1 zhi1 yi1 dian3 si4 si4 zai4 gong1 bu4 le5 cai2 bao4 zhi1 hou4 de5 pan2 hou4 jiao1 yi4 qi1 jian1
+SSB15550066|SSB1555|{g uang2 ch ang2 sp w u3 d a4 m a1 d e5 sh a1 sh ang1 l i4}|guang2 chang2 wu3 da4 ma1 de5 sha1 shang1 li4
+SSB16990132|SSB1699|{sh iii2 x ian4 y i2 g e4 y ing1 y iong4 y i2 c ii4 k ai1 f a1}|shi2 xian4 yi2 ge4 ying1 yong4 yi2 ci4 kai1 fa1
+SSB07600313|SSB0760|{m u4 m a3 r en2}|mu4 ma3 ren2
+SSB11000462|SSB1100|{y ing1 ch ao1 j v4 l e4 b u4 y iou3 sh en2 m e5}|ying1 chao1 ju4 le4 bu4 you3 shen2 me5
+SSB06860262|SSB0686|{zh e4 l iang4 ch e1 y iou3 d ian4 y van2 z u3}|zhe4 liang4 che1 you3 dian4 yuan2 zu3
+SSB05020306|SSB0502|{zh u4 y van4 g uan1 ch a2 zh iii4 l iao2 s ii4 y i1 r en2}|zhu4 yuan4 guan1 cha2 zhi4 liao2 si4 yi1 ren2
+SSB01930496|SSB0193|{e2 rr t i1 ch u2 k e3 sh ou4 x ing2 sp b ao3 zh ang4 x ing4 zh u4 f ang2 h ou4}|er2 ti1 chu2 ke3 shou4 xing2 bao3 zhang4 xing4 zhu4 fang2 hou4
+SSB03750208|SSB0375|{k e1 l in2 s ii4 h u1 x iang3 d ang1 r an2 d e5 r en4 w uei2 k e1 l in2 y ing1 g ai1 y i3 sp d ai4 b iao3 d e5 sh en1 f en5 f a1 y ian2}|ke1 lin2 si4 hu1 xiang3 dang1 ran2 de5 ren4 wei2 ke1 lin2 ying1 gai1 yi3 dai4 biao3 de5 shen1 fen5 fa1 yan2
+SSB01330376|SSB0133|{e4 rr l ing2 y i1 e4 rr c u4 x iao1 f ei4 sp zh eng4 c e4}|er4 ling2 yi1 er4 cu4 xiao1 fei4 zheng4 ce4
+SSB00120051|SSB0012|{y i2 ch ang1 sh iii4 l a1 j i1 t ong3 d e5 sh e4 zh iii4}|yi2 chang1 shi4 la1 ji1 tong3 de5 she4 zhi4
+SSB05880222|SSB0588|{zh iii1 h ou4 sh eng1 ch eng1 g ai2 x ie3 j v4 b en3}|zhi1 hou4 sheng1 cheng1 gai2 xie3 ju4 ben3
+SSB16990173|SSB1699|{y i4 d i4 k e2 y i3 g ong1 j i1 j in1 d ai4 k uan2 m ai3 f ang2 m a5}|yi4 di4 ke2 yi3 gong1 ji1 jin1 dai4 kuan2 mai3 fang2 ma5
+SSB11310076|SSB1131|{p ing2 sh iii2 d e5 j i1 l ei3}|ping2 shi2 de5 ji1 lei3
+SSB14520273|SSB1452|{zh e4 j iang1 t e4 d a4 w uang3 l uo4 sp zh ao1 p iao2 an4 sh iii1 z u2 n v3 sp y ve4 r u4 j iou3 w uan4 sp l ao2 b an3 r eng2 x ian2 sp zh uan4 sh ao3 sp q ian2 sh ao3}|zhe4 jiang1 te4 da4 wang3 luo4 zhao1 piao2 an4 shi1 zu2 nv3 yue4 ru4 jiu3 wan4 lao2 ban3 reng2 xian2 zhuan4 shao3 qian2 shao3
+SSB10720498|SSB1072|{s uo2 y i2 w uo3 m en5 n eng2 h en3 q ing1 s ong1 d e5 w uei4 sh iii4 j ie4}|suo2 yi2 wo3 men5 neng2 hen3 qing1 song1 de5 wei4 shi4 jie4
+SSB11310147|SSB1131|{w uo3 g ei2 n i3 ch u1 g e4 zh u3 y i4}|wo3 gei2 ni3 chu1 ge4 zhu3 yi4
+SSB13200053|SSB1320|{h ai2 d ao3 zh iii1 l ian4}|hai2 dao3 zhi1 lian4
+SSB07200440|SSB0720|{l ang2 p ing2 y ie3 n a2 x ia4 z ii4 j i3 z uo4 w uei2 zh u3 j iao4 l ian4 s uo3 h uo4 d e2 d e5 d i4 y i1 g e4 sp sh iii4 j ie4 g uan4 j vn1}|lang2 ping2 ye3 na2 xia4 zi4 ji3 zuo4 wei2 zhu3 jiao4 lian4 suo3 huo4 de2 de5 di4 yi1 ge4 shi4 jie4 guan4 jun1
+SSB09130269|SSB0913|{k u3 k a1 f ei1}|ku3 ka1 fei1
+SSB03820263|SSB0382|{m ei2 y iou2 b i3 f ang2 z ii5 g eng4 h ao3 d e5 t ou2 z ii1 p in3}|mei2 you2 bi3 fang2 zi5 geng4 hao3 de5 tou2 zi1 pin3
+SSB11610067|SSB1161|{j iang1 s u1 d e5 sh iii3 j ing4 l in2 sp d a3 p o4 l e5 zh ong1 g uo2 j in4 n ian2 z ai4 sp n v3 w ua1 x iang4 m u4 sh ang4 d e5 sp ch en2 j i4}|jiang1 su1 de5 shi3 jing4 lin2 da3 po4 le5 zhong1 guo2 jin4 nian2 zai4 nv3 wa1 xiang4 mu4 shang4 de5 chen2 ji4
+SSB04070392|SSB0407|{sh ou3 x iang4 b iao3 sh iii4 t a1 m i3 z ai4 j ie2 l i4 x iang4 sp t ang1 m i3 d e5 r en2 m in2 x van1 ch uan2 h e2 p ing2 sp h e2 k uan1 r ong2}|shou3 xiang4 biao3 shi4 ta1 mi3 zai4 jie2 li4 xiang4 tang1 mi3 de5 ren2 min2 xuan1 chuan2 he2 ping2 he2 kuan1 rong2
+SSB02410154|SSB0241|{n ong2 c uen1 g an1 q vn2 sp g uan1 x i4 sp m ing2 x ian2 g ai3 sh an4}|nong2 cun1 gan1 qun2 guan1 xi4 ming2 xian2 gai3 shan4
+SSB06660232|SSB0666|{ch uan1 zh e5 n i3 m en5 d ian4 l i3 d e5 ch en4 sh an1 h e2 n iou2 z ai3 k u4}|chuan1 zhe5 ni3 men5 dian4 li3 de5 chen4 shan1 he2 niu2 zai3 ku4
+SSB04820232|SSB0482|{y iou3 x ie1 x iao3 w u4 j ie3 j iou4 h ao3 x iang4 zh ang3 l e5 j iao3 sp h uei4 p ao3 d iao4 y i2 y iang4}|you3 xie1 xiao3 wu4 jie3 jiu4 hao3 xiang4 zhang3 le5 jiao3 hui4 pao3 diao4 yi2 yang4
+SSB05440329|SSB0544|{y iou3 x iao4 h ua4 j ie3 d ang1 q ian2 f ang2 d i4 ch an3 sp j in1 r ong2 f eng1 x ian3}|you3 xiao4 hua4 jie3 dang1 qian2 fang2 di4 chan3 jin1 rong2 feng1 xian3
+SSB03070250|SSB0307|{l ao3 d a4}|lao3 da4
+SSB08710257|SSB0871|{q i1 b ai3 q i1 sh iii2 w u3 w uan4 sp y i1 q ian1 s ii4 b ai3 sp l iou4 sh iii2 s ii4}|qi1 bai3 qi1 shi2 wu3 wan4 yi1 qian1 si4 bai3 liu4 shi2 si4
+SSB11970483|SSB1197|{e4 rr b ai3 y i1 sh iii2 e4 rr d ian3 l ing2 e4 rr}|er4 bai3 yi1 shi2 er4 dian3 ling2 er4
+SSB02990062|SSB0299|{t a1 d e5 x in1 sh uei3 b i3 q i4 q van2 g uo2 p ing2 j vn1 sh uei3 p ing2 g ao1 d e5 sp h en3 d uo1}|ta1 de5 xin1 shui3 bi3 qi4 quan2 guo2 ping2 jun1 shui3 ping2 gao1 de5 hen3 duo1
+SSB01930090|SSB0193|{d an4 sh iii4 r u2 g uo3 t ang1 m i3 m en5 sp b u4 k an3 x ia4 t ang1 m i3 d e5 t ou2}|dan4 shi4 ru2 guo3 tang1 mi3 men5 bu4 kan3 xia4 tang1 mi3 de5 tou2
+SSB00050014|SSB0005|{j iang1 y v2 sh iii2 y i1 y ve4 e4 rr sh iii2 y i1 r iii4 sp z ao3 q i1 d ian3 z ai4 d ong1 f ang1 m ing2 zh u1 t a3 x ia4 p ao1 q i4}|jiang1 yu2 shi2 yi1 yue4 er4 shi2 yi1 ri4 zao3 qi1 dian3 zai4 dong1 fang1 ming2 zhu1 ta3 xia4 pao1 qi4
+SSB14570172|SSB1457|{j i2 l ian2 sh eng3 sh e4 k e1 y van4 f u4 y van4 zh ang3 h uang2 w uen2 y i4 y ian2 j iou1 f a1 x ian4}|ji2 lian2 sheng3 she4 ke1 yuan4 fu4 yuan4 zhang3 huang2 wen2 yi4 yan2 jiu1 fa1 xian4
+SSB03390327|SSB0339|{j iou2 b ai2 j iou3 sh iii2 y i1 w uan4 b a1 q ian1 b a1 b ai3 b a1 sh iii2 j iou2 d ian3 e4 rr s an1}|jiu2 bai2 jiu3 shi2 yi1 wan4 ba1 qian1 ba1 bai3 ba1 shi2 jiu2 dian3 er4 san1
+SSB13850470|SSB1385|{w uo2 x iang3 t ing1 sp ai4 j iang1 sh an1 g eng4 ai4 m ei3 r en2}|wo2 xiang3 ting1 ai4 jiang1 shan1 geng4 ai4 mei3 ren2
+SSB00800437|SSB0080|{w uo2 x iang3 t ing1 sp l iou2 n ian2}|wo2 xiang3 ting1 liu2 nian2
+SSB11760290|SSB1176|{j i1 ch u3 sh e4 sh iii1 zh ai4 q van2 t ou2 z ii1 j i4 h ua4 w uei2 s an1 q ian1 y i4 y van2}|ji1 chu3 she4 shi1 zhai4 quan2 tou2 zi1 ji4 hua4 wei2 san1 qian1 yi4 yuan2
+SSB12190039|SSB1219|{j in1 t ian1 j iou4 r ang4 w uo3 m en5 zh ang3 g uan3 f u4 h uo2 j ie2 g ong1 ch ang3 b a5}|jin1 tian1 jiu4 rang4 wo3 men5 zhang3 guan3 fu4 huo2 jie2 gong1 chang3 ba5
+SSB18910059|SSB1891|{w uo3 z ii4 j i3 b ing4 b u2 j ie4 y i4 y v3 b u2 ai4 d e5 r en2 j ie2 h uen1}|wo3 zi4 ji3 bing4 bu2 jie4 yi4 yu3 bu2 ai4 de5 ren2 jie2 hun1
+SSB13850006|SSB1385|{b u4 g uan3 z ai4 b o2 h an4 n an2 sp z ai4 b u2 z ai4 t a1 d ou1 h uei4}|bu4 guan3 zai4 bo2 han4 nan2 zai4 bu2 zai4 ta1 dou1 hui4
+SSB06070270|SSB0607|{l i4 sh iii3 l ei4 x ing2 d ian4 sh iii4 j v4 y iou2 sh en3 m e5}|li4 shi3 lei4 xing2 dian4 shi4 ju4 you2 shen3 me5
+SSB09970312|SSB0997|{x in1 j iang1 w uei2 w u2 e3 rr z ii4 zh iii4 q v1 d e5 x ve2 x iao4 y iou3 sh en2 m e5}|xin1 jiang1 wei2 wu2 er3 zi4 zhi4 qu1 de5 xue2 xiao4 you3 shen2 me5
+SSB12150370|SSB1215|{n a4 sh iii4 sh ei2 z ai4 l uan4 g ao2 w uo3 d e5 d ong1 x i5}|na4 shi4 shei2 zai4 luan4 gao2 wo3 de5 dong1 xi5
+SSB05780416|SSB0578|{y ing2 k ou3 d e5 l ou2 p an2 sp y iou3 sh en2 m e5}|ying2 kou3 de5 lou2 pan2 you3 shen2 me5
+SSB03540236|SSB0354|{w uang2 x ve2 b ing1 ch u1 y ian3 d e5 d ian4 y ing3 sp y iou3 sh en2 m e5}|wang2 xue2 bing1 chu1 yan3 de5 dian4 ying3 you3 shen2 me5
+SSB13410263|SSB1341|{n a4 m e5 n ei4 d i4 f ang2 q i1 s uo3 f a1 x ing2 d e5 m ei3 y van2 zh ai4 ch eng2 b en2 sp y ie3 h uei4 sh ang4 zh ang3}|na4 me5 nei4 di4 fang2 qi1 suo3 fa1 xing2 de5 mei3 yuan2 zhai4 cheng2 ben2 ye3 hui4 shang4 zhang3
+SSB19560038|SSB1956|{b i3 r u2 sh uo1 sp b ei3 j ing1 d i4 q v1 sh ang4 h ai3 d i4 q v1}|bi3 ru2 shuo1 bei3 jing1 di4 qu1 shang4 hai3 di4 qu1
+SSB00090474|SSB0009|{r en4 ch eng2 q v1 j ie1 d ao4 y iou3 sh en2 m e5}|ren4 cheng2 qu1 jie1 dao4 you3 shen2 me5
+SSB10720210|SSB1072|{l iang3 r en2 w uei2 zh e5 j in3 h ua2 y i4 q v1 zh ou1 b ian1 zh ao3 l e5 j i3 q van1 q ve4 z ai4 m ei2 zh ao3 d ao4 n a4 m ing2 n an2 z ii3}|liang3 ren2 wei2 zhe5 jin3 hua2 yi4 qu1 zhou1 bian1 zhao3 le5 ji3 quan1 que4 zai4 mei2 zhao3 dao4 na4 ming2 nan2 zi3
+SSB13930330|SSB1393|{l eng3 c ang2 w uen1 d u4 sh e4 d ing4 l iang3 sh e4 sh iii4 d u4 d ang4}|leng3 cang2 wen1 du4 she4 ding4 liang3 she4 shi4 du4 dang4
+SSB13930493|SSB1393|{l ai2 y i4 sh ou3 b an1 d e2 n i2 an1 n i1 d e5 sp x ian1 j ing4}|lai2 yi4 shou3 ban1 de2 ni2 an1 ni1 de5 xian1 jing4
+SSB16860216|SSB1686|{t ai2 z ii1 ch iii2 sp g u2 b i3 l i4 z uei4 g ao1 k e3 d a2 b ai3 f en1 zh iii1 y i1}|tai2 zi1 chi2 gu2 bi3 li4 zui4 gao1 ke3 da2 bai3 fen1 zhi1 yi1
+SSB10960464|SSB1096|{n i3 g uo4 l ai5 b ang1 w uo3 m a5}|ni3 guo4 lai5 bang1 wo3 ma5
+SSB07170147|SSB0717|{s uo2 y i2 w uo3 d e2 sp z ii4 j i3 s ong4 h ai2 z ii5 sh ang4 x ia4 x ve2}|suo2 yi2 wo3 de2 zi4 ji3 song4 hai2 zi5 shang4 xia4 xue2
+SSB14480420|SSB1448|{k e3 y i2 h an4 d e5 sh iii4 sp q ve4 p ian1 p ian1 y iou4 sh a1 ch u1 l e5 y i2 g e4 j iao4 sp k an1 l ong2 d e5 d uei4 sh ou3}|ke3 yi2 han4 de5 shi4 que4 pian1 pian1 you4 sha1 chu1 le5 yi2 ge4 jiao4 kan1 long2 de5 dui4 shou3
+SSB04820180|SSB0482|{t a1 z ai4 zh iii1 q ian2 d e5 g ong1 z uo4 zh ong1 h en2 l eng3 j ing4 y iou3 p o4 l i4}|ta1 zai4 zhi1 qian2 de5 gong1 zuo4 zhong1 hen2 leng3 jing4 you3 po4 li4
+SSB15930499|SSB1593|{y ing3 p ian4 z ai4 j ing1 l i4 l e5 y i2 x i4 l ie4 d e5 zh en4 r ong2 zh en4 d ang4 zh iii1 h ou4}|ying3 pian4 zai4 jing1 li4 le5 yi2 xi4 lie4 de5 zhen4 rong2 zhen4 dang4 zhi1 hou4
+SSB12390265|SSB1239|{y iao4 c ong2 g en1 b en3 sh ang4 zh uan3 b ian4 g uan1 n ian4}|yao4 cong2 gen1 ben3 shang4 zhuan3 bian4 guan1 nian4
+SSB11250272|SSB1125|{f ang4 y i4 sh ou3 g e1 zh ou1 ch uan2 x iong2 d e5 g e1}|fang4 yi4 shou3 ge1 zhou1 chuan2 xiong2 de5 ge1
+SSB12390134|SSB1239|{zh eng2 t i3 k an4 sh ang4 b an4 n ian2 sh iii4 j ia1 zh uang1 h ang2 y ie4 d e5 sp w uang4 j i4}|zheng2 ti3 kan4 shang4 ban4 nian2 shi4 jia1 zhuang1 hang2 ye4 de5 wang4 ji4
+SSB02670350|SSB0267|{b u4 f en4 zh eng4 sh iii4 y iou2 g u3 sh iii4 zh uan3 r u4 l ou2 sh iii4 d e5 m ai3 j ia1}|bu4 fen4 zheng4 shi4 you2 gu3 shi4 zhuan3 ru4 lou2 shi4 de5 mai3 jia1
+SSB07000141|SSB0700|{zh e4 g e5 f u3 g ai4 l v4 l i2 sp y v4 x iang3 sp d e5 sp t ai4 y iao2 y van3}|zhe4 ge5 fu3 gai4 lv4 li2 yu4 xiang3 de5 tai4 yao2 yuan3
+SSB13650327|SSB1365|{s ii1 s ii1 j iang1 k u1 n ao4 d e5 h ai2 z ii5 b ao4 q i3}|si1 si1 jiang1 ku1 nao4 de5 hai2 zi5 bao4 qi3
+SSB05340024|SSB0534|{m o4 y ian2 d e5 d ian4 sh iii4 j v4 sp y iou3 sh en2 m e5}|mo4 yan2 de5 dian4 shi4 ju4 you3 shen2 me5
+SSB05940238|SSB0594|{sh iii4 sh iii4 y iao4 l iou2 y van4 sp g uan1 ch a2}|shi4 shi4 yao4 liu2 yuan4 guan1 cha2
+SSB11250477|SSB1125|{zh ong1 w uen2 d e5 y iou2 x i4 y iou3 sh en2 m e5}|zhong1 wen2 de5 you2 xi4 you3 shen2 me5
+SSB07510404|SSB0751|{y i3 s an1 b i3 y i1 d e5 z ong2 b i3 f en1 zh an4 sh eng4 d uei4 sh ou3}|yi3 san1 bi3 yi1 de5 zong2 bi3 fen1 zhan4 sheng4 dui4 shou3
+SSB01330122|SSB0133|{w uo3 g uo2 f ang2 d i4 ch an3 sh iii4 ch ang3 j in4 r u4 sh en1 d u4 t iao2 zh en3 sh iii2 q i1}|wo3 guo2 fang2 di4 chan3 shi4 chang3 jin4 ru4 shen1 du4 tiao2 zhen3 shi2 qi1
+SSB00730075|SSB0073|{z ai4 zh e4 c ii4 b ei3 j ing1 sh iii4 j in3 s ai4 j v3 x ing2 q i1 j ian1}|zai4 zhe4 ci4 bei3 jing1 shi4 jin3 sai4 ju3 xing2 qi1 jian1
+SSB00160419|SSB0016|{n i2 z en3 m e5 n eng2 r ang4 zh e4 zh ong3 q ing2 k uang4 ch u1 x ian4}|ni2 zen3 me5 neng2 rang4 zhe4 zhong3 qing2 kuang4 chu1 xian4
+SSB00110107|SSB0011|{ch ang2 h e2 ch ong2 z u3 sp h ou4 ch iii2 x v4 j ia1 m a3 ou1 zh ou1}|chang2 he2 chong2 zu3 hou4 chi2 xu4 jia1 ma3 ou1 zhou1
+SSB16070066|SSB1607|{zh ong1 g uo2 y i1 sh eng1 j iang1 c an1 y v3 sh iii2 sh iii1 r en2 l ei4 sh ou3 l ie4 sp h uan4 t ou2 sh u4}|zhong1 guo2 yi1 sheng1 jiang1 can1 yu3 shi2 shi1 ren2 lei4 shou3 lie4 huan4 tou2 shu4
+SSB01390263|SSB0139|{n i3 zh en1 j ve2 d e5 y iou2 n i2 s ii1 k e2 y i3 x iang4 z eng4 c ang2 r en2 n a4 y iang4 h e1 j iou3}|ni3 zhen1 jue2 de5 you2 ni2 si1 ke2 yi3 xiang4 zeng4 cang2 ren2 na4 yang4 he1 jiu3
+SSB07480293|SSB0748|{w uei4 l e5 t u1 x ian3 h ei1 s e4 d e5 sh ou3 h uan2}|wei4 le5 tu1 xian3 hei1 se4 de5 shou3 huan2
+SSB02000104|SSB0200|{w uan3 h uei2 x iao1 f ei4 zh e3 d e5 x in4 r en4 h e2 x in4 x in1}|wan3 hui2 xiao1 fei4 zhe3 de5 xin4 ren4 he2 xin4 xin1
+SSB15550059|SSB1555|{ai2 j ing3 y iong4 d e5 zh u3 y iao4 y iong4 y v2 x ing2 zh en1 x iao1 f ang2 d eng3}|ai2 jing3 yong4 de5 zhu3 yao4 yong4 yu2 xing2 zhen1 xiao1 fang2 deng3
+SSB17110474|SSB1711|{t ong1 g uo4 g e4 sh iii4 k e3 ch uan1 d ai4 sh e4 b ei4}|tong1 guo4 ge4 shi4 ke3 chuan1 dai4 she4 bei4
+SSB07200180|SSB0720|{j ia4 zh iii2 s an1 sh iii2 l iou4 w uan4 sp z uan4 j ie4 sh ou3 sh iii4 sp k uai4 d i4 b ao1 sh iii1 q ie4 k uai4 d i4 g ong1 s ii1 n ei4 g uei3 z uo4 an4}|jia4 zhi2 san1 shi2 liu4 wan4 zuan4 jie4 shou3 shi4 kuai4 di4 bao1 shi1 qie4 kuai4 di4 gong1 si1 nei4 gui3 zuo4 an4
+SSB15930196|SSB1593|{w u1 l u3 m u4 q i2 d e5 q i3 y ie4 y iou3 sh en2 m e5}|wu1 lu3 mu4 qi2 de5 qi3 ye4 you3 shen2 me5
+SSB18320102|SSB1832|{b ao2 m u3 b ei4 zh iii3 sp t ou2 d u2 zh iii4 y iou4 e2 rr s ii3 w uang2 sp h an3 y van1 sp y i1 s an1 n ian2 sp j in1 r iii4 sp k ai1 t ing2 z ai4 sh en3}|bao2 mu3 bei4 zhi3 tou2 du2 zhi4 you4 er2 si3 wang2 han3 yuan1 yi1 san1 nian2 jin1 ri4 kai1 ting2 zai4 shen3
+SSB09930286|SSB0993|{y i4 f u3 l an4 d e5 sh iii2 w u4 y iao4 j in4 k uai4 ch iii1 d iao4}|yi4 fu3 lan4 de5 shi2 wu4 yao4 jin4 kuai4 chi1 diao4
+SSB03790237|SSB0379|{y i1 s an1 j iou3 sp y i1 w u3 l iou4 sp y i1 b a1 y i1 sp l ing2 sp e4}|yi1 san1 jiu3 yi1 wu3 liu4 yi1 ba1 yi1 ling2 e4
+SSB03380474|SSB0338|{b u2 g uo4 b i2 q i2 y i3 q ian2 n a4 sp k e3 sh iii4 sh ao3 sp d uo1 l e5}|bu2 guo4 bi2 qi2 yi3 qian2 na4 ke3 shi4 shao3 duo1 le5
+SSB03160338|SSB0316|{y ing1 d ang1 an4 zh ao4 d ao4 l u4 j iao1 t ong1 an1 q van2 f a3 sp d i4 q i1 sh iii2 l iou4 t iao2 d e5 g uei1 d ing4}|ying1 dang1 an4 zhao4 dao4 lu4 jiao1 tong1 an1 quan2 fa3 di4 qi1 shi2 liu4 tiao2 de5 gui1 ding4
+SSB18720399|SSB1872|{b ei3 j ing1 ch en2 b ao4 j i4 zh e3 h e2 l ing2}|bei3 jing1 chen2 bao4 ji4 zhe3 he2 ling2
+SSB03420099|SSB0342|{ai4 d e5 ch iii4 b ang3 sh ou4 l e5 sh ang1}|ai4 de5 chi4 bang3 shou4 le5 shang1
+SSB11080479|SSB1108|{s ou1 h u2 y v2 l e4 x vn4 z ao3 q ian2 sh en1 x ian4 ch u1 g uei3 m en2 d e5 t ao2 zh e2}|sou1 hu2 yu2 le4 xun4 zao3 qian2 shen1 xian4 chu1 gui3 men2 de5 tao2 zhe2
+SSB07200460|SSB0720|{l ang2 p ing2 q in1 z ii4 zh u4 z ao4 l e5 zh ong1 g uo2 n v3 p ai2 d e5 l iang3 sp d u4 h uei1 h uang2}|lang2 ping2 qin1 zi4 zhu4 zao4 le5 zhong1 guo2 nv3 pai2 de5 liang3 du4 hui1 huang2
+SSB03540296|SSB0354|{n i3 z ai4 t a1 x iang1 h ai2 h ao3 m a5}|ni3 zai4 ta1 xiang1 hai2 hao3 ma5
+SSB07160467|SSB0716|{x iang1 y ian1 t ang2 p in2 x ian4 x iao4 y van2 zh ou1 b ian1 sh ang1 p u4}|xiang1 yan1 tang2 pin2 xian4 xiao4 yuan2 zhou1 bian1 shang1 pu4
+SSB09350007|SSB0935|{g uang3 zh ou1 l i4 sh iii3 w uen2 h ua4 m ing2 ch eng2 b ao3 h u4 t iao2 l i4 sp h uo4 b iao3 j ve2 t ong1 g uo4}|guang3 zhou1 li4 shi3 wen2 hua4 ming2 cheng2 bao3 hu4 tiao2 li4 huo4 biao3 jue2 tong1 guo4
+SSB01930323|SSB0193|{y ie3 j iou4 sh iii4 sh uo1 sp l ao2 b ai3 x ing4 y iou3 j in4 y i2 b an4 d e5 d a3 c u1 sp z u1 sp x v1 q iou2 d e2 b u2 d ao4 m ang3 z u2}|ye3 jiu4 shi4 shuo1 lao2 bai3 xing4 you3 jin4 yi2 ban4 de5 da3 cu1 zu1 xu1 qiu2 de2 bu2 dao4 mang3 zu2
+SSB00570413|SSB0057|{zh ao4 p eng2}|zhao4 peng2
+SSB15750301|SSB1575|{n i3 b u2 sh iii4 sh uo1 g uo4 y i3 j ing1 j ie4 w u2 sp k e3 j ie4 l e5 m a5}|ni3 bu2 shi4 shuo1 guo4 yi3 jing1 jie4 wu2 ke3 jie4 le5 ma5
+SSB06090226|SSB0609|{t ing1 n a4 j iou4 sp zh e4 y iang4 b a5}|ting1 na4 jiu4 zhe4 yang4 ba5
+SSB07940405|SSB0794|{sh iii4 zh u4 f ang2 b ao3 zh ang4 sp h e2 sp f ang2 w u1 g uan2 l i3 j v2 zh eng4 g en1 j v4 n ian2 d u4 g ong1 z uo4 m u4 b iao1}|shi4 zhu4 fang2 bao3 zhang4 he2 fang2 wu1 guan2 li3 ju2 zheng4 gen1 ju4 nian2 du4 gong1 zuo4 mu4 biao1
+SSB07170116|SSB0717|{j ian2 sh ao3 p o4 h uai4 x ing4 h ong2 sh uei3}|jian2 shao3 po4 huai4 xing4 hong2 shui3
+SSB04340119|SSB0434|{zh iii4 n eng2 sh ou2 b iao3 j iang1 h uei4 x iang4 j ian1 k ong4 zh ong1 x in1 f a1 ch u1 sp j ing3 g ao4 x in4 x i1}|zhi4 neng2 shou2 biao3 jiang1 hui4 xiang4 jian1 kong4 zhong1 xin1 fa1 chu1 jing3 gao4 xin4 xi1
+SSB13660002|SSB1366|{w u2 zh eng4 zh en1 j iou1 h uei4 s uo3 sp ch eng1 sp b ao1 zh iii4 b ai3 b ing4 sp b ei4 q v3 d i4 sp q v3 m ing2 sp x iao2 l i3 f ei1 zh en1}|wu2 zheng4 zhen1 jiu1 hui4 suo3 cheng1 bao1 zhi4 bai3 bing4 bei4 qu3 di4 qu3 ming2 xiao2 li3 fei1 zhen1
+SSB00160213|SSB0016|{g uei4 l in2 d e5 zh iii2 w u4 y iou3 sh en2 m e5}|gui4 lin2 de5 zhi2 wu4 you3 shen2 me5
+SSB03420198|SSB0342|{zh en4 f u3 zh iii2 n eng2 zh uan3 b ian4 d e5 x ian4 zh uang4}|zhen4 fu3 zhi2 neng2 zhuan3 bian4 de5 xian4 zhuang4
+SSB06230053|SSB0623|{d ao4 l e5 q iou1 t ian1 j iou4 m ei2 sh en2 m e5 sh uei2 g uo3 sp l e5}|dao4 le5 qiu1 tian1 jiu4 mei2 shen2 me5 shui2 guo3 le5
+SSB16840242|SSB1684|{g uang3 zh ou1 d uei4 zh u3 l i4 sp sh iii2 l iou4 s uei4 d e5 g uo2 sh ao3 d uei4 zh ong1 f eng1 sp l i3 y ve4 r u3 z ai4 s ai4 h ou4 b iao3 sh iii4}|guang3 zhou1 dui4 zhu3 li4 shi2 liu4 sui4 de5 guo2 shao3 dui4 zhong1 feng1 li3 yue4 ru3 zai4 sai4 hou4 biao3 shi4
+SSB12390157|SSB1239|{y i4 g u3 d u2 d a4 x ian4 x iang4 p u3 b ian4 c uen2}|yi4 gu3 du2 da4 xian4 xiang4 pu3 bian4 cun2
+SSB13280377|SSB1328|{x ian4 z ai4 sp m ei2 f a1 n a2 ch u1 y i4 k uan2 sp ch an2 p in3 h uei2 k uei4 sp zh e4 g e4 sh iii4 ch ang3}|xian4 zai4 mei2 fa1 na2 chu1 yi4 kuan2 chan2 pin3 hui2 kui4 zhe4 ge4 shi4 chang3
+SSB05350241|SSB0535|{g uang3 d ong1 sh eng3 sh uai4 x ian1 sh iii4 d ian3 r ang4 zh ong1 x iao3 x ve2 sh eng1 x ve2 x i2 g u3 p iao4 zh eng4 q van4 zh iii1 sh iii2}|guang3 dong1 sheng3 shuai4 xian1 shi4 dian3 rang4 zhong1 xiao3 xue2 sheng1 xue2 xi2 gu3 piao4 zheng4 quan4 zhi1 shi2
+SSB06070473|SSB0607|{d ong4 h ua4 d e5 r en2 w u4 y iou3 sh en2 m e5}|dong4 hua4 de5 ren2 wu4 you3 shen2 me5
+SSB16700410|SSB1670|{b ei4 d a4 p i1 y i4 z ao3 z ai4 y v4 s uo3 w uai4 sh ou3 h ou4 d e5 j i4 zh e3 zh uei1 f ang3}|bei4 da4 pi1 yi4 zao3 zai4 yu4 suo3 wai4 shou3 hou4 de5 ji4 zhe3 zhui1 fang3
+SSB07230089|SSB0723|{j in3 zh ou1 t ie3 h e2 j in1 g ong1 sh ang1 sh iii2 y ie4 g ong1 s ii1}|jin3 zhou1 tie3 he2 jin1 gong1 shang1 shi2 ye4 gong1 si1
+SSB04350211|SSB0435|{s ii4 b ai3 sp w u3 sh iii2 s an1 w uan4 sp s an1 q ian1 l ing2 s ii4 sh iii2 b a1}|si4 bai3 wu3 shi2 san1 wan4 san1 qian1 ling2 si4 shi2 ba1
+SSB16240350|SSB1624|{y iou3 t ian1 w uo3 h uei2 d ao4 j ia1}|you3 tian1 wo3 hui2 dao4 jia1
+SSB07620176|SSB0762|{y in1 y ve4 b o1 f ang4 sp zh ao4 m u4 y iang2 d e5 g e1}|yin1 yue4 bo1 fang4 zhao4 mu4 yang2 de5 ge1
+SSB04340353|SSB0434|{sh ou2 b iao3 sh ang4 h ai2 k e2 y i3 sh e4 d ing4 sp q in1 j in4 r en2 d e5 sh ou3 j i1 h ao4 m a3}|shou2 biao3 shang4 hai2 ke2 yi3 she4 ding4 qin1 jin4 ren2 de5 shou3 ji1 hao4 ma3
+SSB05700156|SSB0570|{s an1 b ai3 q i1 sh iii2 j iou2 d ian3 y i1}|san1 bai3 qi1 shi2 jiu2 dian3 yi1
+SSB12740463|SSB1274|{r ong2 h e2 d e5 b u4 f en4 m ei4 l i4 l ai2 z ii4 y v2 r ong2 h e2 s uo3 b ao1 h an2 sp d e5 x v3 d uo1 b u4 t ong2 sh iii4 w u4}|rong2 he2 de5 bu4 fen4 mei4 li4 lai2 zi4 yu2 rong2 he2 suo3 bao1 han2 de5 xu3 duo1 bu4 tong2 shi4 wu4
+SSB12180118|SSB1218|{z ai4 f u2 h e2 y iao1 q iou2 d e5 q ian2 t i2 x ia4}|zai4 fu2 he2 yao1 qiu2 de5 qian2 ti2 xia4
+SSB04150030|SSB0415|{l an2 m ou2 y v3 y vn2}|lan2 mou2 yu3 yun2
+SSB14480171|SSB1448|{ch u2 l e5 x iang3 sh ou4 y vn4 d ong4 b en3 sh en1 d e5 sh iii4 j ve2 sh eng4 y ian4 zh iii1 w uai4}|chu2 le5 xiang3 shou4 yun4 dong4 ben3 shen1 de5 shi4 jue2 sheng4 yan4 zhi1 wai4
+SSB07110273|SSB0711|{j ia1 n ing2 n a4 g uang2 ch ang3}|jia1 ning2 na4 guang2 chang3
+SSB18320374|SSB1832|{m in2 j ian1 j ie4 d ai4 z ii1 j in1 h ei1 d ong4 sp w uei1 j i1 x ian3 x ian4}|min2 jian1 jie4 dai4 zi1 jin1 hei1 dong4 wei1 ji1 xian3 xian4
+SSB06290473|SSB0629|{c an1 k ao3 x iao1 x i1 w uang2 sp j iou3 y ve4 y i1 q i1 r iii4 b ao4 d ao4 sp g ang3 sp m ei2 sp ch eng1}|can1 kao3 xiao1 xi1 wang2 jiu3 yue4 yi1 qi1 ri4 bao4 dao4 gang3 mei2 cheng1
+SSB18370395|SSB1837|{y iang2 ch eng2 w uan2 b ao4 j i4 zh e3 c eng2 j iou4 g uang3 zh ou1 d e5 sh ou3 t ao4 f ang2 d ai4 sh iii4 ch ang3 sp j in4 x ing2 d iao4 ch a2}|yang2 cheng2 wan2 bao4 ji4 zhe3 ceng2 jiu4 guang3 zhou1 de5 shou3 tao4 fang2 dai4 shi4 chang3 jin4 xing2 diao4 cha2
+SSB06320377|SSB0632|{y i2 t ao4 y i4 b an1 d e5 f ang2 z ii3 sp j ia4 g e2 z ai4 s an1 sh iii2 w uan4 m ei3 y van2 z uo3 y iou4}|yi2 tao4 yi4 ban1 de5 fang2 zi3 jia4 ge2 zai4 san1 shi2 wan4 mei3 yuan2 zuo3 you4
+SSB07480275|SSB0748|{ch en2 m eng4 d a4 k ua4 b u4 sp j iou4 q iou2 z ao4 ch eng2 d a4 t uei3 sp j i1 r ou4 l a1 sh ang1}|chen2 meng4 da4 kua4 bu4 jiu4 qiu2 zao4 cheng2 da4 tui3 ji1 rou4 la1 shang1
+SSB12390001|SSB1239|{s uei2 zh e5 g ong1 s ii1 ch an2 p in3 sh ou1 r u4 j ie2 g ou4 d e5 b u2 d uan4 y iou1 h ua4}|sui2 zhe5 gong1 si1 chan2 pin3 shou1 ru4 jie2 gou4 de5 bu2 duan4 you1 hua4
+SSB05650136|SSB0565|{y iao1 s an1 y iao1 l u4 h ong2 q iao2 b ei3 zh an4}|yao1 san1 yao1 lu4 hong2 qiao2 bei3 zhan4
+SSB01450397|SSB0145|{w uan2 sh an4 z u1 f ang2 sh iii4 ch ang3 sp j iou4 b ian4 d e2 g eng4 j ia1 p o4 q ie4}|wan2 shan4 zu1 fang2 shi4 chang3 jiu4 bian4 de2 geng4 jia1 po4 qie4
+SSB02880401|SSB0288|{j iang1 d uei4 g ai1 m ing2 y van2 g ong1 sp k ou4 ch u2 q van2 n ian2 k ao3 q in2 k ao3 h e2 j iang3}|jiang1 dui4 gai1 ming2 yuan2 gong1 kou4 chu2 quan2 nian2 kao3 qin2 kao3 he2 jiang3
+SSB07480402|SSB0748|{q ing2 x i4 k e4 l a1 l a1 b u4}|qing2 xi4 ke4 la1 la1 bu4
+SSB00330210|SSB0033|{f an4 w uei3 q i2 d e5 d ian4 y ing2 y iou3 sh en2 m e5}|fan4 wei3 qi2 de5 dian4 ying2 you3 shen2 me5
+SSB09350051|SSB0935|{t e4 s ii1 l a1 h ai2 w uei4 b ai3 f en1 zh iii1 j iou3 sh iii2 d e5 zh ong1 g uo2 y iong4 h u4 sp m ian3 f ei4 j ian4 sh e4 l e5 j ia1 y iong4 ch ong1 d ian4 zh uang1}|te4 si1 la1 hai2 wei4 bai3 fen1 zhi1 jiu3 shi2 de5 zhong1 guo2 yong4 hu4 mian3 fei4 jian4 she4 le5 jia1 yong4 chong1 dian4 zhuang1
+SSB07160486|SSB0716|{zh an4 j iang1 d e5 x ve2 x iao4 sp y iou2 sh en3 m e5}|zhan4 jiang1 de5 xue2 xiao4 you2 shen3 me5
+SSB05900330|SSB0590|{b ei4 y van2 q v1 j ing3 f ang1 sp y i1 f a3 sp x ing2 zh eng4 j v1 l iou2}|bei4 yuan2 qu1 jing3 fang1 yi1 fa3 xing2 zheng4 ju1 liu2
+SSB05990439|SSB0599|{y iong4 e4 x ing4 j ing4 zh eng1 d e5 f ang1 sh iii4 q v3 d e5 h uo4 y van2}|yong4 e4 xing4 jing4 zheng1 de5 fang1 shi4 qu3 de5 huo4 yuan2
+SSB07230011|SSB0723|{j iou4 j iang1 k ong4 y ian1 zh iii2 f a3 r en2 y van2 d ang3 z ai4 l e5 m en2 w uai4}|jiu4 jiang1 kong4 yan1 zhi2 fa3 ren2 yuan2 dang3 zai4 le5 men2 wai4
+SSB03410321|SSB0341|{w u2 d ian3 l ing2 sp w u3 l ing2 sp s an1 s an1}|wu2 dian3 ling2 wu3 ling2 san1 san1
+SSB07940031|SSB0794|{j ia1 l e4 f u2 sp x in1 zh uang1 d ian4}|jia1 le4 fu2 xin1 zhuang1 dian4
+SSB09660471|SSB0966|{w uei4 l e5 sp g ong1 z uo4 d e5 sh iii4 sp s ii4 ch u4 b en1 b o1}|wei4 le5 gong1 zuo4 de5 shi4 si4 chu4 ben1 bo1
+SSB06680356|SSB0668|{ai3 d eng1 h e2 t a1 d e5 x iong1 d i4}|ai3 deng1 he2 ta1 de5 xiong1 di4
+SSB07620278|SSB0762|{b ai3 l i4 e3 rr w uei4 sh en2 m e5 y iao4 g u4 n i3}|bai3 li4 er3 wei4 shen2 me5 yao4 gu4 ni3
+SSB04150325|SSB0415|{f ang4 sh ou3 g e1 l ai2 t ing1 sp y i2 b ei4 z ii5 d e5 ai4}|fang4 shou3 ge1 lai2 ting1 yi2 bei4 zi5 de5 ai4
+SSB07230426|SSB0723|{d an4 y ie3 x i1 w uang4 n eng2 w uei4 b en3 d i4 zh iii4 z uo4 zh eng1 k ou3 q i4}|dan4 ye3 xi1 wang4 neng2 wei4 ben3 di4 zhi4 zuo4 zheng1 kou3 qi4
+SSB14520103|SSB1452|{zh iii2 y iou3 ch ai1 ch u2 ch ong2 j ian4 c ai2 n eng2 h uo4 d e2 sp x iang1 d ang1 l i4 r uen4}|zhi2 you3 chai1 chu2 chong2 jian4 cai2 neng2 huo4 de2 xiang1 dang1 li4 run4
+SSB18320465|SSB1832|{j v4 c ao3 y ing1 f u1 r en2 sh eng4 t ian1 m in2 x iao1 x i5}|ju4 cao3 ying1 fu1 ren2 sheng4 tian1 min2 xiao1 xi5
+SSB18100023|SSB1810|{l iou4 d ian2 w u3 s ii4 q i1 l iou4 b a1}|liu4 dian2 wu3 si4 qi1 liu4 ba1
+SSB03660136|SSB0366|{j iou4 s uan4 h en2 h ao3 w uan2 ch eng2 r en4 w u4 l e5}|jiu4 suan4 hen2 hao3 wan2 cheng2 ren4 wu4 le5
+SSB06140415|SSB0614|{j iang1 d ong4 j ie2 s uo2 y iou3 sp z ai4 h an2 y van2 g ong1 d e5 g ong1 z ii1}|jiang1 dong4 jie2 suo2 you3 zai4 han2 yuan2 gong1 de5 gong1 zi1
+SSB11970428|SSB1197|{n a4 j iou4 d eng3 y i4 d eng3}|na4 jiu4 deng3 yi4 deng3
+SSB06140283|SSB0614|{zh e4 k uai4 ch uang1 l ian2 b u4 sp zh ou4 q i3 l ai2 l e5}|zhe4 kuai4 chuang1 lian2 bu4 zhou4 qi3 lai2 le5
+SSB06070132|SSB0607|{l iou4 b ai3 j iou3 sh iii2 j iou2 d ian3 l iou4}|liu4 bai3 jiu3 shi2 jiu2 dian3 liu4
+SSB06320079|SSB0632|{h ai2 y iou2 l iang3 w uei4 g uo2 j ia1 d uei4 d e5 n ian2 q ing1 q iou2 y van2 y iou2 k e3 n eng2 j ia1 m eng2 x i1 sp l a4 sp l ian2 s ai4}|hai2 you2 liang3 wei4 guo2 jia1 dui4 de5 nian2 qing1 qiu2 yuan2 you2 ke3 neng2 jia1 meng2 xi1 la4 lian2 sai4
+SSB13410304|SSB1341|{sh uo3 x ing4 s ong1 j iang1 d ian4 l i4 b u4 m en2 j i2 sh iii2 ch u1 d ong4}|shuo3 xing4 song1 jiang1 dian4 li4 bu4 men2 ji2 shi2 chu1 dong4
+SSB03790270|SSB0379|{w uei1 er3 s ii1 b o2 sh iii4 h uei4 j ian1 k ong4 n i3 d e5 n eng2 l iang4 sh u1 ch u1}|wei1 er3 si1 bo2 shi4 hui4 jian1 kong4 ni3 de5 neng2 liang4 shu1 chu1
+SSB03230353|SSB0323|{l i4 sh iii2 y v4 sh an4 x vn4 s u4 ch ong4 x iang4 y ian2 x i1 b o1}|li4 shi2 yu4 shan4 xun4 su4 chong4 xiang4 yan2 xi1 bo1
+SSB03850436|SSB0385|{y iong4 x in1 q ing1 t ing1 zh u3 r en2 d e5 f ei4 f u3 zh iii1 y ian2}|yong4 xin1 qing1 ting1 zhu3 ren2 de5 fei4 fu3 zhi1 yan2
+SSB04820456|SSB0482|{w uei4 l ai2 j i1 b en3 sh ang4 sh iii4 q i2 h uo4 k e3 sp j v1}|wei4 lai2 ji1 ben3 shang4 shi4 qi2 huo4 ke3 ju1
+SSB00800031|SSB0080|{h ua1 m u4 d i4 m ing2 sp y iou2 sh en3 m e5}|hua1 mu4 di4 ming2 you2 shen3 me5
+SSB16860404|SSB1686|{z ai4 d ian4 sh iii4 t ai2 g ong1 z uo4 l iang3 n ian2 h ou4}|zai4 dian4 shi4 tai2 gong1 zuo4 liang3 nian2 hou4
+SSB10550076|SSB1055|{m an4 m an5 d a2 l i3 h ua1 y van2 b a5}|man4 man5 da2 li3 hua1 yuan2 ba5
+SSB07600084|SSB0760|{b ei3 j ing1 t ong2 b i3 z eng1 zh ang3 x vn4 s u4 b ai3 f en1 zh iii1 y i4 b ai3}|bei3 jing1 tong2 bi3 zeng1 zhang3 xun4 su4 bai3 fen1 zhi1 yi4 bai3
+SSB07780067|SSB0778|{y i4 j v1 zh ong1 g uo2 zh iii2 x ing2 z ong3 c ai2 d ing1 z u3 y v4 b iao3 sp sh iii4}|yi4 ju1 zhong1 guo2 zhi2 xing2 zong3 cai2 ding1 zu3 yu4 biao3 shi4
+SSB18280284|SSB1828|{j ing1 k ao3 h e2 f a1 x ian4 w uei3 z ao4 b ei3 j ing1 sh iii4 g ong1 z uo4 sp j v1 zh u4 zh eng4 x ing2 w uei2 sp d e5}|jing1 kao3 he2 fa1 xian4 wei3 zao4 bei3 jing1 shi4 gong1 zuo4 ju1 zhu4 zheng4 xing2 wei2 de5
+SSB11250275|SSB1125|{s uei2 b ian4 l ai2 sh ou3 l iou2 t ao1 d e5 g e1}|sui2 bian4 lai2 shou3 liu2 tao1 de5 ge1
+SSB05780309|SSB0578|{m i3 y i4 x ian4 d e5 x iang1 zh en4 sp y iou3 sh en2 m e5}|mi3 yi4 xian4 de5 xiang1 zhen4 you3 shen2 me5
+SSB07000065|SSB0700|{j ia1 q iang2 sp ch eng2 zh en4 j i2 zh ong1 sp zh iii4 w u1 sh e4 sh iii1 j i2 sp zh ou1 b ian1 t u3 r ang1 h uan2 j ing4 g uan2 l i3}|jia1 qiang2 cheng2 zhen4 ji2 zhong1 zhi4 wu1 she4 shi1 ji2 zhou1 bian1 tu3 rang1 huan2 jing4 guan2 li3
+SSB11870197|SSB1187|{n i3 b u4 n eng2 y in1 w uei4 t a1 z uo4 l uen2 y i3}|ni3 bu4 neng2 yin1 wei4 ta1 zuo4 lun2 yi3
+SSB16240471|SSB1624|{j ie2 zh iii4 sp e4 rr l ing2 y i1 s ii4 n ian2 sh iii2 e4 rr y ve4 d i3}|jie2 zhi4 er4 ling2 yi1 si4 nian2 shi2 er4 yue4 di3
+SSB03850241|SSB0385|{b o1 f ang4 g e1 q v3 z ang1 zh eng4 y ve4 d e5 g e1}|bo1 fang4 ge1 qu3 zang1 zheng4 yue4 de5 ge1
+SSB03790307|SSB0379|{zh e4 sh iii4 w uo3 m en5 b i4 x v1 q ian1 c ii2 d e5}|zhe4 shi4 wo3 men5 bi4 xu1 qian1 ci2 de5
+SSB00050052|SSB0005|{s ii4 l u4 w u2 r en2 sh ou4 p iao4 d i4 y i1 r en2 m in2 y i1 y van4 zh an4}|si4 lu4 wu2 ren2 shou4 piao4 di4 yi1 ren2 min2 yi1 yuan4 zhan4
+SSB09350189|SSB0935|{e2 rr ch uan2 t ong3 j ie2 n eng2 d eng1 x v1 y iao4 k ai1 q i3 y i2 d uan4 sh iii2 j ian1 c ai2 x ing2}|er2 chuan2 tong3 jie2 neng2 deng1 xu1 yao4 kai1 qi3 yi2 duan4 shi2 jian1 cai2 xing2
+SSB11380086|SSB1138|{d eng4 z ii3 sh an1 d ian4 sh iii4 j v4 y iou3 sh en2 m e5}|deng4 zi3 shan1 dian4 shi4 ju4 you3 shen2 me5
+SSB04270141|SSB0427|{e2 rr l iang3 r en2 j iao1 w uang3 k uai4 e4 rr n ian2}|er2 liang3 ren2 jiao1 wang3 kuai4 er4 nian2
+SSB07370152|SSB0737|{q i2 t a1 sh iii2 h ou4 d ou1 z ai4 y i1 y van4 n a4 p o4 j iao4 sh iii4 l i3 sh ang4 k e4}|qi2 ta1 shi2 hou4 dou1 zai4 yi1 yuan4 na4 po4 jiao4 shi4 li3 shang4 ke4
+SSB08630216|SSB0863|{y i4 m ing2 zh ong1 n ian2 n v3 ch eng2 k e4 t u1 g an3 sh en1 t i3 b u2 sh iii4}|yi4 ming2 zhong1 nian2 nv3 cheng2 ke4 tu1 gan3 shen1 ti3 bu2 shi4
+SSB07510262|SSB0751|{d uei4 c uen2 z ai4 h en3 d uo1 w uei4 zh iii1 d e5 h ou4 x van3 x in1 y iao4 l ai2 sh uo1 g uo4 y v2 k e1 k e4}|dui4 cun2 zai4 hen3 duo1 wei4 zhi1 de5 hou4 xuan3 xin1 yao4 lai2 shuo1 guo4 yu2 ke1 ke4
+SSB15930485|SSB1593|{zh en3 j iou4}|zhen3 jiu4
+SSB12190187|SSB1219|{y ia2 q ian1 sp ch a2 l i3 g ao4 s u4 n i3 m en5 sp d e5 m a5}|ya2 qian1 cha2 li3 gao4 su4 ni3 men5 de5 ma5
+SSB07940156|SSB0794|{zh eng4 sh iii4 m a3 s ii1 k e4 d e5 j ian1 d ing4 x in4 n ian4}|zheng4 shi4 ma3 si1 ke4 de5 jian1 ding4 xin4 nian4
+SSB17280330|SSB1728|{b ai2 g uei3 y ie4 x ing2 r en2 w u4 y iou3 sh en2 m e5}|bai2 gui3 ye4 xing2 ren2 wu4 you3 shen2 me5
+SSB02610063|SSB0261|{y iang2 zh ou1 sp t ong1 h ua2 sp g ua4 ch e3 w uei2 x iou1 j i4 sh u4}|yang2 zhou1 tong1 hua2 gua4 che3 wei2 xiu1 ji4 shu4
+SSB12210381|SSB1221|{d an4 j iou4 s uan4 sh iii4 sh ou4 s ii3 d e5 l uo4 t uo2 sp y i2 b i2 m a3 d a4}|dan4 jiu4 suan4 shi4 shou4 si3 de5 luo4 tuo2 yi2 bi2 ma3 da4
+SSB04820406|SSB0482|{y ve4 sp k an4 sp y ve4 sp k e3 sp ai4}|yue4 kan4 yue4 ke3 ai4
+SSB18780283|SSB1878|{w uo3 y iao4 l iao3 j ie2 t a1 m en5 d e5 sh eng1 m ing4}|wo3 yao4 liao3 jie2 ta1 men5 de5 sheng1 ming4
+SSB02410111|SSB0241|{y ie3 sh iii4 x in1 d ian4 d e5 l iang4 d ian3 zh iii1 y i1}|ye3 shi4 xin1 dian4 de5 liang4 dian3 zhi1 yi1
+SSB13660037|SSB1366|{g uo2 an1 f u3 r u4 sh iii4 j ia4 g e2 sp y ie3 j iang1 f u3 h e2 sp m ai3 f ang2 r en2 y v4 q i1}|guo2 an1 fu3 ru4 shi4 jia4 ge2 ye3 jiang1 fu3 he2 mai3 fang2 ren2 yu4 qi1
+SSB18060495|SSB1806|{c ai2 y i4 j ie1 ch u4 y ve1 h an4 sp j iou4 r ang4 b u4 l e5}|cai2 yi4 jie1 chu4 yue1 han4 jiu4 rang4 bu4 le5
+SSB07510205|SSB0751|{y vn2 n an2 q v1 j ing4 y i2 d uei4 f u1 q i1 j ie4 sh ao4 y ve4 sp n an2 j i2 t ou1 d u4 sp n v3 m ai4 y in2 b ei4 sp p i1 b u3}|yun2 nan2 qu1 jing4 yi2 dui4 fu1 qi1 jie4 shao4 yue4 nan2 ji2 tou1 du4 nv3 mai4 yin2 bei4 pi1 bu3
+SSB11100319|SSB1110|{t i3 x i4 r en4 zh eng4 sp y iou3 sh en2 m e2}|ti3 xi4 ren4 zheng4 you3 shen2 me2
+SSB07170017|SSB0717|{h an4 ch eng2 sp q ing2 y van2}|han4 cheng2 qing2 yuan2
+SSB02460099|SSB0246|{z ai4 y i4 w u1 sh iii4 k ai1 zh u1 b ao3 d ian4 d e5 sh en3 x ian1 sh eng1 sp j iang1 y i2 m ian4 y in4 y iou3 p o4 an4 sh en2 s u4}|zai4 yi4 wu1 shi4 kai1 zhu1 bao3 dian4 de5 shen3 xian1 sheng1 jiang1 yi2 mian4 yin4 you3 po4 an4 shen2 su4
+SSB16840199|SSB1684|{zh iii1 h ou4 h uei4 z ai4 f an2 m ei3 g uo2 x iou1 d u2 sh uo4 sh iii4 k e4 ch eng2}|zhi1 hou4 hui4 zai4 fan2 mei3 guo2 xiu1 du2 shuo4 shi4 ke4 cheng2
+SSB05880495|SSB0588|{an1 t a4 sh eng4 sh iii4 zh ong1 y iang1 n an2}|an1 ta4 sheng4 shi4 zhong1 yang1 nan2
+SSB15630052|SSB1563|{n a4 n i3 sh iii4 n ei4 zh ong3 sp z uo4 l e5}|na4 ni3 shi4 nei4 zhong3 zuo4 le5
+SSB04700219|SSB0470|{j in1 t ian1 n i3 y iao4 j ia4 g ei2 w uo3}|jin1 tian1 ni3 yao4 jia4 gei2 wo3
+SSB13200135|SSB1320|{j iang1 w u3 ch u1 y ian3 d e5 d ian4 sh iii4 j v4 y iou3 sh en2 m e5}|jiang1 wu3 chu1 yan3 de5 dian4 shi4 ju4 you3 shen2 me5
+SSB06230082|SSB0623|{h uai2 n an2 d e5 zh iii2 w u4 y iou2 sh en3 m e5}|huai2 nan2 de5 zhi2 wu4 you2 shen3 me5
+SSB07600070|SSB0760|{y i4 d ian3 d ou1 b u4 g an1 g a4}|yi4 dian3 dou1 bu4 gan1 ga4
+SSB05700127|SSB0570|{w uo2 x iang3 t ing1 zh ou1 j ie2 l uen2 d e5 d ao4 x iang1}|wo2 xiang3 ting1 zhou1 jie2 lun2 de5 dao4 xiang1
+SSB05440459|SSB0544|{n an2 sh an1 q v1 n an2 t ou2 y i4 x iao3 q v1 n ei4 f a1 sh eng1 zh uei4 l ou2 sh iii4 j ian4}|nan2 shan1 qu1 nan2 tou2 yi4 xiao3 qu1 nei4 fa1 sheng1 zhui4 lou2 shi4 jian4
+SSB11080197|SSB1108|{t ai2 b ei3 sh iii4 zh ong1 sh an1 b ei3 l u4 q i1 d uan4}|tai2 bei3 shi4 zhong1 shan1 bei3 lu4 qi1 duan4
+SSB01390114|SSB0139|{n i3 d e5 k u4 z ii5 j ian4 s ang4 n i2 d ian3 l e5}|ni3 de5 ku4 zi5 jian4 sang4 ni2 dian3 le5
+SSB03750443|SSB0375|{d ian4 sh iii4 j iang1 j ie1 r u4 g eng4 d uo1 y iang4 h ua4 d e5 n ei4 r ong2 y v3 f u2 w u5}|dian4 shi4 jiang1 jie1 ru4 geng4 duo1 yang4 hua4 de5 nei4 rong2 yu3 fu2 wu5
+SSB07360388|SSB0736|{g uo2 k ai1 h ang2 j iang1 sp j ia1 d a4 d uei4 w uen2 h ua4 c an3 y ie4 d e5 sp zh iii1 c ii2 l i4 d u4}|guo2 kai1 hang2 jiang1 jia1 da4 dui4 wen2 hua4 can3 ye4 de5 zhi1 ci2 li4 du4
+SSB06680189|SSB0668|{l ao3 y ing1 y ve4 d uei4 d e5 j ia1 zh ou1 l v2 g uan3}|lao3 ying1 yue4 dui4 de5 jia1 zhou1 lv2 guan3
+SSB06710434|SSB0671|{t ao2 h uei4 m in3 ch u1 y ian3 d e5 d ian4 y ing2 y iou3 sh en2 m e5}|tao2 hui4 min3 chu1 yan3 de5 dian4 ying2 you3 shen2 me5
+SSB11150327|SSB1115|{k uai4 j i4 sh u1 j i2 y iou2 sh en3 m e5}|kuai4 ji4 shu1 ji2 you2 shen3 me5
+SSB13660260|SSB1366|{f a1 h uei1 z ii1 j in1 t ou2 r u4 d e5 zh eng2 t i3 x iao4 y i4}|fa1 hui1 zi1 jin1 tou2 ru4 de5 zheng2 ti3 xiao4 yi4
+SSB01390049|SSB0139|{q i4 ch e1 y v4 y v3 h u4 l ian2 w uang3 y iong2 h e2 d e5 j i2 p o4}|qi4 che1 yu4 yu3 hu4 lian2 wang3 yong2 he2 de5 ji2 po4
+SSB06310469|SSB0631|{l ai2 y i4 sh ou3 x in1 t ai4 r uan3}|lai2 yi4 shou3 xin1 tai4 ruan3
+SSB17110003|SSB1711|{h ua2 sh ang1 b ao4 x vn4 j i4 zh e3 sp x iao4 l in2 z uo2 r iii4 l ing2 ch en2}|hua2 shang1 bao4 xun4 ji4 zhe3 xiao4 lin2 zuo2 ri4 ling2 chen2
+SSB07940276|SSB0794|{s uei1 r an2 ch eng2 j iao1 h uan2 b i3 x ia4 h ua2 sp m ing2 x ian3}|sui1 ran2 cheng2 jiao1 huan2 bi3 xia4 hua2 ming2 xian3
+SSB12030154|SSB1203|{f eng1 zh iii1 n uo4 y ian2}|feng1 zhi1 nuo4 yan2
+SSB12530356|SSB1253|{p i2 j iou3 b ei4 h e1 d e2 g an1 g an1 j ing4 j ing4}|pi2 jiu3 bei4 he1 de2 gan1 gan1 jing4 jing4
+SSB11380136|SSB1138|{an1 h uei1 sh eng3 d e5 zh ong1 x ve2 y iou3 sh en2 m e5}|an1 hui1 sheng3 de5 zhong1 xue2 you3 shen2 me5
+SSB06860483|SSB0686|{y ie4 l ang2 ch uan2 sh uo1 zh iii1 m ian4 j v4 p an4 g uan1}|ye4 lang2 chuan2 shuo1 zhi1 mian4 ju4 pan4 guan1
+SSB02000411|SSB0200|{zh e4 s an1 g e4 d ong1 x i5 d ai4 b iao3 zh e5 r en2 l ei4 z uei4 y van2 sh iii3 z uei4 b en3 zh iii4 d e5 ch ong1 d ong4}|zhe4 san1 ge4 dong1 xi5 dai4 biao3 zhe5 ren2 lei4 zui4 yuan2 shi3 zui4 ben3 zhi4 de5 chong1 dong4
+SSB03070342|SSB0307|{h ua2 w uei2 g ei3 ch u1 l e5 g eng4 w uei2 l e4 g uan1 d e5 y v4 q i1}|hua2 wei2 gei3 chu1 le5 geng4 wei2 le4 guan1 de5 yu4 qi1
+SSB10020281|SSB1002|{s ii4 y i4 e4 rr q ian1 e4 rr b ai2 w u3 sh iii2 w u3 w uan4 q i1 q ian1 l iou4 b ai3 s an1 sh iii2 w u3}|si4 yi4 er4 qian1 er4 bai2 wu3 shi2 wu3 wan4 qi1 qian1 liu4 bai3 san1 shi2 wu3
+SSB13220259|SSB1322|{sh iii4 h ou4 j ing3 f ang1 q ing2 c eng2 j ie1 ch u4 sp g uo1 b ing3 x iang1}|shi4 hou4 jing3 fang1 qing2 ceng2 jie1 chu4 guo1 bing3 xiang1
+SSB03540061|SSB0354|{d an4 sh iii4 m ei3 g uo2 z ii4 j i3 j iou4 k e2 y i2 g ai3 b ian4 sp zh an4 zh eng1 w uei4 l ai2 d e5 z ou3 sp x iang4}|dan4 shi4 mei3 guo2 zi4 ji3 jiu4 ke2 yi2 gai3 bian4 zhan4 zheng1 wei4 lai2 de5 zou3 xiang4
+SSB15850476|SSB1585|{j iou2 b ai2 w u3 sh iii2 q i1 w uan4 sp j iou3 q ian1 w u2 b ai3 b a1 sh iii2}|jiu2 bai2 wu3 shi2 qi1 wan4 jiu3 qian1 wu2 bai3 ba1 shi2
+SSB11080011|SSB1108|{zh iii4 m ei3 j i2 t uan2 w uei4 p ei4 h e2 h ang2 m a3 sh en1 q ing3 g uo2 j i4 sp b iao1 p ai2 s ai4 sh iii4 d e5 x v1 y iao4}|zhi4 mei3 ji2 tuan2 wei4 pei4 he2 hang2 ma3 shen1 qing3 guo2 ji4 biao1 pai2 sai4 shi4 de5 xu1 yao4
+SSB18630474|SSB1863|{x iao2 m a2 y i3}|xiao2 ma2 yi3
+SSB03410414|SSB0341|{z eng1 zh iii4 w uei3 h e4 s uan4 p ian1 sp y iou3 sh en2 m e5}|zeng1 zhi4 wei3 he4 suan4 pian1 you3 shen2 me5
+SSB14310158|SSB1431|{s ii4 sh iii5 q i1}|si4 shi5 qi1
+SSB01450364|SSB0145|{l iou4 b ai2 w u3 sh iii2 l iou4 w uan4 sp s ii4 q ian1 j iou2 b ai3 e4 rr sh iii2 s an1}|liu4 bai2 wu3 shi2 liu4 wan4 si4 qian1 jiu2 bai3 er4 shi2 san1
+SSB12390002|SSB1239|{sh uen4 x in1 sp l v3 s u4 m en2 ch uang1 sp x in1 m in2 sh iii4 sp y iao2 b ao3 g ong4 x iao1 h e2 z uo4 sh e4 sp x i1 n an3}|shun4 xin1 lv3 su4 men2 chuang1 xin1 min2 shi4 yao2 bao3 gong4 xiao1 he2 zuo4 she4 xi1 nan3
+SSB03070014|SSB0307|{t ong2 sh iii2 y ie3 h uo4 d e5 l e5 t a1 z ai4 j in1 n ian2 ch ao1 j i2 s ai4 zh ong1 d e5 d i4 w u3 g e4 g uan4 j vn1}|tong2 shi2 ye3 huo4 de5 le5 ta1 zai4 jin1 nian2 chao1 ji2 sai4 zhong1 de5 di4 wu3 ge4 guan4 jun1
+SSB05350282|SSB0535|{s ii4 w uan4 sp w u3 q ian1 sp y i4 b ai3 sp b a1 sh iii2 l iou4}|si4 wan4 wu3 qian1 yi4 bai3 ba1 shi2 liu4
+SSB18280296|SSB1828|{w uo3 m en5 d ao3 d e5 d ian4 f ei4 z uei4 ang2 g uei4}|wo3 men5 dao3 de5 dian4 fei4 zui4 ang2 gui4
+SSB07490178|SSB0749|{w uo2 x iang3 j iou4 t a1 m en5}|wo2 xiang3 jiu4 ta1 men5
+SSB09660299|SSB0966|{f a1 zh an3 d e5 sh u1 j i2 sp y iou3 sh en2 m e5}|fa1 zhan3 de5 shu1 ji2 you3 shen2 me5
+SSB11310196|SSB1131|{x iao1 x iang1 f u3}|xiao1 xiang1 fu3
+SSB05780237|SSB0578|{x v2 zh ou1 d e5 p in3 p ai2 sp y iou3 sh en2 m e5}|xu2 zhou1 de5 pin3 pai2 you3 shen2 me5
+SSB02870425|SSB0287|{y iong4 y v2 b u3 ch ong1 q i2 l iou2 d ong4 z ii1 j in1}|yong4 yu2 bu3 chong1 qi2 liu2 dong4 zi1 jin1
+SSB11000461|SSB1100|{w u3 h an4 t ie3 l u4 j v2 ch e1 zh an4 y iou3 sh en2 m e5}|wu3 han4 tie3 lu4 ju2 che1 zhan4 you3 shen2 me5
+SSB07020097|SSB0702|{x iao3 h an2 c uen1 w uan2 q van2 x iao3 x ve2}|xiao3 han2 cun1 wan2 quan2 xiao3 xue2
+SSB11150389|SSB1115|{y iao1 s an1 q i1 q i1 s ii4 e4 rr l iou4 b a1 l ing2 sp e4 rr sp b a1}|yao1 san1 qi1 qi1 si4 er4 liu4 ba1 ling2 er4 ba1
+SSB06680182|SSB0668|{s uo2 y i3 n i2 y iou3 w uen4 t i2 x iang3 w uen4 an1 d e2 l u3}|suo2 yi3 ni2 you3 wen4 ti2 xiang3 wen4 an1 de2 lu3
+SSB12210146|SSB1221|{r uan3 j ing1 t ian1 ch eng2 z uo4 q van2 q iou2 sh ou3 l iang4 sp j ian4 k ang1 b a1 sh iii4 l ai2 d ao4 x ian4 ch ang3}|ruan3 jing1 tian1 cheng2 zuo4 quan2 qiu2 shou3 liang4 jian4 kang1 ba1 shi4 lai2 dao4 xian4 chang3
+SSB04700421|SSB0470|{s uei1 y iou3 k ua1 zh ang1 ch eng2 f en4}|sui1 you3 kua1 zhang1 cheng2 fen4
+SSB09130060|SSB0913|{y i1 j iou3 b a1 s ii4 n ian2 m ei3 g uo2 h ua2 n a4 g ong1 s ii1 p ai1 sh e4 d ian4 y ing3 zh ong1 j ie2 zh e3 y i1}|yi1 jiu3 ba1 si4 nian2 mei3 guo2 hua2 na4 gong1 si1 pai1 she4 dian4 ying3 zhong1 jie2 zhe3 yi1
+SSB18280019|SSB1828|{zh u4 zh ai2 j vn1 j ia4 h uan2 b i3 sh ang4 zh ang2 b ai3 f en1 zh iii1 l ing2 d ian3 rr q i1 s an1}|zhu4 zhai2 jun1 jia4 huan2 bi3 shang4 zhang2 bai3 fen1 zhi1 ling2 dianr3 qi1 san1
+SSB17450406|SSB1745|{ch a2 sh iii2 sh e4 an4 y iou2 p in3 sp l iou4 w uan4 y v2 d uen1 sp d a3 d iao4 sh e4 j i2 sp q van2 g uo2 sp e4 rr sh iii2 b a1 g e4 sh eng3 sp f en4}|cha2 shi2 she4 an4 you2 pin3 liu4 wan4 yu2 dun1 da3 diao4 she4 ji2 quan2 guo2 er4 shi2 ba1 ge4 sheng3 fen4
+SSB05780411|SSB0578|{k uen1 l uen2 zh iii2 w u4 y iou3 sh en2 m e5}|kun1 lun2 zhi2 wu4 you3 shen2 me5
+SSB07460097|SSB0746|{j in1 sh a1}|jin1 sha1
+SSB05780111|SSB0578|{y i3 j i2 x iang1 y ing4 d e5 k ong4 zh iii4 g ong1 ch eng2 j i4 sh u4 h e2 sp y v4 j ing3 sp y ing4 j i2 y v4 sp an4}|yi3 ji2 xiang1 ying4 de5 kong4 zhi4 gong1 cheng2 ji4 shu4 he2 yu4 jing3 ying4 ji2 yu4 an4
+SSB11150169|SSB1115|{b u2 sh iii4 m ei2 y iou3 r en2 h uei4 x in1 sh ang3}|bu2 shi4 mei2 you3 ren2 hui4 xin1 shang3
+SSB15930004|SSB1593|{y i4 b ai3 l iou4 sh iii2 j iou3 w uang4 b a1 q ian1 b a1 b ai3 y i1 sh iii2 s an1}|yi4 bai3 liu4 shi2 jiu3 wang4 ba1 qian1 ba1 bai3 yi1 shi2 san1
+SSB08170107|SSB0817|{g uo2 q i2 sh eng1 q i3 l ai2 d e5 sh iii2 h ou4 g an3 j ve2 t e4 b ie2 z ii4 h ao2}|guo2 qi2 sheng1 qi3 lai2 de5 shi2 hou4 gan3 jue2 te4 bie2 zi4 hao2
+SSB05340399|SSB0534|{p a4 sh iii4 h e2 t a1 z ai4 y i4 q i3 sh iii2 j ian1 sp z uei4 ch ang2 d e5 r en2}|pa4 shi4 he2 ta1 zai4 yi4 qi3 shi2 jian1 zui4 chang2 de5 ren2
+SSB00160141|SSB0016|{d ong1 w uan3 sh iii4 zh ang3 sp an1 zh en4 d e5 sh e4 q v1 y iou3 sh en2 m e5}|dong1 wan3 shi4 zhang3 an1 zhen4 de5 she4 qu1 you3 shen2 me5
+SSB05650179|SSB0565|{j ia1 d a4 sh iii4 zh ong1 j ian3 ch a2 sh iii4 h ou4 j i1 ch a2 ch u3 f a2 l i4 d u4 d eng3 c uo4 sh iii1}|jia1 da4 shi4 zhong1 jian3 cha2 shi4 hou4 ji1 cha2 chu3 fa2 li4 du4 deng3 cuo4 shi1
+SSB10010221|SSB1001|{z ii3 m ei4 q ing2 sh en1}|zi3 mei4 qing2 shen1
+SSB04270213|SSB0427|{b ing4 q i1 p an4 h e2 l in2 zh iii4 y ing3 w u2 m eng4 d a2 d eng3 sp z ai4 d u4 h e2 z uo4}|bing4 qi1 pan4 he2 lin2 zhi4 ying3 wu2 meng4 da2 deng3 zai4 du4 he2 zuo4
+SSB07600184|SSB0760|{y i3 t ou2 p iao4 b iao3 j ve2 zh ong1 zh iii3 sp b ian4 l uen4}|yi3 tou2 piao4 biao3 jue2 zhong1 zhi3 bian4 lun4
+SSB16250264|SSB1625|{y van2 l ai2 m ai3 j ia1 sh iii4 l iou2 k ai3 w uei1 j i2 y iang2 m i4}|yuan2 lai2 mai3 jia1 shi4 liu2 kai3 wei1 ji2 yang2 mi4
+SSB07370203|SSB0737|{g ei2 w uo3 f en4 rr g ong1 s ii1 s an1 m ing2 zh iii4}|gei2 wo3 fenr4 gong1 si1 san1 ming2 zhi4
+SSB09870312|SSB0987|{y i4 j ia4 l v4 g ao1 d a2 b ai3 f en1 zh iii1 j iou3 sh iii2 w u3}|yi4 jia4 lv4 gao1 da2 bai3 fen1 zhi1 jiu3 shi2 wu3
+SSB15550303|SSB1555|{zh uei4 j in4 x in1 g u3 f a1 x ing2 y i4 l an2 b iao3}|zhui4 jin4 xin1 gu3 fa1 xing2 yi4 lan2 biao3
+SSB03160484|SSB0316|{y iou1 y iou1 c uen4 c ao3 x in1}|you1 you1 cun4 cao3 xin1
+SSB05440434|SSB0544|{d eng4 l i4 j vn1 d e5 n v3 r en2 h ua1}|deng4 li4 jun1 de5 nv3 ren2 hua1
+SSB06660437|SSB0666|{b o2 m ei3 f u2 zh uang1 ch ao1 sh iii4 sp l ei4 l uo2 sh iii4 sp b i4 sh iii2 zh en4 sp c ai2 zh eng4 s uo3 x i1 n an2}|bo2 mei3 fu2 zhuang1 chao1 shi4 lei4 luo2 shi4 bi4 shi2 zhen4 cai2 zheng4 suo3 xi1 nan2
+SSB04340401|SSB0434|{b ei3 j ing1 ch u1 t ai2 x in1 g uei1 e4 zh iii4 sp m ai3 f ang2 sp b i4 sh uei4}|bei3 jing1 chu1 tai2 xin1 gui1 e4 zhi4 mai3 fang2 bi4 shui4
+SSB15670360|SSB1567|{b ang1 w uo3 f ang4 y i4 sh ou3 g e1 sp x v2 l iang2 d e5 g e1}|bang1 wo3 fang4 yi4 shou3 ge1 xu2 liang2 de5 ge1
+SSB04340281|SSB0434|{t uei1 ch u1 sp j in3 m i4 g en1 z ong1 zh ong1 sp f ang2 t ian1 x ia4 d a4 sh u4 j v4 zh iii3 sh u4 d e5 sp j i1 j in1 ch an2 p in3}|tui1 chu1 jin3 mi4 gen1 zong1 zhong1 fang2 tian1 xia4 da4 shu4 ju4 zhi3 shu4 de5 ji1 jin1 chan2 pin3
+SSB19020307|SSB1902|{s ii4 h u1 y i3 j ing1 y v4 j ian4 g ong1 s ii1 z ai4 d a2 ch eng2 x iao1 sh ou4 m u4 b iao1 sh ang4 d e5 l i4 b u4 c ong2 x in1}|si4 hu1 yi3 jing1 yu4 jian4 gong1 si1 zai4 da2 cheng2 xiao1 shou4 mu4 biao1 shang4 de5 li4 bu4 cong2 xin1
+SSB17810141|SSB1781|{h u2 n an2 zh u1 zh ou1 d a4 t ou2 w ua2 w ua5 s an1 s uei4 x iao2 n v3 h ai2 sp h an2 h an5}|hu2 nan2 zhu1 zhou1 da4 tou2 wa2 wa5 san1 sui4 xiao2 nv3 hai2 han2 han5
+SSB10240334|SSB1024|{s uei2 zh e5 sh uang1 f ang1 h e2 z uo4 x iao1 x i5 l uo4 d i4}|sui2 zhe5 shuang1 fang1 he2 zuo4 xiao1 xi5 luo4 di4
+SSB18060373|SSB1806|{zh u4 f ang2 g ong1 j i1 j in1 g uan2 l i3 zh ong1 x in1}|zhu4 fang2 gong1 ji1 jin1 guan2 li3 zhong1 xin1
+SSB02990101|SSB0299|{h u1 r an2 k an4 d ao4 y i2 d uei4 q ing5 sp n ian2 q ing5 d e5 f u4 m u3 sh ou2 l i3 b ao4 zh e5 y i2 g e4 q i1 b a1 sh uei4 d e5 sp x iao3 n an2 h ai2}|hu1 ran2 kan4 dao4 yi2 dui4 qing5 nian2 qing5 de5 fu4 mu3 shou2 li3 bao4 zhe5 yi2 ge4 qi1 ba1 shui4 de5 xiao3 nan2 hai2
+SSB08090293|SSB0809|{x ia4 zh uang1 y i1 y van4 sp b ei3 d ing1 sh uei3 sp w uei4 sh eng1 s uo3}|xia4 zhuang1 yi1 yuan4 bei3 ding1 shui3 wei4 sheng1 suo3
+SSB16840249|SSB1684|{b ing4 q ie3 ch eng2 g ong1 d a3 ch u1 d uo1 c ii4 f ang2 sh ou2 f an3 j i1}|bing4 qie3 cheng2 gong1 da3 chu1 duo1 ci4 fang2 shou2 fan3 ji1
+SSB09660093|SSB0966|{l ian2 sp an1 d e5 sp y iong2 y van3 sp sh iii4 f ou2 sp zh iii3 sh iii4 sp y in1 w uei4 c eng2 j ing1}|lian2 an1 de5 yong2 yuan3 shi4 fou2 zhi3 shi4 yin1 wei4 ceng2 jing1
+SSB13820277|SSB1382|{q ian2 c ai2 d uei4 w uo3 m en5 h e2 y iong4}|qian2 cai2 dui4 wo3 men5 he2 yong4
+SSB12190451|SSB1219|{w u2 sh iii2 b a1 w uan4 s ii4 q ian1 e4 rr b ai3 q i1 sh iii2 s ii4}|wu2 shi2 ba1 wan4 si4 qian1 er4 bai3 qi1 shi2 si4
+SSB10640294|SSB1064|{s ong4 c ii2 d e5 sh u1 j i2 y iou3 sh en2 m e5}|song4 ci2 de5 shu1 ji2 you3 shen2 me5
+SSB03820151|SSB0382|{y iou2 g e4 z u3 d e5 d i4 e4 rr m ing2 h e2 x iang1 sp d uei4 y ing4 d e5 x iao2 z u3 d i4 s an1 m ing2 j iao1 f eng1}|you2 ge4 zu3 de5 di4 er4 ming2 he2 xiang1 dui4 ying4 de5 xiao2 zu3 di4 san1 ming2 jiao1 feng1
+SSB06030451|SSB0603|{sh e4 t uan2 z u3 zh iii1 sp y iou3 sh en2 m e5}|she4 tuan2 zu3 zhi1 you3 shen2 me5
+SSB13400443|SSB1340|{w uo3 y iao4 t ing1 sp z an2 m en5 j ie2 h uen1 b a5}|wo3 yao4 ting1 zan2 men5 jie2 hun1 ba5
+SSB13660418|SSB1366|{w u2 zh eng4 y iou4 e2 rr y van2 sp k ai1 y i4 n ian2 sp w u2 r en2 g uan3 sp y i1 q i1 z uo4 x iao4 ch e1 sp j i3 j in4 sp s an1 sp e4 rr m ing2 sp x ve2 sh eng1}|wu2 zheng4 you4 er2 yuan2 kai1 yi4 nian2 wu2 ren2 guan3 yi1 qi1 zuo4 xiao4 che1 ji3 jin4 san1 er4 ming2 xue2 sheng1
+SSB18780242|SSB1878|{b u4 x v2 y iao4 r en4 h e2 x ing4 h uan4 x iang3}|bu4 xu2 yao4 ren4 he2 xing4 huan4 xiang3
+SSB07490239|SSB0749|{d a3 k ai1 d i4 s an1 b ai3 s an1 sh iii2 q i1}|da3 kai1 di4 san1 bai3 san1 shi2 qi1
+SSB06030253|SSB0603|{zh e4 n an2 z ii3 t u1 r an2 h uen1 d ao4 z ai4 sp d e5 b an3 sh ang4}|zhe4 nan2 zi3 tu1 ran2 hun1 dao4 zai4 de5 ban3 shang4
+SSB16500265|SSB1650|{y i1 s an1 w u3 sp b a1 l ing2 s an1 sp l ing2 q i1 s ii4 y i1 e4 rr}|yi1 san1 wu3 ba1 ling2 san1 ling2 qi1 si4 yi1 er4
+SSB16070145|SSB1607|{y iou2 y iong3 d uei4 h uo4 d e2 n a4 m e5 d uo1 r ong2 y v4}|you2 yong3 dui4 huo4 de2 na4 me5 duo1 rong2 yu4
+SSB03160445|SSB0316|{n ei4 m eng2 g u3 b ao1 t ou2 sh iii4 d e5 j ing2 d ian3 sp y iou3 sh en2 m e5}|nei4 meng2 gu3 bao1 tou2 shi4 de5 jing2 dian3 you3 shen2 me5
+SSB05350360|SSB0535|{g uang3 d ong1 ch ao2 zh ou1 h uo4 ch e1 zh ong1 b a1 x iang1 zh uang4 sp zh iii4 sp j iou2 s ii3 sh ang1}|guang3 dong1 chao2 zhou1 huo4 che1 zhong1 ba1 xiang1 zhuang4 zhi4 jiu2 si3 shang1
+SSB18280207|SSB1828|{b ai3 f ang4 zh e5 t a1 c ong2 x iao3 d ao4 d a4 h uo4 d e2 d e5 q van2 b u4 j iang3 sp b ei1}|bai3 fang4 zhe5 ta1 cong2 xiao3 dao4 da4 huo4 de2 de5 quan2 bu4 jiang3 bei1
+SSB13220494|SSB1322|{zh e4 l i3 b u4 j iou3 q ian2 y iou3 r en2 l ai2 g uo4}|zhe4 li3 bu4 jiu3 qian2 you3 ren2 lai2 guo4
+SSB06070184|SSB0607|{s uei1 r an2 d uei4 zh ong1 ch iii4 j ie4 p ai2 m ing2 d i4 s an1 d e5 f an2 zh en4 d ong1}|sui1 ran2 dui4 zhong1 chi4 jie4 pai2 ming2 di4 san1 de5 fan2 zhen4 dong1
+SSB11870096|SSB1187|{s uen1 z ii5 sp d a4 sp zh uan4}|sun1 zi5 da4 zhuan4
+SSB07940258|SSB0794|{y i1 s an1 l iou4 l ing2 j iou3 q i1 sp y i1 s ii4 q i1 j iou3 b a1}|yi1 san1 liu4 ling2 jiu3 qi1 yi1 si4 qi1 jiu3 ba1
+SSB02870477|SSB0287|{b i4 g ao1 y in4 sh ua1}|bi4 gao1 yin4 shua1
+SSB11100316|SSB1110|{s ii4 d ian3 s an1 s an1 b a1 b a1}|si4 dian3 san1 san1 ba1 ba1
+SSB11260247|SSB1126|{d a4 d uo1 sh u4 sp r en2 sp b ai2 t ian1 d ou1 y iao4 m ang2 y v2 g ong1 z uo4 h uo4 q i2 t a1 sh iii4 q ing5}|da4 duo1 shu4 ren2 bai2 tian1 dou1 yao4 mang2 yu2 gong1 zuo4 huo4 qi2 ta1 shi4 qing5
+SSB03850006|SSB0385|{z ong1 g uo2 sh iii4 ch ang3 d a2 j ia3 l ang4 ch ao2 y i4 b o1 y iou4 y i4 b o1}|zong1 guo2 shi4 chang3 da2 jia3 lang4 chao2 yi4 bo1 you4 yi4 bo1
+SSB10910145|SSB1091|{m ei3 s ii4 x iao3 sh iii2 zh u4 sh e4 s an1 sh iii2 h ao2 k e4 k e3 d ai4 y in1}|mei3 si4 xiao3 shi2 zhu4 she4 san1 shi2 hao2 ke4 ke3 dai4 yin1
+SSB17390069|SSB1739|{g ong1 s ii1 z ai4 j v4 z ii1 ch iii1 d iao4 n uo4 j i1 y ia4 d e5 sp h ou4 ch u1 x ian4 x iao1 h ua4 b u4 l iang2}|gong1 si1 zai4 ju4 zi1 chi1 diao4 nuo4 ji1 ya4 de5 hou4 chu1 xian4 xiao1 hua4 bu4 liang2
+SSB06930417|SSB0693|{e2 rr c ii3 c ii4 d e5 c ai2 y van2 j i4 h ua4 sh iii4 q i2 zh ong1 d e5 y i2 g e4 c e4 l ve4}|er2 ci3 ci4 de5 cai2 yuan2 ji4 hua4 shi4 qi2 zhong1 de5 yi2 ge4 ce4 lve4
+SSB02000290|SSB0200|{e4 rr sh iii2 s an1 w uan4 w u3 q ian1 l iou4 b ai3 y i1 sh iii2 e4 rr}|er4 shi2 san1 wan4 wu3 qian1 liu4 bai3 yi1 shi2 er4
+SSB17110133|SSB1711|{h ang2 zh ou1 zh iii1 j iang1 j in1 d u1 j i2 d i4 sp h ai3 y iang2 g ong1 y van2}|hang2 zhou1 zhi1 jiang1 jin1 du1 ji2 di4 hai3 yang2 gong1 yuan2
+SSB07840340|SSB0784|{n i3 g ao4 s u4 k a3 l uo4 s ii1 x iang4 c e4 sh iii4 l u2 k a3 s ii1 d e5 l e5}|ni3 gao4 su4 ka3 luo4 si1 xiang4 ce4 shi4 lu2 ka3 si1 de5 le5
+SSB02460012|SSB0246|{zh ou1 b ian1 x v3 d uo1 l ao2 b ai3 x in4 d e5 t i3 y v4 x v1 q iou2 sp n eng2 g ou4 b u2 d uan4 sh en1 j i2}|zhou1 bian1 xu3 duo1 lao2 bai3 xin4 de5 ti3 yu4 xu1 qiu2 neng2 gou4 bu2 duan4 shen1 ji2
+SSB14570250|SSB1457|{zh iii4 sh iii3 d a4 l iang4 x ve2 sh eng1 ch u1 x ian4 b u2 sh iii4 f an3 sp y ing4}|zhi4 shi3 da4 liang4 xue2 sheng1 chu1 xian4 bu2 shi4 fan3 ying4
+SSB03820054|SSB0382|{s ii4 sh iii2 y i1 w uan4 s an1 q ian1 w u2 sp b ai3 q i1 sh iii2 l iou4}|si4 shi2 yi1 wan4 san1 qian1 wu2 bai3 qi1 shi2 liu4
+SSB08710165|SSB0871|{zh ang1 s an1 d e5 g e1}|zhang1 san1 de5 ge1
+SSB05940075|SSB0594|{p ing2 g uo3 b u2 sh iii4 y i4 j ia1 y ing4 j ian4 g ong1 s ii1}|ping2 guo3 bu2 shi4 yi4 jia1 ying4 jian4 gong1 si1
+SSB11310446|SSB1131|{f u2 l in2 d e2 h ai3 x ian1 h uo3 sp g uo1}|fu2 lin2 de2 hai3 xian1 huo3 guo1
+SSB00730240|SSB0073|{g en1 j v4 x ian4 x ing2 zh eng4 j van4 f a1 x ing2 sh ang4 sh iii4 b ao3 j ian4 y ie4 w u4 g uan2 l i3 sp b an4 f a3 d e5 g uei1 d ing4}|gen1 ju4 xian4 xing2 zheng4 juan4 fa1 xing2 shang4 shi4 bao3 jian4 ye4 wu4 guan2 li3 ban4 fa3 de5 gui1 ding4
+SSB13200200|SSB1320|{n a4 x ie1 g u1 e2 rr z en3 y iang4 an1 zh iii4}|na4 xie1 gu1 er2 zen3 yang4 an1 zhi4
+SSB11380178|SSB1138|{n a4 x ie1 x in4 b ang1 zh u4 w uo3 ch eng1 d ao4 x ian4 z ai4}|na4 xie1 xin4 bang1 zhu4 wo3 cheng1 dao4 xian4 zai4
+SSB11250188|SSB1125|{c ai3 zh uang1 p ao3 x ian1 q iou1 j i4 c ai3 sp s e4 k uang2 l an2}|cai3 zhuang1 pao3 xian1 qiu1 ji4 cai3 se4 kuang2 lan2
+SSB02870375|SSB0287|{zh ong1 g uo2 zh iii3 zh an4 t e4 s ii1 l a1 q van2 q iou2 sh iii4 ch ang3 d e5 y i1 sh iii2}|zhong1 guo2 zhi3 zhan4 te4 si1 la1 quan2 qiu2 shi4 chang3 de5 yi1 shi2
+SSB07020404|SSB0702|{x in1 y v3 ch ao1 sh iii4}|xin1 yu3 chao1 shi4
+SSB11000016|SSB1100|{b u4 r an2 t ang1 m i3 b u2 h uei4 t ao2 z ou3}|bu4 ran2 tang1 mi3 bu2 hui4 tao2 zou3
+SSB07860304|SSB0786|{e4 rr w uan4 s ii4 q ian1 l iou4 b ai3 l iou4 sh iii2 q i1}|er4 wan4 si4 qian1 liu4 bai3 liu4 shi2 qi1
+SSB19020440|SSB1902|{j ing4 g uan3 h eng2 x in1 g ong1 s ii1 y i3 sh iii4 d a4 q ing4 z uei4 d a4 d e5 f ang2 d i4 ch an3 g ong1 s ii1}|jing4 guan3 heng2 xin1 gong1 si1 yi3 shi4 da4 qing4 zui4 da4 de5 fang2 di4 chan3 gong1 si1
+SSB00330047|SSB0033|{h u2 l uo2 b o1 d e5 b ing4 h ai4 y iou3 sh en2 m e5}|hu2 luo2 bo1 de5 bing4 hai4 you3 shen2 me5
+SSB01390297|SSB0139|{g ei2 w uo2 b a3 k ong1 t iao2 w uen1 d u4 sh e4 zh iii4 w uei2 s an1 sh iii2 sp d u4}|gei2 wo2 ba3 kong1 tiao2 wen1 du4 she4 zhi4 wei2 san1 shi2 du4
+SSB18910126|SSB1891|{w uo3 x ian4 z ai4 h e2 x iao1 z ai4 y i4 q i3 d e5 d ai4 j ia4 j iou4 sh iii4}|wo3 xian4 zai4 he2 xiao1 zai4 yi4 qi3 de5 dai4 jia4 jiu4 shi4
+SSB03660355|SSB0366|{zh ong4 zh iii2 y ia2 j i1 g ou4 y iou2 sh en3 m e5}|zhong4 zhi2 ya2 ji1 gou4 you2 shen3 me5
+SSB11760095|SSB1176|{d ang1 q ian2 g ong1 s ii1 z eng4 ch u3 y v2 z ong4 y iao4 zh uan3 x ing2 f a1 z an3 sh iii2 q i1}|dang1 qian2 gong1 si1 zeng4 chu3 yu2 zong4 yao4 zhuan3 xing2 fa1 zan3 shi2 qi1
+SSB07490074|SSB0749|{w uo3 zh iii1 d ao4 k an4 q i3 l ai2 b u2 x iang4}|wo3 zhi1 dao4 kan4 qi3 lai2 bu2 xiang4
+SSB19180330|SSB1918|{b o1 f ang4 d eng4 z ii3 q i2 d e5 ai4 n i3}|bo1 fang4 deng4 zi3 qi2 de5 ai4 ni3
+SSB11100159|SSB1110|{j ian4 z ii4 sp r u2 m ian4}|jian4 zi4 ru2 mian4
+SSB09660251|SSB0966|{z ai4 sp d i4 t ie3 sp y i1 h ao4 x ian4 sp g u3 ch eng2 zh an4 sp x i1 n an2 sp e4 rr b ai2 m i2 z uo3 y iou4}|zai4 di4 tie3 yi1 hao4 xian4 gu3 cheng2 zhan4 xi1 nan2 er4 bai2 mi2 zuo3 you4
+SSB04070147|SSB0407|{j iou4 p ao3 d ao4 m a3 l u4 sh ang4 l e5}|jiu4 pao3 dao4 ma3 lu4 shang4 le5
+SSB03410237|SSB0341|{b u2 sh iii4 w uei2 sp en1 h e2 f u4 sp en1 t e4 s ii1}|bu2 shi4 wei2 en1 he2 fu4 en1 te4 si1
+SSB05020126|SSB0502|{y v4 j ing1 g uang1 d ian4 l ian2 x v4 l iang3 n ian2 k uei1 s uen3}|yu4 jing1 guang1 dian4 lian2 xu4 liang3 nian2 kui1 sun3
+SSB04150091|SSB0415|{j ia1 l e4 f u2 sp x iang1 b in1 d ian4}|jia1 le4 fu2 xiang1 bin1 dian4
+SSB00380152|SSB0038|{sh uo1 p ing2 g uo3 n a4 g e5 b ei4 y iao3 l e5 y i4 k ou3 d e5 sh ang1 b iao1}|shuo1 ping2 guo3 na4 ge5 bei4 yao3 le5 yi4 kou3 de5 shang1 biao1
+SSB10020393|SSB1002|{f ang2 q i3 y iong1 b ao4 h u4 l ian2 w uang2 y i3 w uei4 r an2 ch eng2 f eng1}|fang2 qi3 yong1 bao4 hu4 lian2 wang2 yi3 wei4 ran2 cheng2 feng1
+SSB07370502|SSB0737|{n a4 n i3 z uo2 w uan3 w uei4 sh en2 m e5 t i2 q i3 zh e4 sh iii4}|na4 ni3 zuo2 wan3 wei4 shen2 me5 ti2 qi3 zhe4 shi4
+SSB13410108|SSB1341|{p iao4 x i1 l v4 d i1 y v2 b ai3 f en1 zh iii1 sh iii2}|piao4 xi1 lv4 di1 yu2 bai3 fen1 zhi1 shi2
+SSB00160343|SSB0016|{x iao3 p ing2 g uo3}|xiao3 ping2 guo3
+SSB09660385|SSB0966|{n i3 k e2 y i3 n a2 z ou3 sp t a1}|ni3 ke2 yi3 na2 zou3 ta1
+SSB14310197|SSB1431|{f eng1 y vn4 l an2 w uan1 x iao3 q v1 k ai1 f a1 sh ang1 t ie1 t ong1 zh iii1 ch eng1}|feng1 yun4 lan2 wan1 xiao3 qu1 kai1 fa1 shang1 tie1 tong1 zhi1 cheng1
+SSB04340316|SSB0434|{f ang2 d i4 ch an3 k ai1 f a1 t ou2 z ii1 e2 sp z eng1 zh ang2 j iou3 b ei4}|fang2 di4 chan3 kai1 fa1 tou2 zi1 e2 zeng1 zhang2 jiu3 bei4
+SSB12150336|SSB1215|{z ai4 sh en1 t i3 l i4 l iang4 x vn4 l ian4 f ang1 m ian4}|zai4 shen1 ti3 li4 liang4 xun4 lian4 fang1 mian4
+SSB04820198|SSB0482|{t ong3 y i1 zh iii2 x ing2 b ai3 f en1 zh iii1 s an1 sh iii2 d e5 sh ou3 f u4 b i3 l i4 sp h e2 j i1 sp zh uen3 sp l i4 sp l v4}|tong3 yi1 zhi2 xing2 bai3 fen1 zhi1 san1 shi2 de5 shou3 fu4 bi3 li4 he2 ji1 zhun3 li4 lv4
+SSB08630008|SSB0863|{zh ong1 g uo2 g uo2 j i4 sh ang1 h uei4 sp d a4 l ian2 sh ang1 h uei4}|zhong1 guo2 guo2 ji4 shang1 hui4 da4 lian2 shang1 hui4
+SSB03160103|SSB0316|{n i3 m en5 zh ao1 r en2 m e5}|ni3 men5 zhao1 ren2 me5
+SSB00160014|SSB0016|{n i3 j in1 t ian1 z en3 m e5 y iang4}|ni3 jin1 tian1 zen3 me5 yang4
+SSB10960384|SSB1096|{w uang2 y iou3 s ii4 ch u4 d a3 t an4 h uo4 y van2 y iao4 h uai2 j iou4 sp y iao4 ch ang2 x ian1}|wang2 you3 si4 chu4 da3 tan4 huo4 yuan2 yao4 huai2 jiu4 yao4 chang2 xian1
+SSB05990176|SSB0599|{j i1 j in1 h e2 zh ai4 q van4 b u4 zh eng1 sh ou1 y in4 h ua1 sh uei4}|ji1 jin1 he2 zhai4 quan4 bu4 zheng1 shou1 yin4 hua1 shui4
+SSB02870382|SSB0287|{zh e4 x iang4 zh eng4 c e4 j in3 x ian4 y v2 ch ao2 y iang2 q v1}|zhe4 xiang4 zheng4 ce4 jin3 xian4 yu2 chao2 yang2 qu1
+SSB18060379|SSB1806|{t a1 z ai4 j in1 n ian2 z ao3 x ie1 j iang4 d i1 l e5 t a1 d e5 sp g u3 x i1}|ta1 zai4 jin1 nian2 zao3 xie1 jiang4 di1 le5 ta1 de5 gu3 xi1
+SSB15630435|SSB1563|{n ei4 d i4 b u4 j in3 ch u1 t ai2 e4 rr e4 rr sp l ing2 x in1 zh en4 c e4 d i1 sh ou3 f u4}|nei4 di4 bu4 jin3 chu1 tai2 er4 er4 ling2 xin1 zhen4 ce4 di1 shou3 fu4
+SSB03420476|SSB0342|{d uo1 c ii4 h uo4 d e2 q van2 g uo2 b i3 s ai4 d e5 g uan4 j vn1}|duo1 ci4 huo4 de2 quan2 guo2 bi3 sai4 de5 guan4 jun1
+SSB18060175|SSB1806|{n i3 d uei4 j i1 j ing1 g uan2 l i3 g ong1 s ii1 g u4 y iou3 z ii1 j in1 sp y vn4 y iong4 g uan2 l i3 j in4 x ing2 t ong3 y i1 g uei1 d ing4}|ni3 dui4 ji1 jing1 guan2 li3 gong1 si1 gu4 you3 zi1 jin1 yun4 yong4 guan2 li3 jin4 xing2 tong3 yi1 gui1 ding4
+SSB12180184|SSB1218|{m in3 h ang2 q v1 f ang2 g uan3 sp j v2 sp f u4 j v2 zh ang3 sp y iao2 q vn2 f eng4 sp c eng2 b iao3 sh iii4}|min3 hang2 qu1 fang2 guan3 ju2 fu4 ju2 zhang3 yao2 qun2 feng4 ceng2 biao3 shi4
+SSB01970161|SSB0197|{g uang1 k ao4 x iao1 f ei4 zh e3 zh iii4 sh eng1 h uo4 sh iii4 x iao1 f ei4 zh e3 x ie2 h uei4 d e5 l i4 l iang4 y van2 y van3 b u2 sp g ou4}|guang1 kao4 xiao1 fei4 zhe3 zhi4 sheng1 huo4 shi4 xiao1 fei4 zhe3 xie2 hui4 de5 li4 liang4 yuan2 yuan3 bu2 gou4
+SSB00430188|SSB0043|{sh iii4 y iou2 m ei2 d u2 z ao4 ch eng2 d e5 m ei2 d u2 l iou2 s uen3 sh ang1}|shi4 you2 mei2 du2 zao4 cheng2 de5 mei2 du2 liu2 sun3 shang1
+SSB03540342|SSB0354|{x ian1 m a3 g ong1}|xian1 ma3 gong1
+SSB10560208|SSB1056|{d a3 k ai1 y i4 s ou3 g e1 z ang1 s ao2 h an2 d e5 g e1}|da3 kai1 yi4 sou3 ge1 zang1 sao2 han2 de5 ge1
+SSB06320419|SSB0632|{w ua2 e3 rr j ia1 s ii1 sp h e2 sp m a3 d i4 sp s ii5 en1 sh uo2 sp y i3 j ing1 h e2 sp j ie2 k e4 d e5 j v4 l e4 b u4 q ian1 y ve1}|wa2 er3 jia1 si1 he2 ma3 di4 si5 en1 shuo2 yi3 jing1 he2 jie2 ke4 de5 ju4 le4 bu4 qian1 yue1
+SSB15750023|SSB1575|{b o1 f ang4 k e1 q v3 sp k a1 f ei1}|bo1 fang4 ke1 qu3 ka1 fei1
+SSB07460286|SSB0746|{f a3 s ii1 b in1 d e2 sp q in1 z ii4 ch eng2 q ing1 l e5 sp zh e4 y i4 y iao2 y ian2}|fa3 si1 bin1 de2 qin1 zi4 cheng2 qing1 le5 zhe4 yi4 yao2 yan2
+SSB10560423|SSB1056|{y iong4 j ian3 d an1 y van2 s ii3 d e5 f ang1 f a3 j iou4 n en2 q in1 s ong1 z uan4 q ian2 d e5 s ii2 d ai4 y i2 q v4 b u2 f u4 f an3 l e5}|yong4 jian3 dan1 yuan2 si3 de5 fang1 fa3 jiu4 nen2 qin1 song1 zuan4 qian2 de5 si2 dai4 yi2 qu4 bu2 fu4 fan3 le5
+SSB05020075|SSB0502|{t ing1 sh uo1 sp ai4 q ing2 h uei2 l ai2 g uo4}|ting1 shuo1 ai4 qing2 hui2 lai2 guo4
+SSB07370276|SSB0737|{j vn1 r en2 y vn4 d ong4 y van2 k e3 n eng2 y in1 w uei2 g e4 f ang1 m ian4 y iao1 q iou2 y ian2 g e2 d e5 y van2 g u4}|jun1 ren2 yun4 dong4 yuan2 ke3 neng2 yin1 wei2 ge4 fang1 mian4 yao1 qiu2 yan2 ge2 de5 yuan2 gu4
+SSB18630406|SSB1863|{b u4 y iou2 f en1 sh uo1 x iang4 s an1 r en2 sh iii1 x i2}|bu4 you2 fen1 shuo1 xiang4 san1 ren2 shi1 xi2
+SSB15630181|SSB1563|{ch eng2 h uang2 m iao4 d ian4 n ao3 ch en2}|cheng2 huang2 miao4 dian4 nao3 chen2
+SSB02990148|SSB0299|{w uo3 m en5 b i4 x v1 b a3 t a1 m en5 ch u2 l i3 d iao4}|wo3 men5 bi4 xu1 ba3 ta1 men5 chu2 li3 diao4
+SSB07360004|SSB0736|{q van2 zh ou1 sh iii4 d e5 j ing2 d ian2 sp y iou3 sh en2 m e5}|quan2 zhou1 shi4 de5 jing2 dian2 you3 shen2 me5
+SSB07170328|SSB0717|{d a2 an4 j iou4 c ang2 z ai4 z e4 z ang1 d i4 t u2 s ang4}|da2 an4 jiu4 cang2 zai4 ze4 zang1 di4 tu2 sang4
+SSB04150150|SSB0415|{f ang4 sh ou3 g e1 l ai2 t ing1 sp n i3 sh iii4 w uo3 j in1 sh eng1 d e5 y i1 k ao4}|fang4 shou3 ge1 lai2 ting1 ni3 shi4 wo3 jin1 sheng1 de5 yi1 kao4
+SSB13850185|SSB1385|{n ong2 y ie4 c ii2 h uei4 y iou3 sh en2 m e5}|nong2 ye4 ci2 hui4 you3 shen2 me5
+SSB10910421|SSB1091|{d an4 k e2 y i3 sp an4 q i1 q v3 d e2 l i4 x i1}|dan4 ke2 yi3 an4 qi1 qu3 de2 li4 xi1
+SSB12150400|SSB1215|{j iang1 b ei3 d e5 l ou2 p an2 y iou3 sh en2 m e5}|jiang1 bei3 de5 lou2 pan2 you3 shen2 me5
+SSB09150296|SSB0915|{j i1 h u1 m ei3 y i2 w uei4 j v4 b ei4 q iang2 d a4 sp l ei3 t ai4 sp t ong3 zh iii4 l i4 d e5 sp t ai4 q van2 w uang2 zh eng3}|ji1 hu1 mei3 yi2 wei4 ju4 bei4 qiang2 da4 lei3 tai4 tong3 zhi4 li4 de5 tai4 quan2 wang2 zheng3
+SSB05990257|SSB0599|{q i1 sh iii2 l iou4 w uan4 l iou4 q ian1 j iou2 b ai3 s ii4 sh iii2 l iou4}|qi1 shi2 liu4 wan4 liu4 qian1 jiu2 bai3 si4 shi2 liu4
+SSB04700024|SSB0470|{b o1 f ang4 y in1 y ve4 sp n v3 r en2 b u2 sh iii4 y iao1}|bo1 fang4 yin1 yue4 nv3 ren2 bu2 shi4 yao1
+SSB08090397|SSB0809|{z ai4 ch eng2 w uai4 j ian4 m ian4}|zai4 cheng2 wai4 jian4 mian4
+SSB01330379|SSB0133|{k e1 z ai4 q i2 q iang2 d iao4 l e5 sh u4 x iang4 x in1 j i4 sh u4 h e2 sh iii2 j i4 y ing4 y iong4}|ke1 zai4 qi2 qiang2 diao4 le5 shu4 xiang4 xin1 ji4 shu4 he2 shi2 ji4 ying4 yong4
+SSB06010103|SSB0601|{q v4 t a1 j ia1 d ou1 sp b u4 n a2 d ong1 x i5}|qu4 ta1 jia1 dou1 bu4 na2 dong1 xi5
+SSB07000040|SSB0700|{f u4 m u3 y ie3 w u2 q van2 sp s uo3 h uei2 sp ch u1 z ii1 sp q ian2 k uan3}|fu4 mu3 ye3 wu2 quan2 suo3 hui2 chu1 zi1 qian2 kuan3
+SSB17280151|SSB1728|{s an1 g uo2 sh a1 b ei4 j ing3 y in1 y ve4}|san1 guo2 sha1 bei4 jing3 yin1 yue4
+SSB18320443|SSB1832|{h ai2 y iou3 y i4 x ie1 r en2 y van2 zh eng4 z ai4 q ing1 l i3 sh eng4 y v2 d e5 f ei4 q i4 w u4}|hai2 you3 yi4 xie1 ren2 yuan2 zheng4 zai4 qing1 li3 sheng4 yu2 de5 fei4 qi4 wu4
+SSB03660266|SSB0366|{d an4 sh iii4 g e4 sh uei4 sh iii4 zh iii2 j ie1 sh uei4}|dan4 shi4 ge4 shui4 shi4 zhi2 jie1 shui4
+SSB00120512|SSB0012|{k a3 r uei4 n a4 sh iii4 z ai4 x iang3 zh e5 w uo3 m a5 sp h ai2 sh iii4 k a3 r uei4 n a4 zh eng4 z ai4 x iang3 zh e5 b ie2 r en2}|ka3 rui4 na4 shi4 zai4 xiang3 zhe5 wo3 ma5 hai2 shi4 ka3 rui4 na4 zheng4 zai4 xiang3 zhe5 bie2 ren2
+SSB00330109|SSB0033|{sh iii4 w uo3 m en5 d e5 sh eng1 r iii4}|shi4 wo3 men5 de5 sheng1 ri4
+SSB18320054|SSB1832|{sh ang4 sh iii4 g ong1 s ii1 sp k ong3 n an2 y i3 x ing4 m ian3}|shang4 shi4 gong1 si1 kong3 nan2 yi3 xing4 mian3
+SSB18910248|SSB1891|{h e2 c ii3 q ian2 d uei4 y v2 c ii3 l ei4 d i4 k uai4 sp x iou1 g ai3 g uei1 h ua4 y iou3 g uan1 x i5}|he2 ci3 qian2 dui4 yu2 ci3 lei4 di4 kuai4 xiu1 gai3 gui1 hua4 you3 guan1 xi5
+SSB12190138|SSB1219|{l iou2 y i4 f ei1 d eng4 ch ao1 ch u1 y ian3 d e5 d ian4 y ing2 y iou3 sh en2 m e5}|liu2 yi4 fei1 deng4 chao1 chu1 yan3 de5 dian4 ying2 you3 shen2 me5
+SSB09660184|SSB0966|{x ing1 sp d e5 sh eng1 y in1}|xing1 de5 sheng1 yin1
+SSB17280177|SSB1728|{b u2 d an4 m ei2 j ia4 ch u1 q v4}|bu2 dan4 mei2 jia4 chu1 qu4
+SSB03070059|SSB0307|{h ai3 t an1 sh ang4 y iou3 x ie1 d i4 f ang1 z ai4 zh ang3 ch ao2 sh iii2 w uan2 q van2 y ian1 m o4 z ai4 sh uei3 zh ong1}|hai3 tan1 shang4 you3 xie1 di4 fang1 zai4 zhang3 chao2 shi2 wan2 quan2 yan1 mo4 zai4 shui3 zhong1
+SSB13020239|SSB1302|{b a1 sh iii2 q i1 d ian3 y i1 y i1}|ba1 shi2 qi1 dian3 yi1 yi1
+SSB01450275|SSB0145|{d an4 g eng4 d a4 d e5 w uen4 t i2 z ai4 y v2 s ao3 m iao2}|dan4 geng4 da4 de5 wen4 ti2 zai4 yu2 sao3 miao2
+SSB10080201|SSB1008|{j ing1 sh eng4 j i1 d ian4 sp s an1 b ai3 s an1 y i1 l iou4}|jing1 sheng4 ji1 dian4 san1 bai3 san1 yi1 liu4
+SSB17810237|SSB1781|{y ie2 x v2 b ai3 l i4 m ei2 zh ang3 w uo4 zh eng4 j v4}|ye2 xu2 bai3 li4 mei2 zhang3 wo4 zheng4 ju4
+SSB15550186|SSB1555|{j ia1 sh ang4 zh iii1 sh iii2 sp j ing1 y ian4 h e2 zh uan1 y ie4 n eng2 l i4 d e5 q ve1 f a2}|jia1 shang4 zhi1 shi2 jing1 yan4 he2 zhuan1 ye4 neng2 li4 de5 que1 fa2
+SSB11260226|SSB1126|{y v4 j i4 x in1 zh eng4 c e4 sp j iang1 zh iii3 zh u4 j ia1 d ian4 h ang2 y ie4 sp j in1 n ian2 sp y i3 l ai2 d e5 x ia4 h ua2 sh iii4 t ou2}|yu4 ji4 xin1 zheng4 ce4 jiang1 zhi3 zhu4 jia1 dian4 hang2 ye4 jin1 nian2 yi3 lai2 de5 xia4 hua2 shi4 tou2
+SSB15750044|SSB1575|{w uo3 f u4 c ong2 m ei2 l ai2 g uo4 zh e4}|wo3 fu4 cong2 mei2 lai2 guo4 zhe4
+SSB01490244|SSB0149|{z ou1 x iao3 ch uan1 t i2 ch u1 sp c ong2 l iang3 g e4 f ang1 m ian4 j in4 x ing2}|zou1 xiao3 chuan1 ti2 chu1 cong2 liang3 ge4 fang1 mian4 jin4 xing2
+SSB11150219|SSB1115|{w uo3 y iao4 x iang4 t a1 x ian3 sh iii4 w uo2 y iou3 d uo1 t e4 b ie2}|wo3 yao4 xiang4 ta1 xian3 shi4 wo2 you3 duo1 te4 bie2
+SSB03380450|SSB0338|{d an4 sh iii2 x i2 sh eng1 sp sh iii4 l i4 w uai4}|dan4 shi2 xi2 sheng1 shi4 li4 wai4
+SSB03150246|SSB0315|{zh iii4 j iang1 h uo4 y ing2 sp j in4 sp l iou4 l ing2 n ian2 sp z uei4 q iang2 t ai2 f eng1 d uo1 t ang4 h ang2 b an1 g ao1 t ie3 t eng2 y vn4}|zhi4 jiang1 huo4 ying2 jin4 liu4 ling2 nian2 zui4 qiang2 tai2 feng1 duo1 tang4 hang2 ban1 gao1 tie3 teng2 yun4
+SSB10720029|SSB1072|{g uei4 zh ou1 d e5 x ve2 zh e3 y iou2 sh en3 m e5}|gui4 zhou1 de5 xue2 zhe3 you2 shen3 me5
+SSB09660089|SSB0966|{zh e4 m e5 d a4 sp d e5 sp k ou3 sp z ii5}|zhe4 me5 da4 de5 kou3 zi5
+SSB07460395|SSB0746|{y in3 ch iii2 r en2 w u4 sp y iou3 sh en2 m e5}|yin3 chi2 ren2 wu4 you3 shen2 me5
+SSB03660008|SSB0366|{y ve1 h an4 sh iii4 x iang4 zh e4 y iang4 m a5}|yue1 han4 shi4 xiang4 zhe4 yang4 ma5
+SSB03150294|SSB0315|{zh e4 y iang4 r ong2 y i1 d uei4 x i1 g ai4 ch an3 sh eng1 l ei3 j i1 x ing4 ch ong1 j i1 d ao3 zh iii1 g uan1 j ie2 s uen3 sh ang1}|zhe4 yang4 rong2 yi1 dui4 xi1 gai4 chan3 sheng1 lei3 ji1 xing4 chong1 ji1 dao3 zhi1 guan1 jie2 sun3 shang1
+SSB06070484|SSB0607|{g eng3 zh iii2 h e2 n an2 r en2}|geng3 zhi2 he2 nan2 ren2
+SSB11970384|SSB1197|{y in1 j ie2 s en1 b u4 zh iii1 d ao4 w uo3 m en5 d e5 sh iii4}|yin1 jie2 sen1 bu4 zhi1 dao4 wo3 men5 de5 shi4
+SSB07840468|SSB0784|{w uo2 x iang3 z ii1 d ao4 w uei4 sh en2 m e5}|wo2 xiang3 zi1 dao4 wei4 shen2 me5
+SSB13660252|SSB1366|{b an4 b ian1 t ian1 t u2 w uen2 sp f u4 x ing1 sp zh ong1 l u4}|ban4 bian1 tian1 tu2 wen2 fu4 xing1 zhong1 lu4
+SSB08220123|SSB0822|{y i2 l iang4 sp j i2 sh iii3 e2 rr l ai2 d e5 k e4 ch e1 j iang1 t a1 zh uang4 ch eng2 zh ong4 sh ang1}|yi2 liang4 ji2 shi3 er2 lai2 de5 ke4 che1 jiang1 ta1 zhuang4 cheng2 zhong4 shang1
+SSB11350348|SSB1135|{s ii4 sh iii2 d ian3 j iou3}|si4 shi2 dian3 jiu3
+SSB09660166|SSB0966|{g an2 g an3 n iou2 y iang2 n a4 zh en1 sh iii4 h e2 n i3}|gan2 gan3 niu2 yang2 na4 zhen1 shi4 he2 ni3
+SSB11380191|SSB1138|{d an4 w uei1 l ian2 m ai4 g ei2 w uo3}|dan4 wei1 lian2 mai4 gei2 wo3
+SSB03750086|SSB0375|{q i1 sh iii2 s ii4 s uei4 d e5 sh iii3 y in1 z ao1 sh ou4 zh e5 t ong4 k u3 d e5 zh e2 m o2}|qi1 shi2 si4 sui4 de5 shi3 yin1 zao1 shou4 zhe5 tong4 ku3 de5 zhe2 mo2
+SSB15550285|SSB1555|{sh eng1 h uo2 b en3 sh en1 c ai2 sh iii4 z uei4 h ao3 d e5 b ian1 j v4}|sheng1 huo2 ben3 shen1 cai2 shi4 zui4 hao3 de5 bian1 ju4
+SSB03390128|SSB0339|{b u4 c eng2 q v4 z uo4 d e5 r en2}|bu4 ceng2 qu4 zuo4 de5 ren2
+SSB02410124|SSB0241|{s e4 c ai3 x ian1 m ing2 d e5 sp g ong1 n eng2 x ing4 sp d i4 j iao1}|se4 cai3 xian1 ming2 de5 gong1 neng2 xing4 di4 jiao1
+SSB11250005|SSB1125|{sh iii4 n i3 g ao4 s u4 r uei4 j ia1 n a4}|shi4 ni3 gao4 su4 rui4 jia1 na4
+SSB13410409|SSB1341|{q i1 zh iii3 ch u1 zh ou3 sh iii2 w u3 n ian2 w uei4 g uei1 sp n an2 zh iii3 sh u4 l i2 h uen1 f a3 y van4 ch en1 ch a2 w u2 ch iii3 r en2}|qi1 zhi3 chu1 zhou3 shi2 wu3 nian2 wei4 gui1 nan2 zhi3 shu4 li2 hun1 fa3 yuan4 chen1 cha2 wu2 chi3 ren2
+SSB15930012|SSB1593|{ao4 s ii1 k a3 zh en1 sh iii4 y i2 w uei4 ch u1 s e4 d e5 g u2 sh ou3}|ao4 si1 ka3 zhen1 shi4 yi2 wei4 chu1 se4 de5 gu2 shou3
+SSB06030428|SSB0603|{x iang1 y ia3 j v1 j iou3 l ou2}|xiang1 ya3 ju1 jiu3 lou2
+SSB13220317|SSB1322|{zh ong1 g uo2 y i2 d ong4 sp l iang2 c uen1 zh en4 sp y ing2 y ie4 t ing1}|zhong1 guo2 yi2 dong4 liang2 cun1 zhen4 ying2 ye4 ting1
+SSB18720108|SSB1872|{b an4 s uei2 zh e5 x in1 n eng2 y van2 sp b u3 t ie1 zh eng4 c e4 t uei4 p o1 sh iii2 j ian1 b iao3 d e5 m ing2 q ve4 t uei1 ch u1}|ban4 sui2 zhe5 xin1 neng2 yuan2 bu3 tie1 zheng4 ce4 tui4 po1 shi2 jian1 biao3 de5 ming2 que4 tui1 chu1
+SSB06680483|SSB0668|{r ang4 w uo2 g an3 d ao4 j i4 w uen1 x in1 y iou4 zh en4 f en4}|rang4 wo2 gan3 dao4 ji4 wen1 xin1 you4 zhen4 fen4
+SSB11610009|SSB1161|{g en1 b en3 sp m ei2 y iou3 z ii4 j i3 d e5 y ian2 f a1 n eng2 l i4}|gen1 ben3 mei2 you3 zi4 ji3 de5 yan2 fa1 neng2 li4
+SSB04820324|SSB0482|{y ve4 y v4 d i4 s an1 j i4}|yue4 yu4 di4 san1 ji4
+SSB06090060|SSB0609|{n eng2 g ou4 r ang4 h ai2 z ii5 m en5 sp d a4 b ao2 y ian3 sp f u2}|neng2 gou4 rang4 hai2 zi5 men5 da4 bao2 yan3 fu2
+SSB09930070|SSB0993|{e2 rr t a1 sp zh iii1 s uo2 y i3 j iou1 zh eng4 t a1 m en5}|er2 ta1 zhi1 suo2 yi3 jiu1 zheng4 ta1 men5
+SSB18720161|SSB1872|{w uei4 y v2 j iang1 m en2 sh iii4 x in1 h uei4 q v1 g u3 d ou1 sh an1 d e5 g uan1 g uang1 l an3 ch e1 zh iii1 j ia4 sp b ei4 l ei2 j i1 h ou4}|wei4 yu2 jiang1 men2 shi4 xin1 hui4 qu1 gu3 dou1 shan1 de5 guan1 guang1 lan3 che1 zhi1 jia4 bei4 lei2 ji1 hou4
